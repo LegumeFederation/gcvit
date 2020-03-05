@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  gcvit:
+    build: .
+    volumes:
+    - ./assets:/app/assets
+    - ./config:/app/config
+    ports:
+    - "8080:8080"

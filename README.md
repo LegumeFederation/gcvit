@@ -101,9 +101,40 @@ by changing values in `ui/src/Components/[HaploConfig.js|HeatConfig.js|HistConfi
 For general use, it is probably easiest to get started with GCViT using [Docker](https://www.docker.com/)
 before building, make sure that docker is properly configured for your system.
 
-The process of building from docker will automatically grab the most recent version of CViTjs during the build process.
-To make any changes, including your custom backbone and configuration files, place the files in `ui/cvit_assets`. Any files here
+To make any changes to CViTjs, including your custom backbone and configuration files, place the files in `ui/cvit_assets`. Any files here
 will replace-in-place their equivalent in the default CViT package, this includes custom popover components.
+
+To start the GCViT service:
+
+```
+docker-compose up -d
+```
+
+GCViT is then available at https://localhost:8080
+
+To stop the GCViT service:
+
+```
+docker-compose down
+```
+
+#### Reverse Proxy
+
+To add a reverse proxy for testing, the startup sequence would instead be:
+
+```
+docker-compose -f docker-compose.yml -f docker-compose.proxy.yml up -d
+```
+
+GCViT can be accessed through the reverse proxy at http://localhost and https://localhost (the latter using a self-signed certificate).
+
+To stop both GCViT and reverse proxy services:
+
+```
+docker-compose -f docker-compose.yml -f docker-compose.proxy.yml down -d
+```
+
+#### Building the Container Image Directly
 
 To build through docker:
 ```

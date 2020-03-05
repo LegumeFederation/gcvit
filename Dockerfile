@@ -1,6 +1,6 @@
 #Multistage build
 #make a build container
-FROM golang:alpine as builder
+FROM golang:1.14-alpine3.11 as builder
 #pass --build-arg apionly="true" when building to skip building cvitjs
 ARG apionly=false
 ARG apiauth=false
@@ -11,7 +11,6 @@ ADD . /go/src/gcvit
 WORKDIR /go/src/gcvit
 #if not planning on running UI from container, don't bother wasting time to build
 RUN if [ "$apionly" = "false" ] ; then apk add --update nodejs npm && \
-	git clone --single-branch --branch preact/buildalt https://github.com/LegumeFederation/cvitjs.git && \
 	cp -r ui/cvit_assets/src cvitjs && \
  	cd cvitjs  && \
 	npm install  && \
@@ -30,7 +29,7 @@ RUN if [ "$apionly" = "false" ] ; then cd ui && \
 #grab dependencies for golangdd
 RUN go get && go build -o server .
 #actual deployment container
-FROM alpine
+FROM alpine:3.11
 RUN mkdir /app
 #Good practice to not run deployed container as root
 RUN adduser -S -D -H -h /app appuser
