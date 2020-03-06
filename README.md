@@ -101,6 +101,12 @@ by changing values in `ui/src/Components/[HaploConfig.js|HeatConfig.js|HistConfi
 For general use, it is probably easiest to get started with GCViT using [Docker](https://www.docker.com/)
 before building, make sure that docker is properly configured for your system.
 
+If using the CViTjs ui, first initialize the cvitjs git submodule:
+
+```
+git submodule update --init
+```
+
 To make any changes to CViTjs, including your custom backbone and configuration files, place the files in `ui/cvit_assets`. Any files here
 will replace-in-place their equivalent in the default CViT package, this includes custom popover components.
 
