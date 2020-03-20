@@ -32,24 +32,30 @@ func GetExperiments(ctx *fasthttp.RequestCtx) {
 	//Iterate through experiments and build response
 	opts := make([]ExpData, len(experiments))
 	i := 0
-	for key := range experiments {
-		exp := ExpData{Value: key, Label: experiments[key].Name}
-		opts[i] = exp
-		i++
-	}
 
+	//experiments due to authorization first
 	if authState := ctx.UserValue("auth"); authState != nil {
 		// extend slice
 		auth := (authState).(string)
 		nOpts := make([]ExpData, len(experiments)+len(privateExp[auth]))
 		copy(nOpts, opts)
 		opts = nOpts
-		for key := range privateExp[auth] {
-			exp := ExpData{Value: key, Label: privateExp[auth][key].Name}
+		for _,key := range sortOrder {
+			if ex, ok := privateExp[auth][key]; ok {
+				exp := ExpData{Value: key, Label: ex.Name}
+				opts[i] = exp
+				i++
+			}
+	}
+	// all other experiments
+	for _,key := range sortOrder {
+		if ex, ok := experiments[key]; ok {
+			exp := ExpData{Value: key, Label: ex.Name}
 			opts[i] = exp
 			i++
 		}
 	}
+
 
 	//Response
 	optsJson, err := json.Marshal(opts)

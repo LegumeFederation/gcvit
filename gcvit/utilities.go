@@ -23,6 +23,14 @@ var binSize uint64
 var experiments map[string]DataFiles
 var privateExp map[string]map[string]DataFiles
 
+//key list for iterating over sorted items
+var sortOrder []string
+
+type expLabel struct {
+	Value string
+	Label string
+}
+
 //init does initialization, only runs first time gcvit is called
 func init() {
 	experiments = make(map[string]DataFiles)
@@ -33,9 +41,13 @@ func init() {
 func PopulateExperiments() error {
 	var C map[string]interface{}
 	_ = viper.Unmarshal(&C)
+	toSort := make([]expLabel, 0, len(C))
+
 	for key := range C {
+		//fmt.Println(key)
 		if key != "server" && key != "users" {
 			filecfg := viper.Sub(key) // viper is assumed to have the config read in at server startup or file edit
+			toSort = append(toSort, expLabel{key, filecfg.GetString("name")})
 			gz := strings.Contains(filecfg.GetString("location"), ".gz")
 			gt, err := PopulateGenotype(filecfg.GetString("location"), gz)
 			if err != nil {
@@ -65,6 +77,30 @@ func PopulateExperiments() error {
 			}
 		}
 	}
+
+	//sort keys
+	if sortOn := string(viper.Sub("server").GetString("sortOrder")); sortOn == "keyAscending" {
+		sort.SliceStable( toSort, func( i, j int) bool {
+			return toSort[i].Value <  toSort[j].Value})
+	} else if sortOn == "keyDescending" {
+		sort.SliceStable( toSort, func( i, j int) bool {
+			return toSort[i].Value >  toSort[j].Value})
+	} else if sortOn == "nameDescending" {
+		sort.SliceStable( toSort, func( i, j int) bool {
+			return toSort[i].Label >  toSort[j].Label})
+	} else {
+		sort.SliceStable( toSort, func( i, j int) bool {
+			return toSort[i].Label <  toSort[j].Label})
+	}
+
+	fmt.Println(toSort)
+
+	for i := range toSort {
+		sortOrder = append(sortOrder, toSort[i].Value)
+	}
+
+	fmt.Println(sortOrder, len(sortOrder),cap(sortOrder))
+
 
 	return nil
 }
