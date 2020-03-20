@@ -93,14 +93,9 @@ func PopulateExperiments() error {
 			return toSort[i].Label <  toSort[j].Label})
 	}
 
-	fmt.Println(toSort)
-
 	for i := range toSort {
 		sortOrder = append(sortOrder, toSort[i].Value)
 	}
-
-	fmt.Println(sortOrder, len(sortOrder),cap(sortOrder))
-
 
 	return nil
 }

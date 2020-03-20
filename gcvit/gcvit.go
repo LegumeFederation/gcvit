@@ -46,6 +46,7 @@ func GetExperiments(ctx *fasthttp.RequestCtx) {
 				opts[i] = exp
 				i++
 			}
+		}
 	}
 	// all other experiments
 	for _,key := range sortOrder {
