@@ -40,6 +40,7 @@ server:
   apiOnly: False
   source: gcvit
   binSize: 500000
+  sortOrder: nameAscending
 
 users:
   username : password
@@ -63,6 +64,9 @@ The server stanza is optional, and supports the following options:
 | apiOnly | False | If True, only serves the api routes, ignoring the GCViT frontend |
 | source | gcvit | Value for Column 2 of generated gff files from /api/generateGFF |
 | binSize | 500000 | Default number of bases used for bins |
+| sortOrder | nameAscending| Display order of experiments. If authorization is used, those experiments will always display first|
+
+Valid options for `sortOrder` are `keyAscending`, `keyDescending`, `nameAscending`, and `nameDescending`. 
 
 The users stanza is also optional. Use this configuration option to set one-or-more users to password protect datasets.
 Without proper credentials, users will never be presented with restricted datasets when using the gcvit ui.
