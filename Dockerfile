@@ -38,10 +38,10 @@ USER appuser
 COPY --from=builder /go/src/gcvit/server /app/
 COPY --from=builder /go/src/gcvit/ui/build /app/ui/build/
 #add mount points for config and assets
-VOLUME ["/app/config","/app/assets"]
+#VOLUME ["/app/config","/app/assets"]
 #Comment above and uncomment below if you would rather have assets built into container
-#COPY --from=builder /build/config /app/config/
-#COPY --from=builder /build/assets /app/assets/
+COPY --from=builder /go/src/gcvit/config /app/config/
+COPY --from=builder /go/src/gcvit/assets /app/assets/
 WORKDIR /app
 #start server
 CMD ["./server"]
