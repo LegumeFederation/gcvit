@@ -14,15 +14,11 @@ RUN npm run build
 FROM node:12.18.0-alpine3.11 as gcvitui
 ARG apiauth=false
 WORKDIR /gcvit
-COPY /ui/package*.json ./
+COPY /ui/gcvit/package*.json ./
 RUN npm install
-#Migrate over build artifacts from the cvitui stage
-COPY ui/ ./
-COPY --from=cvitui /cvit/build/ public/cvitjs/build/
-COPY ui/cvit_assets/ public/cvitjs/
+COPY ui/gcvit/ ./
 #Build UI components
-RUN rm -rf public/cvitjs/src && \
-	npm run build && \
+RUN npm run build && \
 	if [ "$apiauth" = "true" ] ; then echo Building UI with Auth && npm run buildauth ; else npm run build ; fi
 
 #Build stage for golang API components
@@ -45,8 +41,12 @@ WORKDIR /app
 ENTRYPOINT ["/app/server"]
 
 #Default image (combined api + gcvitui image, no data sets)
+#Migrate over build artifacts from the cvitui stage
 FROM api AS api-ui
 COPY --from=gcvitui /gcvit/build /app/ui/build/
+COPY --from=cvitui  /cvit/build  /app/ui/build/cvitjs/build/ 
+COPY ui/cvit_assets/cvit.conf    /app/ui/build/cvitjs/cvit.conf
+COPY ui/cvit_assets/data         /app/ui/build/cvitjs/data
 
 #assets built into container
 #This works best with smaller datasets
