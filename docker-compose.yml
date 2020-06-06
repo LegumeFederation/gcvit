@@ -8,5 +8,5 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./assets:/app/assets:ro
-      - ./config:/app/config:ro
+      - ./server/assets:/app/assets:ro
+      - ./server/config:/app/config:ro

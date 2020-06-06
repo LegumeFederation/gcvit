@@ -1,5 +1,5 @@
  # GCViT
-![GCViT](assets/readme_images/logo.png?raw=true)
+![GCViT](readme_images/logo.png?raw=true)
 
 ## Table of Contents
 + [About](#about) 
@@ -16,7 +16,7 @@ GCViT is a tool for whole genome visualization of resequencing or SNP array data
 
 GCViT is built on top of [CViTjs](https://github.com/LegumeFederation/cvitjs), a Javascript application for viewing genomic features at the whole-genome scale. GCViT is implemented in [Go](https://golang.org/). A Docker image is available. GCViT exposes an API, and can be installed as a server only, with no UI.
 
-![Williams Pedigree As Haplotype Blocks ](assets/readme_images/Williams_Pedigree2.png?raw=true)
+![Williams Pedigree As Haplotype Blocks ](readme_images/Williams_Pedigree2.png?raw=true)
 Figure 1. An example of haplotype comparisons of 6 soybean accessions.
 
 [Explore Soybean SNP data in GCViT](https://soybase.org/gcvit/)
@@ -29,13 +29,13 @@ Instructions for the UI are provided in the application itself.
  
 ### General Setup
 
-The steps for setting up a GCViT instance consists of downloading and installing the application, configuring the server, and data preparation. The GCViT repository includes example data from soybean consisting of these files: SNP data is in `assets/SoySNP50k_TestFile_named.vcf,` the backbone chromosomes are defined in `ui/cvit_assets/data/soySnp/gm_backbone.gff,` and the CViTjs image is configured with `ui/cvit_assets/data/soySnp/soySnp.conf.` 
+The steps for setting up a GCViT instance consists of downloading and installing the application, configuring the server, and data preparation. The GCViT repository includes example data from soybean consisting of these files: SNP data is in `server/assets/SoySNP50k_TestFile_named.vcf,` the backbone chromosomes are defined in `ui/cvit_assets/data/soySnp/gm_backbone.gff,` and the CViTjs image is configured with `ui/cvit_assets/data/soySnp/soySnp.conf.` 
 
 Before beginning configuration, if you plan on using the ui initialize the [CViTjs](https://github.com/LegumeFederation/cvitjs/tree/preact/buildalt) git submodule using `git submodule update --init`. This will grab the required repository for generating images.
 
 
 #### Configuring the Service
-No matter which method you intend to run GCViT, configuration of the Go backend service is the same. The default configuration file is `config/assetsconfig.yaml` and it has the following format:
+No matter which method you intend to run GCViT, configuration of the Go backend service is the same. The default configuration file is `server/config/assetsconfig.yaml` and it has the following format:
 
 ```yaml
 server:
@@ -95,7 +95,7 @@ While it is recommended, the data file given for 'location' does not have to be 
 
 To link the GFF file to CViTjs, edit the file ui/cvit_assets/cvit.conf to indicate the file exists and which CViTjs UI configuration file to use (described in [CViTjs documentation](https://github.com/LegumeFederation/cvitjs)).
 
-**Genotype Data Sets** Each genotype data set is represented by a single VCF file (which may be gzipped). By default, the files should go into the assets/ directory, but if you choose a different directory, it will be necessary to tell the application where to find the files. Information about connecting to a different the genotype data directory is described below.
+**Genotype Data Sets** Each genotype data set is represented by a single VCF file (which may be gzipped). By default, the files should go into the server/assets/ directory, but if you choose a different directory, it will be necessary to tell the application where to find the files. Information about connecting to a different the genotype data directory is described below.
 
 ### Configuring the UI
 
@@ -153,13 +153,13 @@ An example of starting an instance of GCViT inside the gcvit directory, binding 
 ```
 docker run -d \
 --name gcvit \
---mount type=bind,source="$(pwd)"/config,target=/app/config \
---mount type=bind,source="$(pwd)"/assets,target=/app/assets \
+--mount type=bind,source="$(pwd)"/server/config,target=/app/config \
+--mount type=bind,source="$(pwd)"/server/assets,target=/app/assets \
 -p 8080:8080 \
 gcvit:1.0
 ```
 
-If using the default server settings in assetconfig.yaml, GCViT will now be available at `http://localhost:8080.`
+If using the default server settings in assetconfig.yaml, GCViT will now be available at `http://localhost:8080`.
 
 To update the data, you should be able to just add it directly to the mounted source, as GCViT checks for updated data when appropriate. 
 

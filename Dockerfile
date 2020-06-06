@@ -17,8 +17,8 @@ COPY /ui/package*.json ./
 RUN npm install
 #Migrate over build artifacts from the cvitui stage
 COPY ui/ ./
-COPY --from=cvitui /cvit/build/ /public/cvitjs/build/
-COPY ui/cvit_assets/ /public/cvitjs/
+COPY --from=cvitui /cvit/build/ public/cvitjs/build/
+COPY ui/cvit_assets/ public/cvitjs/
 #Build UI components
 RUN rm -rf public/cvitjs/src && \
 	npm run build && \
@@ -28,21 +28,21 @@ RUN rm -rf public/cvitjs/src && \
 FROM golang:1.13.12-alpine3.12 as gcvitapi
 RUN apk add --update --no-cache git
 #add project to GOPATH/src so dep can run and make sure dependencies are right
-ADD server /go/src/gcvit
-WORKDIR /go/src/gcvit
+ADD server/src /go/src/
+WORKDIR /go/src/
 #grab dependencies for golangdd
 RUN go get
 RUN CGO_ENABLED=0 go build -o server .
 
 #Actual deployment container stage
 FROM scratch AS api
-COPY --from=gcvitapi /go/src/gcvit/server /app/
+COPY --from=gcvitapi /go/src/server /app/
 #add mount points for config and assets
 VOLUME ["/app/config","/app/assets"]
 #Comment VOLUME directive above and uncomment COPY directives below if you would rather have assets built into container
 #This works best with smaller datasets
-#COPY --from=gcvitapi /go/src/gcvit/config /app/config/
-#COPY --from=gcvitapi /go/src/gcvit/assets /app/assets/
+#COPY ./server/config/ /app/config/
+#COPY ./server/assets/ /app/assets/
 WORKDIR /app
 #start server
 ENTRYPOINT ["/app/server"]
