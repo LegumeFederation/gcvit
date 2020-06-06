@@ -1,0 +1,10 @@
+# example complete (api+ui+data) deployment
+version: '2.3'
+
+services:
+  gcvit:
+    build:
+      context: .
+      target: complete
+    ports:
+      - "8080:8080"

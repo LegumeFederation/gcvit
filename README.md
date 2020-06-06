@@ -131,6 +131,13 @@ To stop the GCViT service:
 docker-compose down
 ```
 
+To build and test a complete image (ui+api+data):
+```
+docker-compose -f docker-compose.prod.yml build
+docker-compose -f docker-compose.prod.yml up -d
+```
+
+
 To build through docker:
 ```
 docker build -t gcvit:1.0 . -f Dockerfile
