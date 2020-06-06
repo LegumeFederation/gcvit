@@ -31,9 +31,6 @@ Instructions for the UI are provided in the application itself.
 
 The steps for setting up a GCViT instance consists of downloading and installing the application, configuring the server, and data preparation. The GCViT repository includes example data from soybean consisting of these files: SNP data is in `server/assets/SoySNP50k_TestFile_named.vcf,` the backbone chromosomes are defined in `ui/cvit_assets/data/soySnp/gm_backbone.gff,` and the CViTjs image is configured with `ui/cvit_assets/data/soySnp/soySnp.conf.` 
 
-Before beginning configuration, if you plan on using the ui initialize the [CViTjs](https://github.com/LegumeFederation/cvitjs/tree/preact/buildalt) git submodule using `git submodule update --init`. This will grab the required repository for generating images.
-
-
 #### Configuring the Service
 No matter which method you intend to run GCViT, configuration of the Go backend service is the same. The default configuration file is `server/config/assetsconfig.yaml` and it has the following format:
 

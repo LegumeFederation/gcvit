@@ -1,11 +1,12 @@
 #Multistage build
 #Build stage for cvit component
 FROM node:12.18.0-alpine3.11 as cvitui
+ARG cvitjs_version=44fc7a98a78275014a547906a6f58bef1385e175
+RUN set -o pipefail && wget -O - https://github.com/LegumeFederation/cvitjs/archive/${cvitjs_version}.tar.gz \
+    | tar -xzf - && mv cvitjs-${cvitjs_version} /cvit
 WORKDIR /cvit
-#Doing package before build allows us to leverage docker caching.
-COPY cvitjs/package*.json ./
+#Doing package install before build allows us to leverage docker caching.
 RUN npm install
-COPY cvitjs/ ./
 COPY ui/cvit_assets/src/ src/
 RUN npm run build
 
