@@ -118,6 +118,22 @@ The Docker build process will retrieve the most recent version of CViTjs during 
 
 To add reference genome backbone files, popover customizations, or any other change to CViT place the files in `ui/cvit_assets`. This will overwrite the equivalent CViT file during the build process. 
 
+Setting the environment variables `DOCKER_BUILDKIT=1` and `COMPOSE_DOCKER_CLI_BUILD=1` to enable [BuildKit](https://github.com/moby/buildkit) is recommended for faster builds.
+
+To start the GCViT service:
+
+```
+docker-compose up -d
+```
+
+GCViT is then available at https://localhost:8080
+
+To stop the GCViT service:
+
+```
+docker-compose down
+```
+
 To build through docker:
 ```
 docker build -t gcvit:1.0 . -f Dockerfile
