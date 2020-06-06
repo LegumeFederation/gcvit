@@ -40,14 +40,16 @@ FROM scratch AS api
 COPY --from=gcvitapi /go/src/server /app/
 #add mount points for config and assets
 VOLUME ["/app/config","/app/assets"]
-#Comment VOLUME directive above and uncomment COPY directives below if you would rather have assets built into container
-#This works best with smaller datasets
-#COPY ./server/config/ /app/config/
-#COPY ./server/assets/ /app/assets/
 WORKDIR /app
 #start server
 ENTRYPOINT ["/app/server"]
 
-#Combined api + gcvitui image
-FROM api
+#Default image (combined api + gcvitui image, no data sets)
+FROM api AS api-ui
 COPY --from=gcvitui /gcvit/build /app/ui/build/
+
+#assets built into container
+#This works best with smaller datasets
+FROM api-ui AS complete
+COPY ./server/config /app/config
+COPY ./server/assets /app/assets

@@ -4,7 +4,8 @@ services:
   gcvit:
     build:
       context: .
-#     target: api
+      # change target to "api" to build/test api server only
+      target: api-ui
     ports:
       - "8080:8080"
     volumes:
