@@ -1,8 +1,10 @@
-version: '3'
+version: '2.3'
 
 services:
   gcvit:
-    build: .
+    build:
+      context: .
+#     target: api
     ports:
       - "8080:8080"
     volumes:

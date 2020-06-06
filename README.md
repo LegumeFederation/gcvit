@@ -138,9 +138,9 @@ To build through docker:
 ```
 docker build -t gcvit:1.0 . -f Dockerfile
 ```
-This command will produce a image with the tag of **gcvit:1.0** that can be used to build a container. If you want to save time with automated builds and only need the server API component, the build-arg:
+This command will produce a image with the tag of **gcvit:1.0** that can be used to build a container. If you want to save time with automated builds and only need the server API component, the target build stage:
 ```
---build-arg apionly=false
+--target=api
 ```
 is provided to skip over the building of the UI components. Similarly, if you wish to build the tool with BasicAuth the build-arg:
 ```
