@@ -37,14 +37,10 @@ ADD server /go/src/gcvit
 WORKDIR /go/src/gcvit
 #grab dependencies for golangdd
 RUN go get
-RUN go build -o server .
+RUN CGO_ENABLED=0 go build -o server .
 
 #Actual deployment container stage
-FROM alpine:3.12.0
-RUN mkdir /app
-#Good practice to not run deployed container as root
-RUN adduser -S -D -H -h /app appuser
-USER appuser
+FROM scratch
 COPY --from=gcvitapi /go/src/gcvit/server /app/
 COPY --from=gcvitui /gcvit/build /app/ui/build/
 #add mount points for config and assets
@@ -55,5 +51,4 @@ VOLUME ["/app/config","/app/assets"]
 #COPY --from=gcvitapi /go/src/gcvit/assets /app/assets/
 WORKDIR /app
 #start server
-CMD ["./server"]
-
+ENTRYPOINT ["/app/server"]
