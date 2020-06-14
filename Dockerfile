@@ -1,28 +1,24 @@
 #Multistage build
 #Build stage for cvit component
 FROM node:12.18.0-alpine3.12 as cvitui
-ARG apionly=false
 WORKDIR /cvit
 #Doing package before build allows us to leverage docker caching.
 COPY ui/cvitjs/package*.json ./
-RUN if [ "$apionly" = "false" ] ; then npm install; fi
+RUN npm install
 COPY ui/cvitjs/ ./
-RUN if [ "$apionly" = "false" ] ; then 	npm run build && \
-	echo Built cvitjs ; else echo Skipping cvitjs component; fi
+RUN npm run build
 
 #Build stage for gcvit ui component
 FROM node:12.18.0-alpine3.12 as gcvitui
-ARG apionly=false
 ARG apiauth=false
 WORKDIR /gcvit
 COPY ui/gcvit/package*.json ./
-RUN if [ "$apionly" = "false" ] ; then npm install; fi
+RUN npm install
 #Migrate over build artifacts from the cvitui stage
 COPY ui/gcvit ./
 #Build UI components
-RUN if [ "$apionly" = "false" ] ; then 	npm run build && \
-	if [ "$apiauth" = "true" ] ; then echo Building UI with Auth && npm run buildauth ; else npm run build ; fi && \
-	echo Built UI components  ; else echo Skipping UI Components; fi
+RUN npm run build && \
+	if [ "$apiauth" = "true" ] ; then echo Building UI with Auth && npm run buildauth ; fi
 
 #Build stage for golang API components
 FROM golang:1.13.12-alpine3.12 as gcvitapi
