@@ -9,7 +9,7 @@ COPY ui/cvitjs/ ./
 RUN npm run build
 
 #Build stage for gcvit ui component
-FROM node:12.18.0-alpine3.12 as gcvitui
+FROM node:12.18.0-alpine3.12 as gcvitui-dev
 ARG apiauth=false
 WORKDIR /gcvit
 COPY ui/gcvit/package*.json ./
@@ -17,6 +17,13 @@ RUN npm ci
 #Migrate over build artifacts from the cvitui stage
 COPY ui/gcvit ./
 #Build UI components
+COPY --from=cvitui /cvit/build public/cvitjs/build/
+COPY --from=cvitui /cvit/cvit.conf public/cvitjs/cvit.conf
+COPY --from=cvitui /cvit/data/ public/cvitjs/data
+ENTRYPOINT ["npm", "start"]
+EXPOSE 3000
+
+FROM gcvitui-dev AS gcvitui
 RUN npm run build && \
 	if [ "$apiauth" = "true" ] ; then echo Building UI with Auth && npm run buildauth ; fi
 
@@ -40,6 +47,7 @@ VOLUME ["/app/config","/app/assets"]
 WORKDIR /app
 #start server
 ENTRYPOINT ["/app/server","--gcvitRoot=./", "--ui=/ui"]
+EXPOSE 8080
 
 FROM api as api-ui
 COPY --from=gcvitui /gcvit/build /app/ui/

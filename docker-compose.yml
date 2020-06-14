@@ -1,0 +1,20 @@
+version: '2.3'
+
+services:
+  ui:
+    build:
+      context: .  
+      target: gcvitui-dev
+    ports:
+      - "3000:3000"
+    # https://github.com/facebook/create-react-app/issues/8688
+    stdin_open: true
+  api:
+    build:
+      context: .
+      target: api
+    volumes:
+      - ./assets:/app/assets:ro
+      - ./config:/app/config:ro
+    ports:
+      - "8080:8080"

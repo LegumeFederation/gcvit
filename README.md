@@ -31,9 +31,6 @@ Instructions for the UI are provided in the application itself.
 
 The steps for setting up a GCViT instance consists of downloading and installing the application, configuring the server, and data preparation. The GCViT repository includes example data from soybean consisting of these files: SNP data is in `assets/SoySNP50k_TestFile_named.vcf,` the backbone chromosomes are defined in `ui/cvit_assets/data/soySnp/gm_backbone.gff,` and the CViTjs image is configured with `ui/cvit_assets/data/soySnp/soySnp.conf.` 
 
-Before beginning configuration, if you plan on using the ui initialize the [CViTjs](https://github.com/LegumeFederation/cvitjs/tree/preact/buildalt) git submodule using `git submodule update --init`. This will grab the required repository for generating images.
-
-
 #### Configuring the Service
 No matter which method you intend to run GCViT, configuration of the Go backend service is the same. The default configuration file is `config/assetsconfig.yaml` and it has the following format:
 
@@ -117,6 +114,27 @@ For general use, it is easiest to get started with GCViT using [Docker](https://
 The Docker build process will retrieve the most recent version of CViTjs during the build process. 
 
 To add reference genome backbone files, popover customizations, or any other change to CViT place the files in `ui/cvit_assets`. This will overwrite the equivalent CViT file during the build process. 
+
+Setting the environment variables `DOCKER_BUILDKIT=1` and `COMPOSE_DOCKER_CLI_BUILD=1` to enable [BuildKit](https://github.com/moby/buildkit) is recommended for faster builds.
+
+To build the GCViT (development) images:
+```
+docker-compose build
+```
+
+To start the GCViT service:
+
+```
+docker-compose up -d
+```
+
+GCViT is then available at https://localhost:8080
+
+To stop the GCViT service:
+
+```
+docker-compose down
+```
 
 To build through docker:
 ```
