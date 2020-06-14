@@ -4,7 +4,7 @@ FROM node:12.18.0-alpine3.12 as cvitui
 WORKDIR /cvit
 #Doing package before build allows us to leverage docker caching.
 COPY ui/cvitjs/package*.json ./
-RUN npm install
+RUN npm ci
 COPY ui/cvitjs/ ./
 RUN npm run build
 
@@ -13,7 +13,7 @@ FROM node:12.18.0-alpine3.12 as gcvitui
 ARG apiauth=false
 WORKDIR /gcvit
 COPY ui/gcvit/package*.json ./
-RUN npm install
+RUN npm ci
 #Migrate over build artifacts from the cvitui stage
 COPY ui/gcvit ./
 #Build UI components
