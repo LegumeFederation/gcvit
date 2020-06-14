@@ -1,6 +1,6 @@
 #Multistage build
 #Build stage for cvit component
-FROM node:12.18.0-alpine3.11 as cvitui
+FROM node:12.18.0-alpine3.12 as cvitui
 ARG apionly=false
 WORKDIR /cvit
 #Doing package before build allows us to leverage docker caching.
@@ -11,7 +11,7 @@ RUN if [ "$apionly" = "false" ] ; then 	npm run build && \
 	echo Built cvitjs ; else echo Skipping cvitjs component; fi
 
 #Build stage for gcvit ui component
-FROM node:12.18.0-alpine3.11 as gcvitui
+FROM node:12.18.0-alpine3.12 as gcvitui
 ARG apionly=false
 ARG apiauth=false
 WORKDIR /gcvit
