@@ -98,15 +98,15 @@ To link the GFF file to CViTjs, edit the file ui/cvit_assets/cvit.conf to indica
 
 Most aspects of the CViTjs display can be customized, including colors, fonts, and the popover box that appears when mousing over a feature. For more information on configuring the CViTjs component of GCViT, please see the documentation [here](https://github.com/LegumeFederation/cvitjs/wiki) and the example file `ui/cvit_assets/data/soySnp/soySnp.conf`.
 
-Configuration files for the three glyphs used by GCViT *Haplotype Block*, *Heatmap* and *Histogram* are in `ui/src/Components/[HaploConfig.js|HeatConfig.js|HistConfig.js]` respectively.
+Configuration files for the three glyphs used by GCViT *Haplotype Block*, *Heatmap* and *Histogram* are in `ui/gcvit/src/Components/[HaploConfig.js|HeatConfig.js|HistConfig.js]` respectively.
 
 Other display options (title, bin size, ruler tic interval) can be changed through editing the values in `ui/src/Components/DefaultConfiguration.js`. After changes are made, the docker container will need to be rebuilt, or a manual build will need to be triggered through node, as described in the following sections. 
 
-**Popover customization** The box that pops up when clicking on a glyph in the image can be customized by editing `ui/cvit_assets/src/templates/Popover.js` if building in docker, or by rebuilding the changes in CViTjs if using Go + Node and moving the resulting build to `/ui/public/cvitjs/`.
+**Popover customization** The box that pops up when clicking on a glyph in the image can be customized by editing `ui/cvitjs/src/templates/Popover.js` if building in docker, or by rebuilding the changes in CViTjs if using Go + Node and moving the resulting build to `/ui/public/cvitjs/`.
 
-**Help box customizations** The text in in-app help can be customized. Edit the files `ui/src/Components/HelpTopcs.`
+**Help box customizations** The text in in-app help can be customized. Edit the files `ui/gcvit/src/Components/HelpTopics`.
   
-**Note:** Configuration settings in `ui/src/Components/DefaultConfiguration.js` override CViTjs equivalent configuration settings, for example, ruler tic interval.
+**Note:** Configuration settings in `ui/gcvit/src/Components/DefaultConfiguration.js` override CViTjs equivalent configuration settings, for example, ruler tic interval.
 
 ### Docker Setup
 For general use, it is easiest to get started with GCViT using [Docker](https://www.docker.com/). Before starting, make sure that docker is properly configured for your system.
