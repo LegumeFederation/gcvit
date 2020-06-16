@@ -1,22 +1,22 @@
 #Multistage build
 #Build stage for cvit component
-FROM node:12.18.0-alpine3.11 as cvitui
+FROM node:12.18.0-alpine3.12 as cvitui
 ARG apionly=false
 WORKDIR /cvit
 #Doing package before build allows us to leverage docker caching.
 COPY ui/cvitjs/package*.json ./
-RUN if [ "$apionly" = "false" ] ; then npm install; fi
+RUN if [ "$apionly" = "false" ] ; then npm ci; fi
 COPY ui/cvitjs/ ./
 RUN if [ "$apionly" = "false" ] ; then 	npm run build && \
 	echo Built cvitjs ; else echo Skipping cvitjs component; fi
 
 #Build stage for gcvit ui component
-FROM node:12.18.0-alpine3.11 as gcvitui
+FROM node:12.18.0-alpine3.12 as gcvitui
 ARG apionly=false
 ARG apiauth=false
 WORKDIR /gcvit
 COPY ui/gcvit/package*.json ./
-RUN if [ "$apionly" = "false" ] ; then npm install; fi
+RUN if [ "$apionly" = "false" ] ; then npm ci; fi
 #Migrate over build artifacts from the cvitui stage
 COPY ui/gcvit ./
 #Build UI components
@@ -31,7 +31,6 @@ RUN apk add --update --no-cache git
 ADD api/ /go/src/
 WORKDIR /go/src/
 #grab dependencies for golangdd
-RUN ls
 RUN go get
 RUN CGO_ENABLED=0 go build -o server .
 
