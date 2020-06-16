@@ -34,12 +34,11 @@ RUN apk add --update --no-cache git
 ADD api/ /go/src/
 WORKDIR /go/src/
 #grab dependencies for golangdd
-RUN ls
 RUN go get
 RUN CGO_ENABLED=0 go build -o server .
 
 #Actual deployment container stage
-FROM alpine:3.12.0 as api
+FROM scratch as api
 #Good practice to not run deployed container as root
 COPY --from=gcvitapi /go/src/server /app/
 #add mount points for config and assets
@@ -58,6 +57,6 @@ COPY --from=cvitui /cvit/data/ /app/ui/cvitjs/data
 #uncomment to build assets directly into container
 #This works best with smaller datasets
 #FROM api-ui AS complete
-#COPY --from=gcvitapi ./api/config /app/config
-#COPY --from=gcvitapi ./api/assets /app/assets
+#COPY /config /app/config
+#COPY /assets /app/assets
 

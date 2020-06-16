@@ -28,11 +28,94 @@
     }
   }
 
-  var css = ".container{position:relative;max-width:960px;margin:0 auto;padding:0 20px}.column,.columns,.container{width:100%;box-sizing:border-box}.column,.columns{float:left}@media (min-width:400px){.container{width:85%;padding:0}}@media (min-width:550px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;font-family:Raleway,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h1{font-size:4rem;line-height:1.2}h1,h2{letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25}h3{font-size:3rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media (min-width:550px){h1{font-size:5rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1eaedb}a:hover{color:#0fa0ce}.button,button,input[type=button],input[type=reset],input[type=submit]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:initial;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:focus,.button:hover,button:focus,button:hover,input[type=button]:focus,input[type=button]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type=button].button-primary,input[type=reset].button-primary,input[type=submit].button-primary{color:#fff;background-color:#33c3f0;border-color:#33c3f0}.button.button-primary:focus,.button.button-primary:hover,button.button-primary:focus,button.button-primary:hover,input[type=button].button-primary:focus,input[type=button].button-primary:hover,input[type=reset].button-primary:focus,input[type=reset].button-primary:hover,input[type=submit].button-primary:focus,input[type=submit].button-primary:hover{color:#fff;background-color:#1eaedb;border-color:#1eaedb}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus{border:1px solid #33c3f0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type=checkbox],input[type=radio]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:400}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ol ol,ol ul,ul ol,ul ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}td,th{padding:12px 15px;text-align:left;border-bottom:1px solid #e1e1e1}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}.button,button{margin-bottom:1rem}fieldset,input,select,textarea{margin-bottom:1.5rem}blockquote,dl,figure,form,ol,p,pre,table,ul{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}.container:after,.row:after,.u-cf{content:\"\";display:table;clear:both}";
+  var css = ".container{position:relative;max-width:960px;margin:0 auto;padding:0 20px}.column,.columns,.container{width:100%;box-sizing:border-box}.column,.columns{float:left}@media (min-width:400px){.container{width:85%;padding:0}}@media (min-width:550px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;font-family:Raleway,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h1{font-size:4rem;line-height:1.2}h1,h2{letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25}h3{font-size:3rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media (min-width:550px){h1{font-size:5rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1eaedb}a:hover{color:#0fa0ce}.button,button,input[type=button],input[type=reset],input[type=submit]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:focus,.button:hover,button:focus,button:hover,input[type=button]:focus,input[type=button]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type=button].button-primary,input[type=reset].button-primary,input[type=submit].button-primary{color:#fff;background-color:#33c3f0;border-color:#33c3f0}.button.button-primary:focus,.button.button-primary:hover,button.button-primary:focus,button.button-primary:hover,input[type=button].button-primary:focus,input[type=button].button-primary:hover,input[type=reset].button-primary:focus,input[type=reset].button-primary:hover,input[type=submit].button-primary:focus,input[type=submit].button-primary:hover{color:#fff;background-color:#1eaedb;border-color:#1eaedb}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus{border:1px solid #33c3f0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type=checkbox],input[type=radio]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:400}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ol ol,ol ul,ul ol,ul ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}td,th{padding:12px 15px;text-align:left;border-bottom:1px solid #e1e1e1}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}.button,button{margin-bottom:1rem}fieldset,input,select,textarea{margin-bottom:1.5rem}blockquote,dl,figure,form,ol,p,pre,table,ul{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}.container:after,.row:after,.u-cf{content:\"\";display:table;clear:both}";
   styleInject(css);
 
-  var css$1 = "#cvit-app{max-width:85%}#cvit-header{background:#666;display:none}#cvit-header .head-item{padding:1rem 0;text-align:center;color:#fff}#cvit-header .head-item:hover{background-color:#111}#cvit-header .active{background-color:#8fbc8f}#cvit-main{margin-top:1rem;margin-bottom:1rem;overflow-x:auto;overflow-y:hidden}#cvit-display{overflow-x:auto;max-width:91%}#cvit-controls hr{margin:.5rem 0 1rem}#cvit-controls .control-label{font-size:.75em;color:#666;text-align:center}#cvit-controls .cvit-button{padding:0;margin:0;border-radius:0}#cvit-controls .cvit-button:disabled{background:#8fbc8f;color:#fff}#cvit-controls .cvit-button i{position:relative;top:.5rem}.cvit-modal{overflow:hidden}.cvit-modal input{width:auto}.cvit-modal td{border:none}.cvit-modal .modal-confirm{margin:auto}.cvit-modal p{width:50%}#cvit-popover{position:absolute;display:inline-block;background:#fff;padding:1em;border:1px solid #666;border-radius:8px;overflow:hidden;height:40rem;width:20rem}#popover-contents{display:inline-block;position:relative;max-height:100%;width:100%;text-align:center;overflow-y:scroll}#cvit-footer{background:#666;text-align:center;font-size:1.5rem;color:#fff}#cvit-footer #toggle-title i{font-size:1.5rem;margin:0 2rem;color:#fff;position:relative;top:.25rem;transition:all .2s ease}#cvit-footer .collapsible{transition:max-height .2s ease-in-out;overflow:hidden}#cvit-footer .content{background:#fff;overflow-y:auto;transition:max-height .2s ease-in-out;color:#000}#cvit-footer .content td{border:none;width:7rem;padding:1rem 0 1rem 1rem}#cvit-footer .control-head{text-align:center}#cvit-footer .content table{margin-left:auto;margin-right:auto}.group-toggle{position:relative;width:80px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}.group-toggle-label{display:block;overflow:hidden;cursor:pointer;border:2px solid #999;border-radius:0}.group-toggle-inner{display:block;width:200%;margin-left:-100%;transition:margin .3s ease-in 0s}.group-toggle-inner:after,.group-toggle-inner:before{display:block;float:left;width:50%;height:20px;padding:0;line-height:16px;font-size:1rem;color:#fff;box-sizing:border-box;border:2px solid transparent;background-clip:padding-box}.group-toggle-inner:before{content:\"ON\";padding-left:10px;background-color:#d4d4d4;color:#fff}.group-toggle-inner:after{content:\"OFF\";padding-right:10px;background-color:#d4d4d4;text-align:right}.group-toggle-switch{display:block;width:30px;margin:0;background:#a1a1a1;position:absolute;top:0;bottom:0;right:50px;transition:all .3s ease-in 0s}.group-toggle-checkbox:checked+.group-toggle-label .group-toggle-inner{margin-left:0}.group-toggle-checkbox:checked+.group-toggle-label .group-toggle-switch{right:0;background-color:#8fbc8f}.container input[type=checkbox],.group-toggle-checkbox{display:none}";
+  var css$1 = "#cvit-app{max-width:85%}#cvit-header{background:#666;display:none}#cvit-header .head-item{padding:1rem 0;text-align:center;color:#fff}#cvit-header .head-item:hover{background-color:#111}#cvit-header .active{background-color:#8fbc8f}#cvit-main{margin-top:1rem;margin-bottom:1rem;overflow-x:auto;overflow-y:hidden}#cvit-display{overflow-x:auto;max-width:91%}#cvit-controls hr{margin:.5rem 0 1rem}#cvit-controls .control-label{font-size:.75em;color:#666;text-align:center}#cvit-controls .cvit-button{padding:0;margin:0;border-radius:0}#cvit-controls .cvit-button:disabled{background:#8fbc8f;color:#fff}#cvit-controls .cvit-button i{position:relative;top:.5rem}.cvit-modal{overflow:hidden}.cvit-modal input{width:auto}.cvit-modal td{border:none}.cvit-modal .modal-confirm{margin:auto}.cvit-modal p{width:50%}#cvit-popover{position:absolute;display:inline-block;background:#fff;padding:1em;border:1px solid #666;border-radius:8px;overflow:hidden;height:40rem;width:20rem}#popover-contents{display:inline-block;position:relative;max-height:100%;width:100%;text-align:center;overflow-y:scroll}#cvit-footer{background:#666;text-align:center;font-size:1.5rem;color:#fff}#cvit-footer #toggle-title i{font-size:1.5rem;margin:0 2rem;color:#fff;position:relative;top:.25rem;-webkit-transition:all .2s ease;transition:all .2s ease}#cvit-footer .collapsible{overflow:hidden}#cvit-footer .collapsible,#cvit-footer .content{-webkit-transition:max-height .2s ease-in-out;transition:max-height .2s ease-in-out}#cvit-footer .content{background:#fff;overflow-y:auto;color:#000}#cvit-footer .content td{border:none;width:7rem;padding:1rem 0 1rem 1rem}#cvit-footer .control-head{text-align:center}#cvit-footer .content table{margin-left:auto;margin-right:auto}.group-toggle{position:relative;width:80px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}.group-toggle-label{display:block;overflow:hidden;cursor:pointer;border:2px solid #999;border-radius:0}.group-toggle-inner{display:block;width:200%;margin-left:-100%;-webkit-transition:margin .3s ease-in 0s;transition:margin .3s ease-in 0s}.group-toggle-inner:after,.group-toggle-inner:before{display:block;float:left;width:50%;height:20px;padding:0;line-height:16px;font-size:1rem;color:#fff;box-sizing:border-box;border:2px solid transparent;background-clip:padding-box}.group-toggle-inner:before{content:\"ON\";padding-left:10px;background-color:#d4d4d4;color:#fff}.group-toggle-inner:after{content:\"OFF\";padding-right:10px;background-color:#d4d4d4;text-align:right}.group-toggle-switch{display:block;width:30px;margin:0;background:#a1a1a1;position:absolute;top:0;bottom:0;right:50px;-webkit-transition:all .3s ease-in 0s;transition:all .3s ease-in 0s}.group-toggle-checkbox:checked+.group-toggle-label .group-toggle-inner{margin-left:0}.group-toggle-checkbox:checked+.group-toggle-label .group-toggle-switch{right:0;background-color:#8fbc8f}.container input[type=checkbox],.group-toggle-checkbox{display:none}.cvit-loading-spinner{display:inline-block;width:2.75rem;height:2.75rem}.cvit-loading-spinner:after{content:\" \";display:block;width:2.5rem;height:2.5rem;margin:.5rem;border-radius:50%;border-color:#666 transparent;border-style:solid;border-width:.25rem;-webkit-animation:cvit-loading-spinner 1.5s linear infinite;animation:cvit-loading-spinner 1.5s linear infinite}@-webkit-keyframes cvit-loading-spinner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes cvit-loading-spinner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}";
   styleInject(css$1);
+
+  function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      _typeof = function (obj) {
+        return typeof obj;
+      };
+    } else {
+      _typeof = function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return _typeof(obj);
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  function _defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function");
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+  }
+
+  function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+  }
+
+  function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+      o.__proto__ = p;
+      return o;
+    };
+
+    return _setPrototypeOf(o, p);
+  }
+
+  function _assertThisInitialized(self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  }
+
+  function _possibleConstructorReturn(self, call) {
+    if (call && (typeof call === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _assertThisInitialized(self);
+  }
 
   var VNode = function VNode() {};
 
@@ -95,7 +178,7 @@
   }
 
   function applyRef(ref, value) {
-    if (ref != null) {
+    if (ref) {
       if (typeof ref == 'function') ref(value);else ref.current = value;
     }
   }
@@ -731,51 +814,120 @@
     return diff(merge, vnode, {}, false, parent, false);
   }
 
-  class HeaderOption extends Component {
-    static capitalise(str) {
-      return str.replace(/\w\S*/g, word => {
-        return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
-      });
+  var CvitStatus =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitStatus, _Component);
+
+    function CvitStatus() {
+      _classCallCheck(this, CvitStatus);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(CvitStatus).apply(this, arguments));
     }
 
-    onClick() {
-      this.props.cvitModel.setActive(this.props.option);
+    _createClass(CvitStatus, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        var status = props.status; // loading spinner is pure css
+
+        if (status !== '') {
+          return h("div", {
+            className: 'row cvit',
+            id: 'cvit-status'
+          }, h("div", null, h("div", {
+            className: 'one column cvit-loading-spinner'
+          }), h("div", {
+            className: 'eleven columns',
+            id: 'loading-div'
+          }, " ", status.toString(), " ")));
+        } else {
+          return null;
+        }
+      }
+    }]);
+
+    return CvitStatus;
+  }(Component);
+
+  var HeaderOption =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(HeaderOption, _Component);
+
+    function HeaderOption() {
+      _classCallCheck(this, HeaderOption);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(HeaderOption).apply(this, arguments));
     }
 
-    render(props, state) {
-      let compClass = 'three columns head-item';
-      if (props.cvitModel.active === props.option) compClass += ' active';
-      return h("div", {
-        className: compClass,
-        onClick: () => this.onClick()
-      }, HeaderOption.capitalise(props.option));
+    _createClass(HeaderOption, [{
+      key: "onClick",
+      value: function onClick() {
+        this.props.cvitModel.setActive(this.props.option);
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        var _this = this;
+
+        var compClass = 'three columns head-item';
+        if (props.cvitModel.active === props.option) compClass += ' active';
+        return h("div", {
+          className: compClass,
+          onClick: function onClick() {
+            return _this.onClick();
+          }
+        }, HeaderOption.capitalise(props.option));
+      }
+    }], [{
+      key: "capitalise",
+      value: function capitalise(str) {
+        return str.replace(/\w\S*/g, function (word) {
+          return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
+        });
+      }
+    }]);
+
+    return HeaderOption;
+  }(Component);
+
+  var CvitHeader =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitHeader, _Component);
+
+    function CvitHeader() {
+      _classCallCheck(this, CvitHeader);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(CvitHeader).apply(this, arguments));
     }
 
-  }
+    _createClass(CvitHeader, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("header", {
+          className: 'row cvit',
+          id: 'cvit-header'
+        }, h(HeaderOption, {
+          cvitModel: this.props.cvitModel,
+          option: 'canvas'
+        }), h(HeaderOption, {
+          cvitModel: this.props.cvitModel,
+          option: 'export'
+        }), h(HeaderOption, {
+          cvitModel: this.props.cvitModel,
+          option: 'import'
+        }), h(HeaderOption, {
+          cvitModel: this.props.cvitModel,
+          option: 'help'
+        }));
+      }
+    }]);
 
-  class CvitHeader extends Component {
-    render(props, state) {
-      return h("header", {
-        className: 'row cvit',
-        id: 'cvit-header'
-      }, h(HeaderOption, {
-        cvitModel: this.props.cvitModel,
-        option: 'canvas'
-      }), h(HeaderOption, {
-        cvitModel: this.props.cvitModel,
-        option: 'export'
-      }), h(HeaderOption, {
-        cvitModel: this.props.cvitModel,
-        option: 'import'
-      }), h(HeaderOption, {
-        cvitModel: this.props.cvitModel,
-        option: 'help'
-      }));
-    }
+    return CvitHeader;
+  }(Component);
 
-  }
-
-  var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+  var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
   function commonjsRequire () {
   	throw new Error('Dynamic requires are not currently supported by rollup-plugin-commonjs');
@@ -786,7 +938,7 @@
   }
 
   function getCjsExportFromNamespace (n) {
-  	return n && n.default || n;
+  	return n && n['default'] || n;
   }
 
   var empty = {};
@@ -4333,7 +4485,8 @@
     if (!this.switchU || c <= 0xD7FF || c >= 0xE000 || i + 1 >= l) {
       return c
     }
-    return (c << 10) + s.charCodeAt(i + 1) - 0x35FDC00
+    var next = s.charCodeAt(i + 1);
+    return next >= 0xDC00 && next <= 0xDFFF ? (c << 10) + next - 0x35FDC00 : c
   };
 
   RegExpValidationState.prototype.nextIndex = function nextIndex (i) {
@@ -4342,8 +4495,9 @@
     if (i >= l) {
       return l
     }
-    var c = s.charCodeAt(i);
-    if (!this.switchU || c <= 0xD7FF || c >= 0xE000 || i + 1 >= l) {
+    var c = s.charCodeAt(i), next;
+    if (!this.switchU || c <= 0xD7FF || c >= 0xE000 || i + 1 >= l ||
+        (next = s.charCodeAt(i + 1)) < 0xDC00 || next > 0xDFFF) {
       return i + 1
     }
     return i + 2
@@ -6144,23 +6298,23 @@
 
   var paperFull = createCommonjsModule(function (module) {
   /*!
-   * Paper.js v0.12.0 - The Swiss Army Knife of Vector Graphics Scripting.
+   * Paper.js v0.12.3 - The Swiss Army Knife of Vector Graphics Scripting.
    * http://paperjs.org/
    *
-   * Copyright (c) 2011 - 2016, Juerg Lehni & Jonathan Puckey
+   * Copyright (c) 2011 - 2019, Juerg Lehni & Jonathan Puckey
    * http://scratchdisk.com/ & https://puckey.studio/
    *
    * Distributed under the MIT license. See LICENSE file for details.
    *
    * All rights reserved.
    *
-   * Date: Mon Dec 3 14:19:11 2018 +0100
+   * Date: Sat Jun 22 14:16:49 2019 +0200
    *
    ***
    *
    * Straps.js - Class inheritance library with support for bean-style accessors
    *
-   * Copyright (c) 2006 - 2016 Juerg Lehni
+   * Copyright (c) 2006 - 2019 Juerg Lehni
    * http://scratchdisk.com/
    *
    * Distributed under the MIT license.
@@ -6690,8 +6844,12 @@
   					if (args.length === 1 && obj instanceof Item
   							&& (useTarget || !(obj instanceof Layer))) {
   						var arg = args[0];
-  						if (Base.isPlainObject(arg))
+  						if (Base.isPlainObject(arg)) {
   							arg.insert = false;
+  							if (useTarget) {
+  								args = args.concat([{ insert: true }]);
+  							}
+  						}
   					}
   					(useTarget ? obj.set : ctor).apply(obj, args);
   					if (useTarget)
@@ -6915,14 +7073,14 @@
   			if (platform)
   				agent[platform] = true;
   			user.replace(
-  				/(opera|chrome|safari|webkit|firefox|msie|trident|atom|node)\/?\s*([.\d]+)(?:.*version\/([.\d]+))?(?:.*rv\:v?([.\d]+))?/g,
+  				/(opera|chrome|safari|webkit|firefox|msie|trident|atom|node|jsdom)\/?\s*([.\d]+)(?:.*version\/([.\d]+))?(?:.*rv\:v?([.\d]+))?/g,
   				function(match, n, v1, v2, rv) {
   					if (!agent.chrome) {
   						var v = n === 'opera' ? v2 :
   								/^(node|trident)$/.test(n) ? rv : v1;
   						agent.version = v;
   						agent.versionNumber = parseFloat(v);
-  						n = n === 'trident' ? 'msie' : n;
+  						n = { trident: 'msie', jsdom: 'node' }[n] || n;
   						agent.name = n;
   						agent[n] = true;
   					}
@@ -6935,7 +7093,7 @@
   		}
   	},
 
-  	version: "0.12.0",
+  	version: "0.12.3",
 
   	getView: function() {
   		var project = this.project;
@@ -9540,7 +9698,7 @@
   			options = options || {};
   			for (var i = 0, l = items.length; i < l; i++) {
   				var item = items[i];
-  				if (item._visible && !item.isEmpty()) {
+  				if (item._visible && !item.isEmpty(true)) {
   					var bounds = item._getCachedBounds(
   						matrix && matrix.appended(item._matrix), options, true),
   						rect = bounds.rect;
@@ -9846,8 +10004,11 @@
   	},
 
   	contains: function() {
-  		return !!this._contains(
-  				this._matrix._inverseTransform(Point.read(arguments)));
+  		var matrix = this._matrix;
+  		return (
+  			matrix.isInvertible() &&
+  			!!this._contains(matrix._inverseTransform(Point.read(arguments)))
+  		);
   	},
 
   	_contains: function(point) {
@@ -10329,9 +10490,18 @@
   		}
   	},
 
-  	isEmpty: function() {
+  	isEmpty: function(recursively) {
   		var children = this._children;
-  		return !children || !children.length;
+  		var numChildren = children ? children.length : 0;
+  		if (recursively) {
+  			for (var i = 0; i < numChildren; i++) {
+  				if (!children[i].isEmpty(recursively)) {
+  					return false;
+  				}
+  			}
+  			return true;
+  		}
+  		return !numChildren;
   	},
 
   	isEditable: function() {
@@ -10660,8 +10830,9 @@
   		this._draw(ctx, param, viewMatrix, strokeMatrix);
   		ctx.restore();
   		matrices.pop();
-  		if (param.clip && !param.dontFinish)
-  			ctx.clip();
+  		if (param.clip && !param.dontFinish) {
+  			ctx.clip(this.getFillRule());
+  		}
   		if (!direct) {
   			BlendMode.process(blendMode, ctx, mainCtx, opacity,
   					itemOffset.subtract(prevOffset).multiply(pixelRatio));
@@ -10851,8 +11022,7 @@
   	_getBounds: function _getBounds(matrix, options) {
   		var clipItem = this._getClipItem();
   		return clipItem
-  			? clipItem._getCachedBounds(
-  				matrix && matrix.appended(clipItem._matrix),
+  			? clipItem._getCachedBounds(clipItem._matrix.prepended(matrix),
   				Base.set({}, options, { stroke: false }))
   			: _getBounds.base.call(this, matrix, options);
   	},
@@ -11243,6 +11413,7 @@
   }});
 
   var Raster = Item.extend({
+  }, {
   	_class: 'Raster',
   	_applyMatrix: false,
   	_canApplyMatrix: false,
@@ -11253,16 +11424,32 @@
   	},
   	_prioritize: ['crossOrigin'],
   	_smoothing: true,
+  	beans: true,
 
-  	initialize: function Raster(object, position) {
-  		if (!this._initialize(object,
-  				position !== undefined && Point.read(arguments, 1))) {
-  			var image = typeof object === 'string'
-  					? document.getElementById(object) : object;
+  	initialize: function Raster(source, position) {
+  		if (!this._initialize(source,
+  				position !== undefined && Point.read(arguments))) {
+  			var image,
+  				type = typeof source,
+  				object = type === 'string'
+  					? document.getElementById(source)
+  					: type  === 'object'
+  						? source
+  						: null;
+  			if (object && object !== Item.NO_INSERT) {
+  				if (object.getContent || object.naturalHeight != null) {
+  					image = object;
+  				} else if (object) {
+  					var size = Size.read(arguments);
+  					if (!size.isZero()) {
+  						image = CanvasProvider.getCanvas(size);
+  					}
+  				}
+  			}
   			if (image) {
   				this.setImage(image);
   			} else {
-  				this.setSource(object);
+  				this.setSource(source);
   			}
   		}
   		if (!this._size) {
@@ -11414,10 +11601,10 @@
 
   	setCanvas: '#setImage',
 
-  	getContext: function(modify) {
+  	getContext: function(_change) {
   		if (!this._context)
   			this._context = this.getCanvas().getContext('2d');
-  		if (modify) {
+  		if (_change) {
   			this._image = null;
   			this._changed(1025);
   		}
@@ -11438,7 +11625,8 @@
   			crossOrigin = this._crossOrigin;
   		if (crossOrigin)
   			image.crossOrigin = crossOrigin;
-  		image.src = src;
+  		if (src)
+  			image.src = src;
   		this.setImage(image);
   	},
 
@@ -11577,6 +11765,11 @@
   		data[2] = components[2] * 255;
   		data[3] = alpha != null ? alpha * 255 : 255;
   		ctx.putImageData(imageData, point.x, point.y);
+  	},
+
+  	clear: function() {
+  		var size = this._size;
+  		this.getContext(true).clearRect(0, 0, size.width + 1, size.height + 1);
   	},
 
   	createImageData: function() {
@@ -15188,7 +15381,11 @@
   new function() {
 
   	function drawHandles(ctx, segments, matrix, size) {
+  		if (size <= 0) return;
+
   		var half = size / 2,
+  			miniSize = size - 2,
+  			miniHalf = half - 1,
   			coords = new Array(6),
   			pX, pY;
 
@@ -15217,10 +15414,10 @@
   			if (selection & 4)
   				drawHandle(4);
   			ctx.fillRect(pX - half, pY - half, size, size);
-  			if (!(selection & 1)) {
+  			if (miniSize > 0 && !(selection & 1)) {
   				var fillStyle = ctx.fillStyle;
   				ctx.fillStyle = '#ffffff';
-  				ctx.fillRect(pX - half + 1, pY - half + 1, size - 2, size - 2);
+  				ctx.fillRect(pX - miniHalf, pY - miniHalf, miniSize, miniSize);
   				ctx.fillStyle = fillStyle;
   			}
   		}
@@ -15423,7 +15620,7 @@
   			} else if (Base.remain(arguments) <= 2) {
   				through = to;
   				to = Point.read(arguments);
-  			} else {
+  			} else if (!from.equals(to)) {
   				var radius = Size.read(arguments),
   					isZero = Numerical.isZero;
   				if (isZero(radius.width) || isZero(radius.height))
@@ -15490,39 +15687,41 @@
   					extent += extent < 0 ? 360 : -360;
   				}
   			}
-  			var epsilon = 1e-7,
-  				ext = abs(extent),
-  				count = ext >= 360 ? 4 : Math.ceil((ext - epsilon) / 90),
-  				inc = extent / count,
-  				half = inc * Math.PI / 360,
-  				z = 4 / 3 * Math.sin(half) / (1 + Math.cos(half)),
-  				segments = [];
-  			for (var i = 0; i <= count; i++) {
-  				var pt = to,
-  					out = null;
-  				if (i < count) {
-  					out = vector.rotate(90).multiply(z);
-  					if (matrix) {
-  						pt = matrix._transformPoint(vector);
-  						out = matrix._transformPoint(vector.add(out))
-  								.subtract(pt);
+  			if (extent) {
+  				var epsilon = 1e-7,
+  					ext = abs(extent),
+  					count = ext >= 360 ? 4 : Math.ceil((ext - epsilon) / 90),
+  					inc = extent / count,
+  					half = inc * Math.PI / 360,
+  					z = 4 / 3 * Math.sin(half) / (1 + Math.cos(half)),
+  					segments = [];
+  				for (var i = 0; i <= count; i++) {
+  					var pt = to,
+  						out = null;
+  					if (i < count) {
+  						out = vector.rotate(90).multiply(z);
+  						if (matrix) {
+  							pt = matrix._transformPoint(vector);
+  							out = matrix._transformPoint(vector.add(out))
+  									.subtract(pt);
+  						} else {
+  							pt = center.add(vector);
+  						}
+  					}
+  					if (!i) {
+  						current.setHandleOut(out);
   					} else {
-  						pt = center.add(vector);
+  						var _in = vector.rotate(-90).multiply(z);
+  						if (matrix) {
+  							_in = matrix._transformPoint(vector.add(_in))
+  									.subtract(pt);
+  						}
+  						segments.push(new Segment(pt, _in, out));
   					}
+  					vector = vector.rotate(inc);
   				}
-  				if (!i) {
-  					current.setHandleOut(out);
-  				} else {
-  					var _in = vector.rotate(-90).multiply(z);
-  					if (matrix) {
-  						_in = matrix._transformPoint(vector.add(_in))
-  								.subtract(pt);
-  					}
-  					segments.push(new Segment(pt, _in, out));
-  				}
-  				vector = vector.rotate(inc);
+  				this._add(segments);
   			}
-  			this._add(segments);
   		},
 
   		lineBy: function() {
@@ -15696,8 +15895,9 @@
   			normal1 = curve1.getNormalAtTime(1).multiply(radius)
   				.transform(strokeMatrix),
   			normal2 = curve2.getNormalAtTime(0).multiply(radius)
-  				.transform(strokeMatrix);
-  		if (normal1.getDirectedAngle(normal2) < 0) {
+  				.transform(strokeMatrix),
+  				angle = normal1.getDirectedAngle(normal2);
+  		if (angle < 0 || angle >= 180) {
   			normal1 = normal1.negate();
   			normal2 = normal2.negate();
   		}
@@ -17416,7 +17616,7 @@
   			}
   		} else if (match = string.match(/^(rgb|hsl)a?\((.*)\)$/)) {
   			type = match[1];
-  			components = match[2].split(/[,\s]+/g);
+  			components = match[2].trim().split(/[,\s]+/g);
   			var isHSL = type === 'hsl';
   			for (var i = 0, l = Math.min(components.length, 4); i < l; i++) {
   				var component = components[i];
@@ -17749,8 +17949,13 @@
 
   		_changed: function() {
   			this._canvasStyle = null;
-  			if (this._owner)
-  				this._owner._changed(129);
+  			if (this._owner) {
+  				if (this._setter) {
+  					this._owner[this._setter](this);
+  				} else {
+  					this._owner._changed(129);
+  				}
+  			}
   		},
 
   		_convert: function(type) {
@@ -17906,6 +18111,19 @@
   			random: function() {
   				var random = Math.random;
   				return new Color(random(), random(), random());
+  			},
+
+  			_setOwner: function(color, owner, setter) {
+  				if (color) {
+  					if (color._owner && owner && color._owner !== owner) {
+  						color = color.clone();
+  					}
+  					if (!color._owner ^ !owner) {
+  						color._owner = owner || null;
+  						color._setter = setter || null;
+  					}
+  				}
+  				return color;
   			}
   		}
   	});
@@ -18101,10 +18319,9 @@
   	},
 
   	setColor: function() {
-  		var color = Color.read(arguments, 0, { clone: true });
-  		if (color)
-  			color._owner = this;
-  		this._color = color;
+  		Color._setOwner(this._color, null);
+  		this._color = Color._setOwner(Color.read(arguments, 0), this,
+  				'setColor');
   		this._changed();
   	},
 
@@ -18198,14 +18415,13 @@
   				var old = this._values[key];
   				if (old !== value) {
   					if (isColor) {
-  						if (old && old._owner !== undefined) {
-  							old._owner = undefined;
+  						if (old) {
+  							Color._setOwner(old, null);
   							old._canvasStyle = null;
   						}
   						if (value && value.constructor === Color) {
-  							if (value._owner)
-  								value = value.clone();
-  							value._owner = owner;
+  							value = Color._setOwner(value, owner,
+  									applyToChildren && set);
   						}
   					}
   					this._values[key] = value;
@@ -18218,24 +18434,10 @@
   		fields[get] = function(_dontMerge) {
   			var owner = this._owner,
   				children = owner && owner._children,
+  				applyToChildren = children && children.length > 0
+  					&& !(owner instanceof CompoundPath),
   				value;
-  			if (key in this._defaults && (!children || !children.length
-  					|| _dontMerge || owner instanceof CompoundPath)) {
-  				var value = this._values[key];
-  				if (value === undefined) {
-  					value = this._defaults[key];
-  					if (value && value.clone)
-  						value = value.clone();
-  				} else {
-  					var ctor = isColor ? Color : isPoint ? Point : null;
-  					if (ctor && !(value && value.constructor === ctor)) {
-  						this._values[key] = value = ctor.read([value], 0,
-  								{ readNull: true, clone: true });
-  						if (value && isColor)
-  							value._owner = owner;
-  					}
-  				}
-  			} else if (children) {
+  			if (applyToChildren && !_dontMerge) {
   				for (var i = 0, l = children.length; i < l; i++) {
   					var childValue = children[i]._style[get]();
   					if (!i) {
@@ -18244,6 +18446,23 @@
   						return undefined;
   					}
   				}
+  			} else if (key in this._defaults) {
+  				var value = this._values[key];
+  				if (value === undefined) {
+  					value = this._defaults[key];
+  					if (value && value.clone) {
+  						value = value.clone();
+  					}
+  				} else {
+  					var ctor = isColor ? Color : isPoint ? Point : null;
+  					if (ctor && !(value && value.constructor === ctor)) {
+  						this._values[key] = value = ctor.read([value], 0,
+  								{ readNull: true, clone: true });
+  					}
+  				}
+  			}
+  			if (value && isColor) {
+  				value = Color._setOwner(value, owner, applyToChildren && set);
   			}
   			return value;
   		};
@@ -19310,6 +19529,10 @@
   		}
   	},
 
+  	getContext: function() {
+  		return this._context;
+  	},
+
   	getPixelSize: function getPixelSize(size) {
   		var agent = paper.agent,
   			pixels;
@@ -19961,7 +20184,7 @@
   				return (
   					operator &&
   					operator.match &&
-  					operator.match(/^[+\-*/]=/)
+  					operator.match(/^[+\-\*\/]=/)
   				)
   					? this._calculate(current, operator[0], value[1])
   					: value;
@@ -20443,11 +20666,16 @@
   		var attrs = new Base(),
   			trans = matrix.getTranslation();
   		if (coordinates) {
-  			matrix = matrix._shiftless();
-  			var point = matrix._inverseTransform(trans);
+  			var point;
+  			if (matrix.isInvertible()) {
+  				matrix = matrix._shiftless();
+  				point = matrix._inverseTransform(trans);
+  				trans = null;
+  			} else {
+  				point = new Point();
+  			}
   			attrs[center ? 'cx' : 'x'] = point.x;
   			attrs[center ? 'cy' : 'y'] = point.y;
-  			trans = null;
   		}
   		if (!matrix.isIdentity()) {
   			var decomposed = matrix.decompose();
@@ -20588,7 +20816,7 @@
   			definition = item._definition,
   			node = getDefinition(definition, 'symbol'),
   			definitionItem = definition._item,
-  			bounds = definitionItem.getBounds();
+  			bounds = definitionItem.getStrokeBounds();
   		if (!node) {
   			node = SvgElement.create('symbol', {
   				viewBox: formatter.rectangle(bounds)
@@ -20809,7 +21037,7 @@
   			if (rect) {
   				attrs.width = rect.width;
   				attrs.height = rect.height;
-  				if (rect.x || rect.y)
+  				if (rect.x || rect.x === 0 || rect.y || rect.y === 0)
   					attrs.viewBox = formatter.rectangle(rect);
   			}
   			var node = SvgElement.create('svg', attrs, formatter),
@@ -20831,8 +21059,9 @@
   	var definitions = {},
   		rootSize;
 
-  	function getValue(node, name, isString, allowNull, allowPercent) {
-  		var value = SvgElement.get(node, name),
+  	function getValue(node, name, isString, allowNull, allowPercent,
+  			defaultValue) {
+  		var value = SvgElement.get(node, name) || defaultValue,
   			res = value == null
   				? allowNull
   					? null
@@ -20846,9 +21075,9 @@
   			: res;
   	}
 
-  	function getPoint(node, x, y, allowNull, allowPercent) {
-  		x = getValue(node, x || 'x', false, allowNull, allowPercent);
-  		y = getValue(node, y || 'y', false, allowNull, allowPercent);
+  	function getPoint(node, x, y, allowNull, allowPercent, defaultX, defaultY) {
+  		x = getValue(node, x || 'x', false, allowNull, allowPercent, defaultX);
+  		y = getValue(node, y || 'y', false, allowNull, allowPercent, defaultY);
   		return allowNull && (x == null || y == null) ? null
   				: new Point(x, y);
   	}
@@ -20950,13 +21179,16 @@
   			scaleToBounds = getValue(node, 'gradientUnits', true) !==
   				'userSpaceOnUse';
   		if (radial) {
-  			origin = getPoint(node, 'cx', 'cy', false, scaleToBounds);
+  			origin = getPoint(node, 'cx', 'cy', false, scaleToBounds,
+  				'50%', '50%');
   			destination = origin.add(
-  					getValue(node, 'r', false, false, scaleToBounds), 0);
+  				getValue(node, 'r', false, false, scaleToBounds, '50%'), 0);
   			highlight = getPoint(node, 'fx', 'fy', true, scaleToBounds);
   		} else {
-  			origin = getPoint(node, 'x1', 'y1', false, scaleToBounds);
-  			destination = getPoint(node, 'x2', 'y2', false, scaleToBounds);
+  			origin = getPoint(node, 'x1', 'y1', false, scaleToBounds,
+  				'0%', '0%');
+  			destination = getPoint(node, 'x2', 'y2', false, scaleToBounds,
+  				'100%', '0%');
   		}
   		var color = applyAttributes(
   				new Color(gradient, origin, destination, highlight), node);
@@ -21042,7 +21274,9 @@
   					getPoint(node, 'dx', 'dy')));
   			text.setContent(node.textContent.trim() || '');
   			return text;
-  		}
+  		},
+
+  		switch: importGroup
   	};
 
   	function applyTransform(item, value, name, node) {
@@ -22843,9 +23077,13 @@
   							exp = '__$__(' + arg + ', "' + node.operator[0]
   									+ '", 1)',
   							str = arg + ' = ' + exp;
-  						if (!node.prefix
-  								&& (parentType === 'AssignmentExpression'
-  									|| parentType === 'VariableDeclarator')) {
+  						if (node.prefix) {
+  							str = '(' + str + ')';
+  						} else if (
+  							parentType === 'AssignmentExpression' ||
+  							parentType === 'VariableDeclarator' ||
+  							parentType === 'BinaryExpression'
+  						) {
   							if (getCode(parent.left || parent.id) === arg)
   								str = exp;
   							str = arg + '; ' + str;
@@ -22996,7 +23234,7 @@
   				}
   			}
   		}
-  		expose({ __$__: __$__, $__: $__, paper: scope, view: view, tool: tool },
+  		expose({ __$__: __$__, $__: $__, paper: scope, tool: tool },
   				true);
   		expose(scope);
   		code = 'var module = { exports: {} }; ' + code;
@@ -23143,7 +23381,7 @@
    */
 
   function formatColor(color) {
-    let grey = color.match(/gr[ea]y(\d+)/);
+    var grey = color.match(/gr[ea]y(\d+)/);
 
     if (grey) {
       color = 'grey';
@@ -23164,7 +23402,8 @@
    * @returns {paper.Color}
    */
 
-  function calculateColor(colorArray, min, max, val, invert = 0) {
+  function calculateColor(colorArray, min, max, val) {
+    var invert = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
     val = calculateDistance(val, {
       start: 0,
       stop: 1
@@ -23172,20 +23411,20 @@
       start: min,
       stop: max
     }, invert);
-    let stop_dist = 1 / (colorArray.length - 1);
-    let cval1 = Math.abs(Math.floor(val / stop_dist));
-    let cval2 = Math.abs(Math.ceil(val / stop_dist));
+    var stop_dist = 1 / (colorArray.length - 1);
+    var cval1 = Math.abs(Math.floor(val / stop_dist));
+    var cval2 = Math.abs(Math.ceil(val / stop_dist));
     if (cval1 === cval2) return formatColor(colorArray[cval1]);
-    let color1 = formatColor(colorArray[cval1]).components;
-    let color2 = formatColor(colorArray[cval2]).components;
-    let weight = calculateDistance(val, {
+    var color1 = formatColor(colorArray[cval1]).components;
+    var color2 = formatColor(colorArray[cval2]).components;
+    var weight = calculateDistance(val, {
       start: 0,
       stop: 1
     }, {
       start: cval1 * stop_dist,
       stop: cval2 * stop_dist
     });
-    let invWeight = 1 - weight;
+    var invWeight = 1 - weight;
     return new paperFull.Color(color2[0] * weight + color1[0] * invWeight, color2[1] * weight + color1[1] * invWeight, color2[2] * weight + color1[2] * invWeight);
   }
   /**
@@ -23200,10 +23439,10 @@
 
   function collisionOffset(feature, view, offset, offDir, pileupGap) {
     //setup collision search
-    let fBounds = feature.getHandleBounds();
-    let searchMinX = offDir ? fBounds.left : view.pileupBounds.left;
-    let searchMaxX = offDir ? view.pileupBounds.right : fBounds.right;
-    let searchSpace = {
+    var fBounds = feature.getHandleBounds();
+    var searchMinX = offDir ? fBounds.left : view.pileupBounds.left;
+    var searchMaxX = offDir ? view.pileupBounds.right : fBounds.right;
+    var searchSpace = {
       minX: searchMinX,
       minY: fBounds.top,
       maxX: searchMaxX,
@@ -23211,13 +23450,13 @@
     }; //test if there is a pileup
 
     if (view.pileupTree.collides(searchSpace)) {
-      let pileupBound = offDir ? fBounds.left : fBounds.right;
-      let lastSearchedMax = offDir ? Math.floor(fBounds.left) : Math.floor(fBounds.right);
+      var pileupBound = offDir ? fBounds.left : fBounds.right;
+      var lastSearchedMax = offDir ? Math.floor(fBounds.left) : Math.floor(fBounds.right);
       view.pileupTree.search(searchSpace) //search for collisions
-      .sort((a, b) => {
+      .sort(function (a, b) {
         return offDir ? a.minX - b.minX : b.maxX - a.maxX;
       }) //sort results fo lastSearchedMax works
-      .some(collision => {
+      .some(function (collision) {
         //if last+gap !== the edge of next you are in an overhang and can safely place
         if (offDir) {
           if (lastSearchedMax + pileupGap < Math.floor(collision.minX)) return true;
@@ -23231,7 +23470,7 @@
 
         return false;
       });
-      let offsetValue = pileupBound + pileupGap - fBounds.left;
+      var offsetValue = pileupBound + pileupGap - fBounds.left;
       return offDir ? offsetValue : offsetValue - fBounds.width;
     }
 
@@ -23245,41 +23484,41 @@
 
   function spreadBackbones(config, view) {
     /** scale cvitView to 1 to prevent sizing to current zoom */
-    let al = paperFull.projects[0].getActiveLayer();
-    let z = al.zoom || 1;
+    var al = paperFull.projects[0].getActiveLayer();
+    var z = al.zoom || 1;
     al.scale(1 / z);
     /** Calculate spacing between backbones */
 
-    let baseGroup = al.children['cvitView'];
-    let labelGroup = al.children['cvitLabels']; // let rulers = paper.projects[0].getLayers()['rulersLayer'].children['rulers'];
+    var baseGroup = al.children['cvitView'];
+    var labelGroup = al.children['cvitLabels']; // let rulers = paper.projects[0].getLayers()['rulersLayer'].children['rulers'];
 
-    let padding = parseInt(config.general.image_padding);
-    let lastEdge = view.leftEdge + padding;
-    let offsetPadding = parseInt(config.general.chrom_spacing);
+    var padding = parseInt(config.general.image_padding);
+    var lastEdge = view.leftEdge + padding;
+    var offsetPadding = parseInt(config.general.chrom_spacing);
 
     if (!parseInt(config.general.fixed_chrom_spacing)) {
       // chrom spacing is variable
-      let groupW = 0;
-      let groupV = 0;
-      baseGroup.children.forEach(child => {
+      var groupW = 0;
+      var groupV = 0;
+      baseGroup.children.forEach(function (child) {
         if (child.visible) {
           groupW += child.getStrokeBounds().width;
           groupV++;
         }
       });
-      let gpad = config.general.display_ruler === 1 ? 1 : 0;
-      let calcPadding = (view.rightEdge - view.leftEdge - groupW - 2 * padding) / (groupV + gpad);
+      var gpad = config.general.display_ruler === 1 ? 1 : 0;
+      var calcPadding = (view.rightEdge - view.leftEdge - groupW - 2 * padding) / (groupV + gpad);
       offsetPadding = calcPadding > offsetPadding ? calcPadding : offsetPadding;
     }
     /** Move backbones */
 
 
-    view.chrOrder.forEach(chr => {
-      let chrGroup = baseGroup.children[chr];
-      let lb = labelGroup.children[`${chr}-label`];
+    view.chrOrder.forEach(function (chr) {
+      var chrGroup = baseGroup.children[chr];
+      var lb = labelGroup.children["".concat(chr, "-label")];
 
       if (chrGroup.visible) {
-        let chrLeft = chrGroup.getStrokeBounds().left;
+        var chrLeft = chrGroup.getStrokeBounds().left;
         chrGroup.translate(new paperFull.Point(lastEdge - chrLeft + offsetPadding, 0));
         lastEdge = chrGroup.getStrokeBounds().right;
         lb.position.x = chrGroup.children[chr].position.x;
@@ -23299,30 +23538,30 @@
    */
 
   function zoomCanvas(newZoom, oldZoom) {
-    let zoomScale = newZoom.zoom / oldZoom;
-    let cl = paperFull.projects[0].layers['cvitLayer'];
-    let rl = paperFull.projects[0].layers['rulersLayer']; //Scale drawing and rulers
+    var zoomScale = newZoom.zoom / oldZoom;
+    var cl = paperFull.projects[0].layers['cvitLayer'];
+    var rl = paperFull.projects[0].layers['rulersLayer']; //Scale drawing and rulers
 
     cl.scale(zoomScale, newZoom.center);
     rl.scale(1, zoomScale);
-    let rulers = paperFull.project.layers['rulersLayer'].children['rulers']; //back scale ruler labels
+    var rulers = paperFull.project.layers['rulersLayer'].children['rulers']; //back scale ruler labels
 
     if (rulers.children.hasOwnProperty('leftRuler')) {
-      rulers.children['leftRuler'].children['rulerLabels'].children.forEach(child => {
+      rulers.children['leftRuler'].children['rulerLabels'].children.forEach(function (child) {
         child.scale(1, 1 / zoomScale);
       });
     }
 
     if (rulers.children.hasOwnProperty('rightRuler')) {
-      rulers.children['rightRuler'].children['rulerLabels'].children.forEach(child => {
+      rulers.children['rightRuler'].children['rulerLabels'].children.forEach(function (child) {
         child.scale(1, 1 / zoomScale); //child.translate(new paper.Point(1,newZoom/oldZoom));
       });
     } // move rulers if needed
 
 
-    let yMin = cl.children['cvitLabels'].bounds.bottomRight.y;
-    rulers.children.forEach(child => {
-      let baseRuler;
+    var yMin = cl.children['cvitLabels'].bounds.bottomRight.y;
+    rulers.children.forEach(function (child) {
+      var baseRuler;
 
       if (child.children.hasOwnProperty('rulerLeft')) {
         baseRuler = child.children['rulerLeft'];
@@ -23331,8 +23570,8 @@
       }
 
       baseRuler.bounds.topLeft.y = yMin;
-      let tg = child.children['rulerTics'];
-      let lg = child.children['rulerLabels'];
+      var tg = child.children['rulerTics'];
+      var lg = child.children['rulerLabels'];
       tg.bounds.topLeft.y = yMin;
       lg.bounds.topLeft.y = yMin - lg.children[0].bounds.height;
     });
@@ -23347,9 +23586,9 @@
    */
 
   function panCanvas(drag) {
-    let delta = new paperFull.Point(drag);
+    var delta = new paperFull.Point(drag);
     paperFull.projects[0].layers['cvitLayer'].translate(delta);
-    let al = paperFull.project.getActiveLayer();
+    var al = paperFull.project.getActiveLayer();
     zoomCanvas({
       zoom: al.zoom
     }, al.zoom);
@@ -23363,9 +23602,10 @@
    * @returns {{center: *, zoom: number}}
    */
 
-  function calculateZoomAndPan(current, delta, center, newScale = current) {
-    let zoomLevel = newScale;
-    let factor = 1.05;
+  function calculateZoomAndPan(current, delta, center) {
+    var newScale = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : current;
+    var zoomLevel = newScale;
+    var factor = 1.05;
 
     if (newScale === current) {
       if (delta < 0) {
@@ -23378,7 +23618,7 @@
     }
 
     zoomLevel = zoomLevel < 1 ? 1 : zoomLevel > 8 ? 8 : zoomLevel;
-    let pl = paperFull.projects[0].getActiveLayer().children['cvitView'];
+    var pl = paperFull.projects[0].getActiveLayer().children['cvitView'];
     center = pl.globalToLocal(center);
     return {
       zoom: zoomLevel,
@@ -23393,8 +23633,9 @@
    * @returns {number}
    */
 
-  function calculateDistance(point, baseScale, newScale, invert = 0) {
-    let val = (baseScale.stop - baseScale.start) * (point - newScale.start) / (newScale.stop - newScale.start) + baseScale.start - baseScale.start;
+  function calculateDistance(point, baseScale, newScale) {
+    var invert = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+    var val = (baseScale.stop - baseScale.start) * (point - newScale.start) / (newScale.stop - newScale.start) + baseScale.start - baseScale.start;
     return invert ? baseScale.stop - baseScale.start - val : val;
   }
   /**
@@ -23414,7 +23655,9 @@
    * @returns {*}
    */
 
-  function transformValue(value, transform, base = Math.E) {
+  function transformValue(value, transform) {
+    var base = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : Math.E;
+
     switch (transform) {
       case 'exponential':
         if (value === 0) value = Number('1e-323'); //as small as you can go
@@ -23424,157 +23667,202 @@
       case 'log':
         return Math.pow(value, base);
 
+      case 'reference':
+        return value === 0 ? 0 : value / base;
+
       default:
         return value;
     }
   }
 
-  class GroupToggle extends Component {
-    constructor() {
-      super();
-      this.state = {
+  var GroupToggle =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(GroupToggle, _Component);
+
+    function GroupToggle() {
+      var _this;
+
+      _classCallCheck(this, GroupToggle);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(GroupToggle).call(this));
+      _this.state = {
         'active': true
       };
+      return _this;
     }
 
-    toggleVisible() {
-      let vis = !this.state.active;
-      let group = this.props.groupType;
-      let target = this.props.target;
-      let active = paperFull.projects[0].getActiveLayer().children['cvitView'];
-      let rulers = paperFull.projects[0].layers['rulersLayer'].children['rulers'];
-      let view = this.props.cvitModel.view;
-      view.leftEdge = rulers.children['leftRuler'] ? rulers.children['leftRuler'].getStrokeBounds().right : 0;
-      view.rightEdge = rulers.children['rightRuler'] ? rulers.children['rightRuler'].getStrokeBounds().left : paperFull.view.bounds.width;
+    _createClass(GroupToggle, [{
+      key: "toggleVisible",
+      value: function toggleVisible() {
+        var vis = !this.state.active;
+        var group = this.props.groupType;
+        var target = this.props.target;
+        var active = paperFull.projects[0].getActiveLayer().children['cvitView'];
 
-      if (group === 'chromosome') {
-        active.children[target].visible = vis;
-      } else {
-        active.children.forEach(child => {
-          if (child.children.hasOwnProperty(group)) child.children[group].visible = vis;
-        });
-      } // this.props.setRedraw(true);
+        if (active !== undefined) {
+          var rulers = paperFull.projects[0].layers['rulersLayer'].children['rulers'];
+          var view = this.props.cvitModel.view;
+          view.leftEdge = rulers.children['leftRuler'] ? rulers.children['leftRuler'].getStrokeBounds().right : 0;
+          view.rightEdge = rulers.children['rightRuler'] ? rulers.children['rightRuler'].getStrokeBounds().left : paperFull.view.bounds.width;
+
+          if (group === 'chromosome') {
+            active.children[target].visible = vis;
+          } else {
+            active.children.forEach(function (child) {
+              if (child.children.hasOwnProperty(group)) child.children[group].visible = vis;
+            });
+          } // this.props.setRedraw(true);
 
 
-      spreadBackbones(this.props.cvitModel.config, this.props.cvitModel.view);
-      this.setState({
-        active: vis
-      });
-    }
+          spreadBackbones(this.props.cvitModel.config, this.props.cvitModel.view);
+          this.setState({
+            active: vis
+          });
+        }
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        var _this2 = this;
 
-    render(props, state) {
-      return h("div", {
-        className: 'group-toggle'
-      }, h("input", {
-        type: 'checkbox',
-        className: 'group-toggle-checkbox',
-        id: `${props.target}-toggle`,
-        onInput: () => this.toggleVisible(),
-        checked: state.active
-      }), h("label", {
-        className: 'group-toggle-label',
-        htmlFor: `${props.target}-toggle`
-      }, h("span", {
-        className: 'group-toggle-inner',
-        content: state.active ? 'ON' : 'OFF'
-      }), h("span", {
-        className: 'group-toggle-switch'
-      })));
-    }
+        return h("div", {
+          className: 'group-toggle'
+        }, h("input", {
+          type: 'checkbox',
+          className: 'group-toggle-checkbox',
+          id: "".concat(props.target, "-toggle"),
+          onInput: function onInput() {
+            return _this2.toggleVisible();
+          },
+          checked: state.active
+        }), h("label", {
+          className: 'group-toggle-label',
+          htmlFor: "".concat(props.target, "-toggle")
+        }, h("span", {
+          className: 'group-toggle-inner',
+          content: state.active ? 'ON' : 'OFF'
+        }), h("span", {
+          className: 'group-toggle-switch'
+        })));
+      }
+    }]);
 
-  }
+    return GroupToggle;
+  }(Component);
 
-  class CvitFooter extends Component {
-    constructor() {
-      super();
-      this.state = {
+  var CvitFooter =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitFooter, _Component);
+
+    function CvitFooter() {
+      var _this;
+
+      _classCallCheck(this, CvitFooter);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(CvitFooter).call(this));
+      _this.state = {
         visible: false
       };
+      return _this;
     }
 
-    onClick() {
-      this.setState({
-        visible: !this.state.visible
-      });
-    }
-
-    generateToggles() {
-      let backbone = [];
-      let groups = [];
-
-      if (paperFull.project) {
-        paperFull.projects[0].getActiveLayer().children['cvitView'].children.forEach(child => {
-          let name = child.name;
-          let bbItem = h("td", null, h("td", null, name), h("td", null, h(GroupToggle, {
-            groupType: 'chromosome',
-            target: name,
-            cvitModel: this.props.cvitModel
-          })));
-          backbone.push(bbItem);
-          child.children.forEach(bbchild => {
-            let cname = bbchild.name;
-
-            if (cname && cname !== name && !cname.match(/.*-label/g) && groups.indexOf(cname) === -1) {
-              groups.push(bbchild.name);
-            }
-          });
+    _createClass(CvitFooter, [{
+      key: "onClick",
+      value: function onClick() {
+        this.setState({
+          visible: !this.state.visible
         });
       }
+    }, {
+      key: "generateToggles",
+      value: function generateToggles() {
+        var _this2 = this;
 
-      let bbToggles = [];
+        var backbone = [];
+        var groups = [];
 
-      for (let i = 0; i < backbone.length; i += 5) {
-        let bb = backbone.slice(i, i + 5);
-        bbToggles.push(h("tr", null, bb));
+        if (paperFull.project && paperFull.projects[0].getActiveLayer().children['cvitView'] !== undefined) {
+          paperFull.projects[0].getActiveLayer().children['cvitView'].children.forEach(function (child) {
+            var name = child.name;
+            var bbItem = h("td", null, h("td", null, name), h("td", null, h(GroupToggle, {
+              groupType: 'chromosome',
+              target: name,
+              cvitModel: _this2.props.cvitModel
+            })));
+            backbone.push(bbItem);
+            child.children.forEach(function (bbchild) {
+              var cname = bbchild.name;
+
+              if (cname && cname !== name && !cname.match(/.*-label/g) && groups.indexOf(cname) === -1) {
+                groups.push(bbchild.name);
+              }
+            });
+          });
+        }
+
+        var bbToggles = [];
+
+        for (var i = 0; i < backbone.length; i += 5) {
+          var bb = backbone.slice(i, i + 5);
+          bbToggles.push(h("tr", null, bb));
+        }
+
+        var groupToggles = groups.map(function (group) {
+          return h("tr", null, h("td", null, h("span", null, " ", group, ": ")), h("td", null, h(GroupToggle, {
+            groupType: group,
+            target: group,
+            cvitModel: _this2.props.cvitModel
+          })));
+        });
+        return h("div", null, h("table", null, h("tr", null, h("td", {
+          className: 'control-head',
+          colSpan: 5
+        }, h("h5", null, " Backbone "))), bbToggles, h("tr", null, h("td", {
+          className: 'control-head',
+          colSpan: 5
+        }, h("h5", null, " Feature Groups "))), groupToggles));
       }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        var _this3 = this;
 
-      let groupToggles = groups.map(group => {
-        return h("tr", null, h("td", null, h("span", null, " ", group, ": ")), h("td", null, h(GroupToggle, {
-          groupType: group,
-          target: group,
-          cvitModel: this.props.cvitModel
-        })));
-      });
-      return h("div", null, h("table", null, h("tr", null, h("td", {
-        className: 'control-head',
-        colSpan: 5
-      }, h("h5", null, " Backbone "))), bbToggles, h("tr", null, h("td", {
-        className: 'control-head',
-        colSpan: 5
-      }, h("h5", null, " Feature Groups "))), groupToggles));
-    }
+        return h("footer", {
+          className: 'cvit',
+          id: 'cvit-footer'
+        }, h("div", {
+          className: 'row'
+        }, h("div", {
+          className: 'twelve columns',
+          id: 'footer-toggle',
+          onClick: function onClick() {
+            return _this3.onClick();
+          }
+        }, h("div", {
+          id: 'toggle-title'
+        }, h("i", {
+          className: 'material-icons'
+        }, " ", state.visible ? 'keyboard_arrow_up' : 'keyboard_arrow_down'), h("span", null, "View Control"), h("i", {
+          className: 'material-icons'
+        }, " ", state.visible ? 'keyboard_arrow_up' : 'keyboard_arrow_down')))), h("div", {
+          className: 'row collapsible',
+          id: 'cvit-toggle',
+          style: {
+            maxHeight: state.visible ? 200 : 0
+          }
+        }, h("div", {
+          className: 'twelve columns content',
+          style: {
+            maxHeight: state.visible ? 200 : 0
+          }
+        }, this.generateToggles())));
+      }
+    }]);
 
-    render(props, state) {
-      return h("footer", {
-        className: 'cvit',
-        id: 'cvit-footer'
-      }, h("div", {
-        className: 'row'
-      }, h("div", {
-        className: 'twelve columns',
-        id: 'footer-toggle',
-        onClick: () => this.onClick()
-      }, h("div", {
-        id: 'toggle-title'
-      }, h("i", {
-        className: 'material-icons'
-      }, " ", state.visible ? 'keyboard_arrow_up' : 'keyboard_arrow_down'), h("span", null, "View Control"), h("i", {
-        className: 'material-icons'
-      }, " ", state.visible ? 'keyboard_arrow_up' : 'keyboard_arrow_down')))), h("div", {
-        className: 'row collapsible',
-        id: 'cvit-toggle',
-        style: {
-          maxHeight: state.visible ? 200 : 0
-        }
-      }, h("div", {
-        className: 'twelve columns content',
-        style: {
-          maxHeight: state.visible ? 200 : 0
-        }
-      }, this.generateToggles())));
-    }
-
-  }
+    return CvitFooter;
+  }(Component);
 
   var quickselect = createCommonjsModule(function (module, exports) {
   (function (global, factory) {
@@ -24202,12 +24490,6 @@
   rbush_1.default = default_1;
 
   /**
-   * @file Glyph for drawing markers, a feature with position but no set size
-   * @author awilkey
-   * @module draw/glyph/marker
-   *
-   */
-  /**
    * @description Adds an individual chromosome backbone to the group
    *
    * @param {object} data - The target backbone to draw.
@@ -24216,244 +24498,265 @@
    *
    */
 
-  class Glyph {
-    constructor(data, config, view) {
+  var Glyph =
+  /*#__PURE__*/
+  function () {
+    function Glyph(data, config, view) {
+      _classCallCheck(this, Glyph);
+
       /* not passing constructor allows us to call Glyphs to access functions without
          the time cost of initial draw, used for measures */
       if (data) this.group = this.formatGlyph(data, config, view);
     } // getters and setters
 
 
-    get children() {
-      return this.group.children;
-    }
+    _createClass(Glyph, [{
+      key: "formatGlyph",
+      value: function formatGlyph(data, config, view) {
+        data.name = data.attribute.hasOwnProperty('name') ? data.attribute.name : '';
+        var fGroup = new paperFull.Group();
+        fGroup.name = data.name;
+        var labelGroup = new paperFull.Group();
+        labelGroup.name = data.name + '-label';
+        fGroup.addChild(labelGroup);
+        var r = this.drawFeature(data, config, view);
+        fGroup.addChild(r);
+        r.info = data.attribute;
+        var fillColor = config.color;
 
-    get bounds() {
-      return this.group.getStrokeBounds();
-    }
+        if (data.attribute.hasOwnProperty('class')) {
+          if (view.colorClasses.hasOwnProperty(data.attribute["class"])) fillColor = view.colorClasses[data.attribute["class"]];
+        }
 
-    formatGlyph(data, config, view) {
-      data.name = data.attribute.hasOwnProperty('name') ? data.attribute.name : '';
-      let fGroup = new paperFull.Group();
-      fGroup.name = data.name;
-      let labelGroup = new paperFull.Group();
-      labelGroup.name = data.name + '-label';
-      fGroup.addChild(labelGroup);
-      let r = this.drawFeature(data, config, view);
-      fGroup.addChild(r);
-      r.info = data.attribute;
-      let fillColor = config.color;
+        var transparent = config.transparent;
+        var t_per = 1 - config.transparent_percent;
+        /** set glyphs stroke */
+        //TODO: play more with border glyph
 
-      if (data.attribute.hasOwnProperty('class')) {
-        if (view.colorClasses.hasOwnProperty(data.attribute.class)) fillColor = view.colorClasses[data.attribute.class];
-      }
-
-      let transparent = config.transparent;
-      let t_per = 1 - config.transparent_percent;
-      /** set glyphs stroke */
-      //TODO: play more with border glyph
-
-      if (config.hasOwnProperty('border') && config.border || config.hasOwnProperty('stroke_width')) {
-        r.strokeWidth = config.hasOwnProperty('border_width') ? config.border_width : config.hasOwnProperty('stroke_width') ? config.stroke_width : 2;
-        let strokeColor = config.hasOwnProperty('border_color') ? config.border_color : r.info.hasOwnProperty('border_color') ? r.info.border_color : fillColor;
-        r.strokeColor = formatColor(strokeColor);
-        if (transparent) r.strokeColor.alpha = t_per;
-      } else {
-        r.strokeWidth = 0;
-      }
-      /** fill the figure, if it is an option for the glyph */
-
-
-      let fill = config.hasOwnProperty('fill') ? config.fill : 1;
-      if (fill) r.fillColor = formatColor(fillColor);
-      if (transparent) r.fillColor.alpha = t_per;
-      /** draw label */
-      //TODO: Draw labels
-      // TODO: Figure out if labels offset from item or from group?
-
-      if (config.draw_label) {
-        let name = data.name || data.attribute.id;
-        let labelOffset = config['label_offset'];
-        let labelY = r.position.y; //position = middle of target
-
-        let label = new paperFull.PointText({
-          point: [r.bounds.right, labelY],
-          content: name,
-          strokeSize: 1,
-          fontSize: `${config['font_size']}pt`,
-          fontFamily: config['font_face'],
-          fontWeight: 'normal',
-          fillColor: formatColor(config['label_color'])
-        });
-        labelGroup.addChild(label);
-
-        if (offsetSign(labelOffset)) {
-          label.translate(labelOffset, 0);
+        if (config.hasOwnProperty('border') && config.border || config.hasOwnProperty('stroke_width')) {
+          r.strokeWidth = config.hasOwnProperty('border_width') ? config.border_width : config.hasOwnProperty('stroke_width') ? config.stroke_width : 2;
+          var strokeColor = config.hasOwnProperty('border_color') ? config.border_color : r.info.hasOwnProperty('border_color') ? r.info.border_color : fillColor;
+          r.strokeColor = formatColor(strokeColor);
+          if (transparent) r.strokeColor.alpha = t_per;
         } else {
-          label.translate(r.getStrokeBounds().left - label.getStrokeBounds().right + labelOffset, 0);
+          r.strokeWidth = 0;
+        }
+        /** fill the figure, if it is an option for the glyph */
+
+
+        var fill = config.hasOwnProperty('fill') ? config.fill : 1;
+        if (fill) r.fillColor = formatColor(fillColor);
+        if (transparent) r.fillColor.alpha = t_per;
+        /** draw label */
+        //TODO: Draw labels
+        // TODO: Figure out if labels offset from item or from group?
+
+        if (config.draw_label) {
+          var name = data.name || data.attribute.id;
+          var labelOffset = config['label_offset'];
+          var labelY = r.position.y; //position = middle of target
+
+          var label = new paperFull.PointText({
+            point: [r.bounds.right, labelY],
+            content: name,
+            strokeSize: 1,
+            fontSize: "".concat(config['font_size'], "pt"),
+            fontFamily: config['font_face'],
+            fontWeight: 'normal',
+            fillColor: formatColor(config['label_color'])
+          });
+          labelGroup.addChild(label);
+
+          if (offsetSign(labelOffset)) {
+            label.translate(labelOffset, 0);
+          } else {
+            label.translate(r.getStrokeBounds().left - label.getStrokeBounds().right + labelOffset, 0);
+          }
+        }
+        /** pileup */
+
+
+        if (view.pileup) {
+          var xOffset = config.offset;
+          var pGap = xOffset >= +0 ? config.pileup_gap : -config.pileup_gap;
+          fGroup.translate(new paperFull.Point(collisionOffset(fGroup, view, xOffset, config.offsetDir, pGap), 0));
+        }
+        /** Attach Popover Listener */
+
+
+        r.onClick = function (e) {
+          e.preventDefault();
+          var pt = fGroup.localToGlobal(fGroup.getStrokeBounds().rightCenter).add(new paperFull.Point(paperFull.view.element.offsetLeft, paperFull.view.element.offsetTop));
+          var cl = paperFull.projects[0].layers['cvitLayer'].children[0];
+          if (cl.children['cvitPtr']) cl.children['cvitPtr'].remove();
+          var ptrGrp = new paperFull.Group();
+          ptrGrp.name = 'cvitPtr';
+          ptrGrp.strokeWidth = 2;
+          ptrGrp.strokeColor = 'white';
+          var innerCross = new paperFull.CompoundPath({
+            children: [new paperFull.Path.Line(e.point.add({
+              x: 0,
+              y: 1
+            }), e.point.add({
+              x: 0,
+              y: 3
+            })), new paperFull.Path.Line(e.point.add({
+              x: 0,
+              y: -1
+            }), e.point.add({
+              x: 0,
+              y: -3
+            })), new paperFull.Path.Line(e.point.add({
+              y: 0,
+              x: 1
+            }), e.point.add({
+              y: 0,
+              x: 3
+            })), new paperFull.Path.Line(e.point.add({
+              y: 0,
+              x: -1
+            }), e.point.add({
+              y: 0,
+              x: -3
+            }))],
+            strokeColor: 'white',
+            strokeWidth: 2
+          });
+          ptrGrp.addChild(innerCross);
+          var outerCross = new paperFull.CompoundPath({
+            children: [new paperFull.Path.Line(e.point.add({
+              x: 0,
+              y: 3
+            }), e.point.add({
+              x: 0,
+              y: 6
+            })), new paperFull.Path.Line(e.point.add({
+              x: 0,
+              y: -3
+            }), e.point.add({
+              x: 0,
+              y: -6
+            })), new paperFull.Path.Line(e.point.add({
+              y: 0,
+              x: 3
+            }), e.point.add({
+              y: 0,
+              x: 6
+            })), new paperFull.Path.Line(e.point.add({
+              y: 0,
+              x: -3
+            }), e.point.add({
+              y: 0,
+              x: -6
+            }))],
+            strokeColor: 'black',
+            strokeWidth: 2
+          });
+          ptrGrp.addChild(outerCross);
+          cl.addChild(ptrGrp);
+          view.setPopover({
+            visible: true,
+            position: {
+              x: pt.x,
+              y: pt.y
+            },
+            data: [data]
+          });
+          e.stopPropagation();
+        };
+
+        return fGroup;
+      }
+      /**
+       * This needs to be extended by the actual glyph but
+       * formats the actual drawn glyph
+       *
+       * @param data
+       * @param config
+       * @param view
+       * @returns object
+       */
+
+    }, {
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        if (data && config && view) {
+          var topLeft = new paperFull.Point(0, 0);
+          var rectSize = new paperFull.Size(1, 1);
+          return new paperFull.Path.Rectangle(new paperFull.Rectangle(topLeft, rectSize));
         }
       }
-      /** pileup */
-
-
-      if (view.pileup) {
-        let xOffset = config.offset;
-        let pGap = xOffset >= +0 ? config.pileup_gap : -config.pileup_gap;
-        fGroup.translate(new paperFull.Point(collisionOffset(fGroup, view, xOffset, config.offsetDir, pGap), 0));
+    }, {
+      key: "children",
+      get: function get() {
+        return this.group.children;
       }
-      /** Attach Popover Listener */
-
-
-      r.onClick = e => {
-        e.preventDefault();
-        let pt = fGroup.localToGlobal(fGroup.getStrokeBounds().rightCenter).add(new paperFull.Point(paperFull.view.element.offsetLeft, paperFull.view.element.offsetTop));
-        let cl = paperFull.projects[0].layers['cvitLayer'].children[0];
-        if (cl.children['cvitPtr']) cl.children['cvitPtr'].remove();
-        let ptrGrp = new paperFull.Group();
-        ptrGrp.name = 'cvitPtr';
-        ptrGrp.strokeWidth = 2;
-        ptrGrp.strokeColor = 'white';
-        let innerCross = new paperFull.CompoundPath({
-          children: [new paperFull.Path.Line(e.point.add({
-            x: 0,
-            y: 1
-          }), e.point.add({
-            x: 0,
-            y: 3
-          })), new paperFull.Path.Line(e.point.add({
-            x: 0,
-            y: -1
-          }), e.point.add({
-            x: 0,
-            y: -3
-          })), new paperFull.Path.Line(e.point.add({
-            y: 0,
-            x: 1
-          }), e.point.add({
-            y: 0,
-            x: 3
-          })), new paperFull.Path.Line(e.point.add({
-            y: 0,
-            x: -1
-          }), e.point.add({
-            y: 0,
-            x: -3
-          }))],
-          strokeColor: 'white',
-          strokeWidth: 2
-        });
-        ptrGrp.addChild(innerCross);
-        let outerCross = new paperFull.CompoundPath({
-          children: [new paperFull.Path.Line(e.point.add({
-            x: 0,
-            y: 3
-          }), e.point.add({
-            x: 0,
-            y: 6
-          })), new paperFull.Path.Line(e.point.add({
-            x: 0,
-            y: -3
-          }), e.point.add({
-            x: 0,
-            y: -6
-          })), new paperFull.Path.Line(e.point.add({
-            y: 0,
-            x: 3
-          }), e.point.add({
-            y: 0,
-            x: 6
-          })), new paperFull.Path.Line(e.point.add({
-            y: 0,
-            x: -3
-          }), e.point.add({
-            y: 0,
-            x: -6
-          }))],
-          strokeColor: 'black',
-          strokeWidth: 2
-        });
-        ptrGrp.addChild(outerCross);
-        cl.addChild(ptrGrp);
-        view.setPopover({
-          visible: true,
-          position: {
-            x: pt.x,
-            y: pt.y
-          },
-          data: [data]
-        });
-        e.stopPropagation();
-      };
-
-      return fGroup;
-    }
-    /**
-     * This needs to be extended by the actual glyph but
-     * formats the actual drawn glyph
-     *
-     * @param data
-     * @param config
-     * @param view
-     * @returns object
-     */
-
-
-    drawFeature(data, config, view) {
-      if (data && config && view) {
-        let topLeft = new paperFull.Point(0, 0);
-        let rectSize = new paperFull.Size(1, 1);
-        return new paperFull.Path.Rectangle(new paperFull.Rectangle(topLeft, rectSize));
+    }, {
+      key: "bounds",
+      get: function get() {
+        return this.group.getStrokeBounds();
       }
+    }]);
+
+    return Glyph;
+  }();
+
+  var Border =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Border, _Glyph);
+
+    function Border() {
+      _classCallCheck(this, Border);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(Border).apply(this, arguments));
     }
 
-  }
+    _createClass(Border, [{
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        var featureWidth = view.chrBounds.width;
+        var featureHeight = (data.end - data.start) * view.yScale;
+        var yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
+        var xLoc = view.chrBounds.left;
+        var point = new paperFull.Point(xLoc, yLoc);
+        var size = new paperFull.Size(featureWidth, featureHeight);
+        return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
+      }
+    }]);
 
-  /**
-   * @file Glyph for drawing centromeres, a feature drawn on the backbone
-   * @author awilkey
-   * @module draw/glyph/marker
-   *
-   */
-  class Border extends Glyph {
-    drawFeature(data, config, view) {
-      let featureWidth = view.chrBounds.width;
-      let featureHeight = (data.end - data.start) * view.yScale;
-      let yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
-      let xLoc = view.chrBounds.left;
-      let point = new paperFull.Point(xLoc, yLoc);
-      let size = new paperFull.Size(featureWidth, featureHeight);
-      return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
+    return Border;
+  }(Glyph);
+
+  var Centromere =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Centromere, _Glyph);
+
+    function Centromere() {
+      _classCallCheck(this, Centromere);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(Centromere).apply(this, arguments));
     }
 
-  }
+    _createClass(Centromere, [{
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        var overhang = parseInt(config.centromere_overhang);
+        var featureWidth = 2 * overhang + view.chrBounds.width;
+        var featureHeight = (data.end - data.start) * view.yScale;
+        if (featureHeight < 2) featureHeight = 2;
+        var yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
+        var xLoc = view.chrBounds.left - overhang;
+        var point = new paperFull.Point(xLoc, yLoc);
+        var size = new paperFull.Size(featureWidth, featureHeight);
+        return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
+      }
+    }]);
 
-  /**
-   * @file Glyph for drawing centromeres, a feature drawn on the backbone
-   * @author awilkey
-   * @module draw/glyph/marker
-   *
-   */
-  class Centromere extends Glyph {
-    drawFeature(data, config, view) {
-      let overhang = parseInt(config.centromere_overhang);
-      let featureWidth = 2 * overhang + view.chrBounds.width;
-      let featureHeight = (data.end - data.start) * view.yScale;
-      if (featureHeight < 2) featureHeight = 2;
-      let yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
-      let xLoc = view.chrBounds.left - overhang;
-      let point = new paperFull.Point(xLoc, yLoc);
-      let size = new paperFull.Size(featureWidth, featureHeight);
-      return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
-    }
+    return Centromere;
+  }(Glyph);
 
-  }
-
-  /**
-   * @file draws a "chromosome" backbone that serves as a reference for drawing other features.
-   * called chromosome, but can in practice be anything with a length.
-   * @author awilkey
-   * @module draw/glyph/chromosome
-   */
   /**
    * @description Adds an individual chromosome backbone to the group
    *
@@ -24463,109 +24766,106 @@
    *
    */
 
-  class Chromosome {
-    constructor(data, config, view) {
+  var Chromosome =
+  /*#__PURE__*/
+  function () {
+    function Chromosome(data, config, view) {
+      _classCallCheck(this, Chromosome);
+
       this.positionTree = rbush_1();
       this.seqName = data.seqName;
       this.group = this.formatChromosome(data, config, view);
     } // getters and setters
 
 
-    get children() {
-      return this.group.children;
-    }
+    _createClass(Chromosome, [{
+      key: "formatChromosome",
+      value: function formatChromosome(data, config, view) {
+        var group = new paperFull.Group();
+        group.name = this.seqName;
+        var labelGroup = new paperFull.Group();
+        labelGroup.name = this.seqName + '-label';
+        group.addChild(labelGroup);
+        var xPos = view.xOffset;
+        var yPos = view.yOffset.offsetTop + view.yAdjust;
+        var startOffset = (data.start - view.min) * view.yScale;
+        var point = new paperFull.Point(xPos, yPos + startOffset);
+        var size = new paperFull.Size(view.chrWidth, (data.end - data.start) * view.yScale);
+        var rectangle = new paperFull.Rectangle(point, size);
+        var r = new paperFull.Path.Rectangle(rectangle);
+        r.info = data.attribute;
+        r.thisColor = 'black';
+        r.fillColor = formatColor(config.chrom_color);
 
-    get labelGroup() {
-      return this.group.children[`${this.seqName}-label`];
-    }
+        if (config.chrom_border === 1) {
+          r.strokeWidth = config.chrom_border_width ? config.chrom_border_width : 2;
+          r.strokeColor = formatColor(config.chrom_border_color);
+        }
 
-    formatChromosome(data, config, view) {
-      let group = new paperFull.Group();
-      group.name = this.seqName;
-      let labelGroup = new paperFull.Group();
-      labelGroup.name = this.seqName + '-label';
-      group.addChild(labelGroup);
-      let xPos = view.xOffset;
-      let yPos = view.yOffset.offsetTop + view.yAdjust;
-      let startOffset = (data.start - view.min) * view.yScale;
-      let point = new paperFull.Point(xPos, yPos + startOffset);
-      let size = new paperFull.Size(view.chrWidth, (data.end - data.start) * view.yScale);
-      let rectangle = new paperFull.Rectangle(point, size);
-      let r = new paperFull.Path.Rectangle(rectangle);
-      r.info = data.attribute;
-      r.thisColor = 'black';
-      r.fillColor = formatColor(config.chrom_color);
-
-      if (config.chrom_border === 1) {
-        r.strokeWidth = config.chrom_border_width ? config.chrom_border_width : 2;
-        r.strokeColor = formatColor(config.chrom_border_color);
+        r.name = group.name;
+        group.addChild(r);
+        point.x = xPos + view.chrWidth / 2;
+        point.y = yPos - view.chrWidth;
+        var label = new paperFull.PointText(point);
+        label.justification = 'center';
+        label.fontFamily = config.chrom_font_face;
+        label.content = data.attribute.hasOwnProperty('name') ? data.attribute.name : group.name;
+        label.fontSize = config.chrom_font_size;
+        label.fillColor = formatColor(config.chrom_label_color);
+        label.name = group.name + 'Label';
+        labelGroup.addChild(label);
+        return group;
       }
+      /**
+       * simple console log to make sure class is loading properly
+       */
 
-      r.name = group.name;
-      group.addChild(r);
-      point.x = xPos + view.chrWidth / 2;
-      point.y = yPos - view.chrWidth;
-      let label = new paperFull.PointText(point);
-      label.justification = 'center';
-      label.fontFamily = config.chrom_font_face;
-      label.content = data.attribute.hasOwnProperty('name') ? data.attribute.name : group.name;
-      label.fontSize = config.chrom_font_size;
-      label.fillColor = formatColor(config.chrom_label_color);
-      label.name = group.name + 'Label';
-      labelGroup.addChild(label);
-      return group;
-    }
-    /**
-     * simple console log to make sure class is loading properly
-     */
+    }, {
+      key: "children",
+      get: function get() {
+        return this.group.children;
+      }
+    }, {
+      key: "labelGroup",
+      get: function get() {
+        return this.group.children["".concat(this.seqName, "-label")];
+      }
+    }], [{
+      key: "test",
+      value: function test() {
+        console.log('Access of centromere glyph');
+      }
+    }]);
 
+    return Chromosome;
+  }();
 
-    static test() {
-      console.log('Access of centromere glyph');
-    }
+  var Marker =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Marker, _Glyph);
 
-  }
+    function Marker() {
+      _classCallCheck(this, Marker);
 
-  /**
-   * @file Glyph for drawing markers, a feature with position but no set size
-   * @author awilkey
-   * @module draw/glyph/marker
-   *
-   */
-  class Marker extends Glyph {
-    drawFeature(data, config, view) {
-      let featureWidth = config.width;
-      let yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
-      let xOffset = config.offset;
-      let chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
-      let xLoc = chrEdge + xOffset;
-      let point = new paperFull.Point(xLoc, yLoc);
-      return new paperFull.Path.Line(point, new paperFull.Point(point.x + featureWidth, point.y));
+      return _possibleConstructorReturn(this, _getPrototypeOf(Marker).apply(this, arguments));
     }
 
-  }
+    _createClass(Marker, [{
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        var featureWidth = config.width;
+        var yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
+        var xOffset = config.offset;
+        var chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
+        var xLoc = chrEdge + xOffset;
+        var point = new paperFull.Point(xLoc, yLoc);
+        return new paperFull.Path.Line(point, new paperFull.Point(point.x + featureWidth, point.y));
+      }
+    }]);
 
-  /**
-   * @file Glyph for drawing ranges, a feature with length placed beside
-   *   the chromosome.
-   * @author awilkey
-   * @module draw/glyph/range
-   *
-   */
-
-  class Range extends Glyph {
-    drawFeature(data, config, view) {
-      let featureWidth = config.width;
-      let yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
-      let xOffset = config.offset;
-      let chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
-      let xLoc = chrEdge + xOffset;
-      let point = new paperFull.Point(xLoc, yLoc);
-      let size = new paperFull.Size(featureWidth, (data.end - data.start) * view.yScale);
-      return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
-    }
-
-  }
+    return Marker;
+  }(Glyph);
 
   /**
    * @file Glyph for drawing ranges, a feature with length placed beside
@@ -24575,19 +24875,33 @@
    *
    */
 
-  class Rect extends Glyph {
-    drawFeature(data, config, view) {
-      let featureWidth = config.width;
-      let yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
-      let xOffset = config.offset;
-      let chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
-      let xLoc = chrEdge + xOffset;
-      let point = new paperFull.Point(xLoc, yLoc);
-      let size = new paperFull.Size(featureWidth, featureWidth);
-      return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
+  var Range =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Range, _Glyph);
+
+    function Range() {
+      _classCallCheck(this, Range);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(Range).apply(this, arguments));
     }
 
-  }
+    _createClass(Range, [{
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        var featureWidth = config.width;
+        var yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
+        var xOffset = config.offset;
+        var chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
+        var xLoc = chrEdge + xOffset;
+        var point = new paperFull.Point(xLoc, yLoc);
+        var size = new paperFull.Size(featureWidth, (data.end - data.start) * view.yScale);
+        return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
+      }
+    }]);
+
+    return Range;
+  }(Glyph);
 
   /**
    * @file Glyph for drawing ranges, a feature with length placed beside
@@ -24597,27 +24911,33 @@
    *
    */
 
-  class Doublecircle extends Glyph {
-    drawFeature(data, config, view) {
-      let featureWidth = config.width;
-      let radius = featureWidth / 2;
-      let xOffset = config.offset;
-      let chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
-      let yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
-      let xLoc = chrEdge + xOffset; //   let point = new paper.Point(xLoc, yLoc);
+  var Rect =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Rect, _Glyph);
 
-      return new paperFull.CompoundPath({
-        children: [new paperFull.Path.Circle({
-          center: new paperFull.Point(xLoc + radius / 2, yLoc + radius / 2),
-          radius: radius / 2
-        }), new paperFull.Path.Circle({
-          center: new paperFull.Point(xLoc + (radius + radius / 2), yLoc + radius / 2),
-          radius: radius / 2
-        })]
-      });
+    function Rect() {
+      _classCallCheck(this, Rect);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(Rect).apply(this, arguments));
     }
 
-  }
+    _createClass(Rect, [{
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        var featureWidth = config.width;
+        var yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
+        var xOffset = config.offset;
+        var chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
+        var xLoc = chrEdge + xOffset;
+        var point = new paperFull.Point(xLoc, yLoc);
+        var size = new paperFull.Size(featureWidth, featureWidth);
+        return new paperFull.Path.Rectangle(new paperFull.Rectangle(point, size));
+      }
+    }]);
+
+    return Rect;
+  }(Glyph);
 
   /**
    * @file Glyph for drawing ranges, a feature with length placed beside
@@ -24627,19 +24947,77 @@
    *
    */
 
-  class Circle extends Glyph {
-    drawFeature(data, config, view) {
-      let featureWidth = config.width;
-      let radius = featureWidth / 2;
-      let xOffset = config.offset;
-      let chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
-      let yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
-      let xLoc = chrEdge + xOffset;
-      let point = new paperFull.Point(xLoc, yLoc);
-      return new paperFull.Path.Circle(point.add(radius), radius);
+  var Doublecircle =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Doublecircle, _Glyph);
+
+    function Doublecircle() {
+      _classCallCheck(this, Doublecircle);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(Doublecircle).apply(this, arguments));
     }
 
-  }
+    _createClass(Doublecircle, [{
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        var featureWidth = config.width;
+        var radius = featureWidth / 2;
+        var xOffset = config.offset;
+        var chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
+        var yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
+        var xLoc = chrEdge + xOffset; //   let point = new paper.Point(xLoc, yLoc);
+
+        return new paperFull.CompoundPath({
+          children: [new paperFull.Path.Circle({
+            center: new paperFull.Point(xLoc + radius / 2, yLoc + radius / 2),
+            radius: radius / 2
+          }), new paperFull.Path.Circle({
+            center: new paperFull.Point(xLoc + (radius + radius / 2), yLoc + radius / 2),
+            radius: radius / 2
+          })]
+        });
+      }
+    }]);
+
+    return Doublecircle;
+  }(Glyph);
+
+  /**
+   * @file Glyph for drawing ranges, a feature with length placed beside
+   *   the chromosome.
+   * @author awilkey
+   * @module draw/glyph/range
+   *
+   */
+
+  var Circle =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Circle, _Glyph);
+
+    function Circle() {
+      _classCallCheck(this, Circle);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(Circle).apply(this, arguments));
+    }
+
+    _createClass(Circle, [{
+      key: "drawFeature",
+      value: function drawFeature(data, config, view) {
+        var featureWidth = config.width;
+        var radius = featureWidth / 2;
+        var xOffset = config.offset;
+        var chrEdge = config.offsetDir ? view.chrBounds.right : view.chrBounds.left - featureWidth;
+        var yLoc = (data.start - view.min) * view.yScale + view.yOffset.offsetTop + view.yAdjust;
+        var xLoc = chrEdge + xOffset;
+        var point = new paperFull.Point(xLoc, yLoc);
+        return new paperFull.Path.Circle(point.add(radius), radius);
+      }
+    }]);
+
+    return Circle;
+  }(Glyph);
 
   function Position$1(data, config, view, subglyph) {
     switch (subglyph) {
@@ -24653,7 +25031,7 @@
         return new Circle(data, config, view);
 
       default:
-        console.log(`${subglyph} is not supported yet`);
+        console.log("".concat(subglyph, " is not supported yet"));
     }
   }
 
@@ -24665,18 +25043,26 @@
    *
    */
 
-  class Histogram extends Range {
-    constructor(data, config, view) {
-      super(data, config, view);
-      let range = this.group.children[1];
-      let mc = view.measureConfig;
-      let max = mc.max;
-      let min = mc.min;
-      let val = config.value_type === 'value_attr' ? data.attribute.value : data.score;
+  var Histogram =
+  /*#__PURE__*/
+  function (_Range) {
+    _inherits(Histogram, _Range);
+
+    function Histogram(data, config, view) {
+      var _this;
+
+      _classCallCheck(this, Histogram);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(Histogram).call(this, data, config, view));
+      var range = _this.group.children[1];
+      var mc = view.measureConfig;
+      var max = mc.max;
+      var min = mc.min;
+      var val = config.value_type === 'value_attr' ? data.attribute.value : data.score;
       if (config.value_distribution !== 'linear') val = transformValue(val, config.value_distribution, config.value_base);
       if (val < min) val = min;
       if (val > max) val = max;
-      let offset = calculateDistance(val, {
+      var offset = calculateDistance(val, {
         start: config.offset,
         stop: config.offset + config.max_distance
       }, {
@@ -24693,14 +25079,18 @@
       /** if labelOffset and offset are same direction, shift label) */
 
       if (offsetSign(config.label_offset) === config.offsetDir) {
-        this.group.children[0].translate(offset, 0);
+        _this.group.children[0].translate(offset, 0);
       }
+
+      return _this;
     }
 
-  }
+    return Histogram;
+  }(Range);
 
-  function getDrawFeature(glyph, subglyph = glyph) {
-    let drawAs;
+  function getDrawFeature(glyph) {
+    var subglyph = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : glyph;
+    var drawAs;
     /* disable pileup to speed up */
 
     switch (glyph) {
@@ -24743,20 +25133,28 @@
    *
    */
 
-  class Heat extends Glyph {
-    constructor(data, config, view) {
-      super();
-      this.drawFeature = getDrawFeature(config.draw_as, config.shape);
-      let mc = view.measureConfig;
+  var Heat =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Heat, _Glyph);
+
+    function Heat(data, config, view) {
+      var _this;
+
+      _classCallCheck(this, Heat);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(Heat).call(this));
+      _this.drawFeature = getDrawFeature(config.draw_as, config.shape);
+      var mc = view.measureConfig;
       if (config.bin_max !== 0 && mc.max !== config.maxScore) mc.max = config.bin_max;
       if (config.bin_min !== 0 && mc.min !== config.minScore) mc.min = config.bin_min;
-      let max = mc.max;
-      let min = mc.min;
-      let val = config.value_type === 'value_attr' ? data.attribute.value : data.score;
+      var max = mc.max;
+      var min = mc.min;
+      var val = config.value_type === 'value_attr' ? data.attribute.value : data.score;
       if (config.value_distribution !== 'linear') val = transformValue(val, config.value_distribution, config.value_base);
-      let fc;
-      let colorArray = config.heat_colors;
-      let invert = config.invert_value;
+      var fc;
+      var colorArray = config.heat_colors;
+      var invert = config.invert_value;
       if (colorArray === 'redgreen') colorArray = ['#FF0000', '#00FF00'];
       if (colorArray === 'greyscale') colorArray = ['#000000', '#ffffff'];
 
@@ -24769,11 +25167,13 @@
       }
 
       if (config.transparent) fc.alpha = 1 - config.transparent_percent;
-      this.group = this.formatGlyph(data, config, view);
-      config.draw_as === 'marker' ? this.group.children[1].strokeColor = fc : this.group.children[1].fillColor = fc;
+      _this.group = _this.formatGlyph(data, config, view);
+      config.draw_as === 'marker' ? _this.group.children[1].strokeColor = fc : _this.group.children[1].fillColor = fc;
+      return _this;
     }
 
-  }
+    return Heat;
+  }(Glyph);
 
   /**
    * @file Glyph for drawing a histogram bin, a feature with length and depth
@@ -24783,29 +25183,41 @@
    *
    */
 
-  class Distance extends Glyph {
-    constructor(data, config, view) {
-      super();
-      this.drawFeature = getDrawFeature(config.draw_as, config.shape);
-      let mc = view.measureConfig;
-      this.group = this.formatGlyph(data, config, view);
-      let max = mc.max;
-      let min = mc.min;
-      let val = config.value_type === 'value_attr' ? data.attribute.value : data.score;
+  var Distance =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(Distance, _Glyph);
+
+    function Distance(data, config, view) {
+      var _this;
+
+      _classCallCheck(this, Distance);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(Distance).call(this));
+      _this.drawFeature = getDrawFeature(config.draw_as, config.shape);
+      var mc = view.measureConfig;
+      _this.group = _this.formatGlyph(data, config, view);
+      var max = mc.max;
+      var min = mc.min;
+      var val = config.value_type === 'value_attr' ? data.attribute.value : data.score;
       if (config.value_distribution !== 'linear') val = transformValue(val, config.value_distribution, config.value_base);
       if (val < min) val = min;
       if (val > max) val = max;
-      let offset = calculateDistance(val, {
+      var offset = calculateDistance(val, {
         start: config.offset,
         stop: config.offset + config.max_distance
       }, {
         start: min,
         stop: max
       }, config.invert_value);
-      this.group.translate(config.offsetDir ? offset : -offset, 0);
+
+      _this.group.translate(config.offsetDir ? offset : -offset, 0);
+
+      return _this;
     }
 
-  }
+    return Distance;
+  }(Glyph);
 
   /**
    * @file Glyph for drawing a histogram bin, a feature with length and depth
@@ -24815,19 +25227,28 @@
    *
    */
 
-  class StackedBar extends Glyph {
-    constructor(data, config, view) {
-      super();
-      this.drawFeature = getDrawFeature('range');
-      let mc = view.measureConfig;
-      let lastOffset = 0;
-      this.group = this.formatGlyph(data, config, view);
-      this.group.children[1].remove();
+  var StackedBar =
+  /*#__PURE__*/
+  function (_Glyph) {
+    _inherits(StackedBar, _Glyph);
 
-      for (let key in view.colorClasses) {
+    function StackedBar(data, config, view) {
+      var _this;
+
+      _classCallCheck(this, StackedBar);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(StackedBar).call(this));
+      _this.drawFeature = getDrawFeature('range');
+      var mc = view.measureConfig;
+      var lastOffset = 0;
+      _this.group = _this.formatGlyph(data, config, view);
+
+      _this.group.children[1].remove();
+
+      for (var key in view.colorClasses) {
         if (view.colorClasses.hasOwnProperty(key) && (data.attribute.hasOwnProperty(key) || data.attribute.hasOwnProperty(key.toLowerCase()))) {
-          let val = data.attribute[key] || data.attribute[key.toLowerCase()];
-          let offset = calculateDistance(val, {
+          var val = data.attribute[key] || data.attribute[key.toLowerCase()];
+          var offset = calculateDistance(val, {
             start: config.offset,
             stop: config.offset + config.max_distance
           }, {
@@ -24836,10 +25257,14 @@
           });
           offset = config.offsetDir ? offset : -offset;
           config.color = view.colorClasses[key];
-          let bar = this.formatGlyph(data, config, view);
+
+          var bar = _this.formatGlyph(data, config, view);
+
           bar.bounds.width = offset;
           bar.translate(lastOffset, 0);
-          this.group.insertChild(1, bar);
+
+          _this.group.insertChild(1, bar);
+
           lastOffset += offset;
         }
       }
@@ -24847,11 +25272,14 @@
 
 
       if (config.draw_label && offsetSign(config.label_offset) === config.offsetDir) {
-        this.group.children[0].translate(lastOffset, 0);
+        _this.group.children[0].translate(lastOffset, 0);
       }
+
+      return _this;
     }
 
-  }
+    return StackedBar;
+  }(Glyph);
 
   /**
    * @file Glyph for drawing a histogram bin, a feature with length and depth
@@ -24861,13 +25289,20 @@
    *
    */
 
-  class Ratio extends StackedBar {
-    constructor(data, config, view) {
+  var Ratio =
+  /*#__PURE__*/
+  function (_StackedBar) {
+    _inherits(Ratio, _StackedBar);
+
+    function Ratio(data, config, view) {
+      _classCallCheck(this, Ratio);
+
       view.measureConfig.max = data.attribute.value;
-      super(data, config, view);
+      return _possibleConstructorReturn(this, _getPrototypeOf(Ratio).call(this, data, config, view));
     }
 
-  }
+    return Ratio;
+  }(StackedBar);
 
   function Measure(data, config, view, subglyph) {
     switch (subglyph) {
@@ -24887,31 +25322,27 @@
         return new Ratio(data, config, view);
 
       default:
-        console.log(`${subglyph} is not supported yet`);
+        console.log("".concat(subglyph, " is not supported yet"));
     }
   }
 
-  /**
-   * Meta glyph to draw a collection of glyphs broken up by categories in [classes]
-   * @param data
-   * @param config
-   * @param view
-   * @param glyph
-   * @param subglyph
-   * @returns {Ratio|Ratio|Ratio|Heat|Heat|Heat|Distance|Distance|Distance|StackedBar|StackedBar|StackedBar|Histogram|Histogram|Histogram}
-   * @constructor
-   */
-  class ClassGroup {
-    constructor(data, config, view, glyph, subglyph) {
+  var ClassGroup =
+  /*#__PURE__*/
+  function () {
+    function ClassGroup(data, config, view, glyph, subglyph) {
+      var _this = this;
+
+      _classCallCheck(this, ClassGroup);
+
       this.group = new paperFull.Group();
-      let feature = {};
-      let activeClasses = config['class_filter'].length > 0 ? config['class_filter'] : Object.keys(view.colorClasses);
-      let baseValue = data.attribute.value;
-      let baseClass = data.attribute.class;
-      let lastOffset = 0;
-      activeClasses.forEach(ac => {
+      var feature = {};
+      var activeClasses = config['class_filter'].length > 0 ? config['class_filter'] : Object.keys(view.colorClasses);
+      var baseValue = data.attribute.value;
+      var baseClass = data.attribute["class"];
+      var lastOffset = 0;
+      activeClasses.forEach(function (ac) {
         if (view.colorClasses.hasOwnProperty(ac) && (data.attribute.hasOwnProperty(ac) || data.attribute.hasOwnProperty(ac.toLowerCase()))) {
-          data.attribute.class = ac;
+          data.attribute["class"] = ac;
           data.attribute.value = data.attribute[ac] || data.attribute[ac.toLowerCase()];
 
           switch (glyph) {
@@ -24945,12 +25376,13 @@
               break;
 
             default:
-              console.log(`${glyph}:${subglyph} is not supported`);
+              console.log("".concat(glyph, ":").concat(subglyph, " is not supported"));
           }
 
-          this.group.addChild(feature.group);
+          _this.group.addChild(feature.group);
+
           feature.group.translate(lastOffset, 0);
-          let offset = 0;
+          var offset = 0;
 
           if (config['class_space']) {
             offset = config.hasOwnProperty('max_distance') ? config['max_distance'] : config.hasOwnProperty['width'] ? config.width : config['stoke_width'];
@@ -24964,9 +25396,9 @@
       });
 
       if (!baseClass) {
-        delete data.attribute.class;
+        delete data.attribute["class"];
       } else {
-        data.attribute.class = baseClass;
+        data.attribute["class"] = baseClass;
       }
 
       if (!baseValue) {
@@ -24976,21 +25408,27 @@
       }
     }
 
-    get children() {
-      return this.group.children;
-    }
+    _createClass(ClassGroup, [{
+      key: "children",
+      get: function get() {
+        return this.group.children;
+      }
+    }, {
+      key: "bounds",
+      get: function get() {
+        return this.group.getStrokeBounds();
+      }
+    }]);
 
-    get bounds() {
-      return this.group.getStrokeBounds();
-    }
+    return ClassGroup;
+  }();
 
-  }
+  function glyph(_ref, glyph) {
+    var data = _ref.data,
+        config = _ref.config,
+        view = _ref.view;
+    var subglyph = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : glyph;
 
-  function glyph({
-    data,
-    config,
-    view
-  }, glyph, subglyph = glyph) {
     if (config.by_class) {
       return new ClassGroup(data, config, view, glyph, subglyph);
     } else {
@@ -25017,7 +25455,7 @@
           return new Measure(data, config, view, subglyph);
 
         default:
-          console.log(`${glyph}:${subglyph} is not supported`);
+          console.log("".concat(glyph, ":").concat(subglyph, " is not supported"));
       }
     }
   }
@@ -25035,15 +25473,15 @@
 
   function layoutRulers(backbone, config, view) {
     // Establish layers and core groups
-    let baseLayer = paperFull.project.getActiveLayer();
+    var baseLayer = paperFull.project.getActiveLayer();
     if (paperFull.project.getLayers()['rulersLayer']) paperFull.project.getLayers['rulersLayer'].remove();
-    let rulersLayer = new paperFull.Layer();
+    var rulersLayer = new paperFull.Layer();
     rulersLayer.name = 'rulersLayer';
-    let rulerGroup = new paperFull.Group();
+    var rulerGroup = new paperFull.Group();
     rulerGroup.name = 'rulers';
     rulerGroup.minSeq = view.chrMin;
     rulerGroup.maxSeq = view.chrMax;
-    let rulerConfig = {};
+    var rulerConfig = {};
     rulerConfig.min = view.min;
     rulerConfig.max = view.max;
     rulerConfig.fontSize = parseInt(config.general.ruler_font_size);
@@ -25060,7 +25498,7 @@
 
     try {
       //Draw Left Ruler
-      let dispRuler = `${config.general.display_ruler}`;
+      var dispRuler = "".concat(config.general.display_ruler);
 
       if (dispRuler === '1' || dispRuler.toLowerCase() === 'l') {
         rulerGroup.addChild(_drawRuler(rulerConfig, 'left', 1));
@@ -25090,45 +25528,45 @@
 
   function _drawRuler(rc, side, dir) {
     //Setup ruler's paper groups
-    let rGroup = new paperFull.Group();
+    var rGroup = new paperFull.Group();
     rGroup.name = side + 'Ruler';
-    let rTextGroup = new paperFull.Group();
+    var rTextGroup = new paperFull.Group();
     rTextGroup.name = 'rulerLabels';
-    let rTicGroup = new paperFull.Group();
+    var rTicGroup = new paperFull.Group();
     rTicGroup.name = 'rulerTics';
     rGroup.addChild(rTextGroup);
     rGroup.addChild(rTicGroup); // get actual on-canvas size of label
 
-    let label = new paperFull.PointText(0, 0);
+    var label = new paperFull.PointText(0, 0);
     label.content = rc.max;
     label.fontSize = rc.fontSize + 'px';
     rc.labelWidth = label.bounds.width + rc.fontSize;
     label.remove(); //draw backbone line
 
-    let min = rc.min;
-    let max = rc.max;
-    let rulerFontSize = rc.fontSize;
-    let yPos = rc.yOffset.offsetTop + rc.chromFont;
-    let xPos = dir === 1 ? rc.xOffset : rc.xOffset + rc.width + rc.labelWidth;
-    let point = new paperFull.Point(xPos, yPos);
-    let size = new paperFull.Point(0, (max + (0 - min)) * rc.scale);
-    let r = new paperFull.Path.Line(point, point.add(size));
+    var min = rc.min;
+    var max = rc.max;
+    var rulerFontSize = rc.fontSize;
+    var yPos = rc.yOffset.offsetTop + rc.chromFont;
+    var xPos = dir === 1 ? rc.xOffset : rc.xOffset + rc.width + rc.labelWidth;
+    var point = new paperFull.Point(xPos, yPos);
+    var size = new paperFull.Point(0, (max + (0 - min)) * rc.scale);
+    var r = new paperFull.Path.Line(point, point.add(size));
     r.name = 'ruler' + side[0].toUpperCase() + side.slice(1);
     r.strokeColor = rc.color;
     r.strokeWidth = 2;
     rGroup.addChild(r);
     rGroup.rulerStart = yPos; //Draw base ruler tic
 
-    let ticW = rc.width + 1;
-    let ticD = dir === 1 ? xPos - 1 : rc.xOffset + rc.labelWidth;
-    let ticO = new paperFull.Point(ticW, 0);
-    let ticP = new paperFull.Point(ticD, yPos);
-    let tic = new paperFull.Path.Line(ticP, ticP.add(ticO));
+    var ticW = rc.width + 1;
+    var ticD = dir === 1 ? xPos - 1 : rc.xOffset + rc.labelWidth;
+    var ticO = new paperFull.Point(ticW, 0);
+    var ticP = new paperFull.Point(ticD, yPos);
+    var tic = new paperFull.Path.Line(ticP, ticP.add(ticO));
     tic.strokeColor = rc.color;
     tic.strokeWidth = 2;
     rTicGroup.addChild(tic); //Draw base ruler label
 
-    let labelX = dir === 1 ? ticP.x + ticO.x + rc.fontSize : ticD - rc.fontSize;
+    var labelX = dir === 1 ? ticP.x + ticO.x + rc.fontSize : ticD - rc.fontSize;
     label = new paperFull.PointText(labelX, ticP.y);
     label.content = min;
     label.fontSize = rulerFontSize + 'px';
@@ -25140,12 +25578,12 @@
 
     rTextGroup.addChild(label); // Draw remaining tics and labels
 
-    let ticInt = rc.interval;
-    let intDivision = Math.round(ticInt / rc.division);
+    var ticInt = rc.interval;
+    var intDivision = Math.round(ticInt / rc.division);
 
-    for (let i = min + intDivision; i <= max; i = i + intDivision) {
-      let mTicP = new paperFull.Point(ticD, yPos + (i - min) * rc.scale);
-      let mTic = new paperFull.Path.Line(mTicP, mTicP.add(ticO));
+    for (var i = min + intDivision; i <= max; i = i + intDivision) {
+      var mTicP = new paperFull.Point(ticD, yPos + (i - min) * rc.scale);
+      var mTic = new paperFull.Path.Line(mTicP, mTicP.add(ticO));
       mTic.strokeColor = rc.color;
       mTic.strokeWidth = 2;
 
@@ -25182,12 +25620,12 @@
 
   function layoutView(data, config, view) {
     /** setup paper base layer's main group */
-    let active = paperFull.project.getActiveLayer();
+    var active = paperFull.project.getActiveLayer();
     active.removeChildren();
     active.cvitComponents = [];
-    let baseGroup = new paperFull.Group();
+    var baseGroup = new paperFull.Group();
     baseGroup.name = 'cvitView';
-    let labelGroup = new paperFull.Group();
+    var labelGroup = new paperFull.Group();
     labelGroup.name = 'cvitLabels';
     /** draw Title */
 
@@ -25196,19 +25634,19 @@
 
 
     layoutRulers(data, config, view);
-    let rulers = paperFull.project.getLayers()['rulersLayer'].children['rulers'];
+    var rulers = paperFull.project.getLayers()['rulersLayer'].children['rulers'];
     /** setup view area **/
 
     view.leftEdge = rulers.children['leftRuler'] ? rulers.children['leftRuler'].getStrokeBounds().right : 0;
     view.rightEdge = rulers.children['rightRuler'] ? rulers.children['rightRuler'].getStrokeBounds().left : paperFull.view.bounds.width;
-    let rulerTop = rulers.children['leftRuler'] ? rulers.children['leftRuler'].rulerStart : rulers.children['rightRuler'] ? rulers.children['rightRuler'].rulerStart : view.yOffset.offsetTop;
+    var rulerTop = rulers.children['leftRuler'] ? rulers.children['leftRuler'].rulerStart : rulers.children['rightRuler'] ? rulers.children['rightRuler'].rulerStart : view.yOffset.offsetTop;
     view.yAdjust = rulerTop - view.yOffset.offsetTop;
     view.xOffset = 0;
     /** draw backbones **/
 
     if (data.hasOwnProperty('chromosome')) {
-      data.chromosome.features.forEach(chromosome => {
-        let chr = glyph({
+      data.chromosome.features.forEach(function (chromosome) {
+        var chr = glyph({
           data: chromosome,
           config: config.general,
           view: view
@@ -25218,10 +25656,10 @@
 
         if (chromosome.seqName === view.chrMin) {
           //add a baseline at view.min to make ruler movement easier.
-          let yVal = view.yOffset.offsetTop + view.yAdjust;
-          let from = new paperFull.Point(view.leftEdge, yVal);
-          let to = new paperFull.Point(view.rightEdge, yVal);
-          let baseline = new paperFull.Path.Line(from, to);
+          var yVal = view.yOffset.offsetTop + view.yAdjust;
+          var from = new paperFull.Point(view.leftEdge, yVal);
+          var to = new paperFull.Point(view.rightEdge, yVal);
+          var baseline = new paperFull.Path.Line(from, to);
           baseline.name = 'baseline';
           baseline.strokeWidth = 0;
           labelGroup.addChild(baseline);
@@ -25231,16 +25669,18 @@
     /** draw all config groups **/
 
 
-    for (let key in config) {
+    var _loop = function _loop(key) {
       //Iterate through data and add to their target chromosomes
       if (key !== 'general' && config.hasOwnProperty(key)) {
         //set glyph/subglyph and the data.<group> that the features can be found in.
-        let cGlyph = config[key].glyph ? config[key].glyph : key;
-        let cSubglyph = config[key].display ? config[key].display : config[key].shape ? config[key].shape : key;
-        let cDataGroup; //Set data source if custom
+        var cGlyph = config[key].glyph ? config[key].glyph : key;
+        var cSubglyph = config[key].display ? config[key].display : config[key].shape ? config[key].shape : key;
+        var cDataGroup;
+        var mRefBase = '';
+        var oRefBase = ''; //Set data source if custom
 
         if (config[key].feature) {
-          let split = config[key].feature.split(':');
+          var split = config[key].feature.split(':');
           cDataGroup = split.length > 1 ? [split[1], split[0]] : split;
         } else {
           cDataGroup = [key];
@@ -25249,16 +25689,21 @@
 
 
         if (config[key].glyph === 'measure') {
-          view.measureConfig = _setMeasure(data, view, config, key, cDataGroup);
+          view.measureConfig = _setMeasure(data, view, config, key, cDataGroup); //setup for "reference" value_dist (pulls base from existing value)
+
+          if (config[key].value_distribution === "reference") {
+            oRefBase = config[key].value_base.slice(0);
+            mRefBase = config[key].value_base.split(":");
+          }
         } //Go through each chromosome's backbone in order
 
 
-        view.chrOrder.forEach(chr => {
+        view.chrOrder.forEach(function (chr) {
           //Check if feature's target backbone exists
           if (data[cDataGroup[0]] && data[cDataGroup[0]][chr]) {
-            let targetChr = baseGroup.children[chr].children[chr];
+            var targetChr = baseGroup.children[chr].children[chr];
             view.chrBounds = targetChr.getStrokeBounds();
-            let keyGroup = new paperFull.Group();
+            var keyGroup = new paperFull.Group();
             keyGroup.name = key;
             baseGroup.children[chr].addChild(keyGroup); //setup pileup
 
@@ -25273,42 +25718,60 @@
 
 
             if (config[key].hasOwnProperty('offset')) config[key].offsetDir = offsetSign(config[key].offset);
-            let g = data[cDataGroup[0]][chr]; //set feature group to draw
+            var g = data[cDataGroup[0]][chr]; //set feature group to draw
 
-            let dg = view.hasOwnProperty('measureConfig') && view.measureConfig.generateBin !== 'pre' ? g.calcFeatures : g.features; //Add features to be drawn
+            var dg = view.hasOwnProperty('measureConfig') && view.measureConfig.generateBin !== 'pre' ? g.calcFeatures : g.features; //if value_dist is "reference" grab target "values" if they aren't local (not suggested unless you know your data)
 
-            dg.forEach(data => {
+            var mBaseGroup;
+
+            if (mRefBase.length > 1 && data.hasOwnProperty(mRefBase[0]) && data[mRefBase[0]].hasOwnProperty(chr)) {
+              mBaseGroup = data[mRefBase[0]][chr].features;
+            } //Add features to be drawn
+
+
+            dg.forEach(function (fData, i) {
               //filter for feature <source>:<type>
               if (cDataGroup[1]) {
-                if (data.source !== cDataGroup[1]) return;
+                if (fData.source !== cDataGroup[1]) return;
               }
 
-              let baseConf = {}; // allows overriding configuration option from gff.
+              var baseConf = {};
 
-              for (let att in data.attribute) {
-                if (data.attribute.hasOwnProperty(att) && config[key].hasOwnProperty(att)) {
+              for (var att in fData.attribute) {
+                if (fData.attribute.hasOwnProperty(att) && config[key].hasOwnProperty(att)) {
                   baseConf[att] = config[key][att];
-                  config[key][att] = data.attribute[att];
+                  config[key][att] = fData.attribute[att];
 
                   if (att === 'display' || att === 'shape') {
                     baseConf[att].sg = cSubglyph;
-                    cSubglyph = data.attribute[att];
+                    cSubglyph = fData.attribute[att];
                   }
+                }
+              } //set base for value_dist "reference"
+
+
+              if (mRefBase) {
+                if (mBaseGroup) {
+                  config[key].value_base = mBaseGroup[i].attribute[mRefBase[1]];
+                } else {
+                  config[key].value_base = fData.attribute[mRefBase[0]];
                 }
               }
 
-              let feature = glyph({
-                data: data,
+              var feature = glyph({
+                data: fData,
                 config: config[key],
                 view: view
               }, cGlyph, cSubglyph); // reset config
 
-              for (let att in baseConf) {
-                if (baseConf.hasOwnProperty(att) && config[key].hasOwnProperty(att)) {
-                  config[key][att] = baseConf[att];
-                  if (att === 'display' || att === 'shape') cSubglyph = baseConf.sg;
+              for (var _att in baseConf) {
+                if (baseConf.hasOwnProperty(_att) && config[key].hasOwnProperty(_att)) {
+                  config[key][_att] = baseConf[_att];
+                  if (_att === 'display' || _att === 'shape') cSubglyph = baseConf.sg;
                 }
               }
+
+              if (oRefBase) config[key].value_base = oRefBase;
 
               if (feature && feature.group && feature.children[0]) {
                 /** add feature to group */
@@ -25320,8 +25783,8 @@
                   /** hide label if it might overlap */
 
                   if (feature.children[0].children.length) {
-                    let tg = feature.group.children[0].getStrokeBounds();
-                    let test = keyGroup.rTree.search({
+                    var tg = feature.group.children[0].getStrokeBounds();
+                    var test = keyGroup.rTree.search({
                       minX: tg.left + .001,
                       //account for sliiight overlap when there is 0 space between pileup
                       maxX: tg.right - .001,
@@ -25333,7 +25796,7 @@
                   /** insert into rTree */
 
 
-                  let fb = feature.group.bounds; //getStrokeBounds();
+                  var fb = feature.group.bounds; //getStrokeBounds();
 
                   keyGroup.rTree.insert({
                     minX: fb.left,
@@ -25348,6 +25811,10 @@
           }
         });
       }
+    };
+
+    for (var key in config) {
+      _loop(key);
     }
     /** Move backbone groups to prevent overlap */
 
@@ -25355,25 +25822,24 @@
     spreadBackbones(config, view);
     /** Set background */
 
-    let act = paperFull.project.getActiveLayer();
-    let bg = new paperFull.Layer();
+    var act = paperFull.project.getActiveLayer();
+    var bg = new paperFull.Layer();
     bg.name = 'background';
-    let vb = paperFull.project.view.getViewSize();
-    let r = paperFull.Path.Rectangle(0, 0, vb.width, vb.height);
+    var vb = paperFull.project.view.getViewSize();
+    var r = paperFull.Path.Rectangle(0, 0, vb.width, vb.height);
     r.fillColor = view.canvas.color;
     bg.sendToBack();
     act.activate();
     zoomCanvas({
       zoom: 1
     }, 1);
-    const x = baseGroup.position.x;
-    const y = baseGroup.position.y;
+    var x = baseGroup.position.x;
+    var y = baseGroup.position.y;
     paperFull.view.cvtCenter = new paperFull.Point(x, y); //store the center-point for resetting the view
-    //cvitModel.setDrawn();
 
     /** set listener for resize event, move right ruler and respread backbone. */
 
-    paperFull.view.onResize = e => {
+    paperFull.view.onResize = function (e) {
       view.rightEdge += e.delta.width;
       if (rulers.children['rightRuler']) rulers.children['rightRuler'].translate(new paperFull.Point(e.delta.width, 0));
       spreadBackbones(config, view);
@@ -25394,25 +25860,25 @@
       return;
     }
 
-    let act = paperFull.project.getActiveLayer();
-    let bg = new paperFull.Layer();
+    var act = paperFull.project.getActiveLayer();
+    var bg = new paperFull.Layer();
     bg.name = 'cvitTitle';
-    let cvitTitle = config.general.title || "";
+    var cvitTitle = config.general.title || "";
     console.log("title", config.general.title);
     cvitTitle = cvitTitle.split(/<[/i]+>/);
-    let titleLoc;
-    let titleSize = config.general.title_font_size;
-    let titleX;
-    let titleY;
+    var titleLoc;
+    var titleSize = config.general.title_font_size;
+    var titleX;
+    var titleY;
 
     if (config.general.hasOwnProperty('title_location')) {
-      let titlePos = config.general.title_location.match(/\((.*),(.*)\)/);
+      var titlePos = config.general.title_location.match(/\((.*),(.*)\)/);
       titleX = parseInt(titlePos[1]);
       titleY = parseInt(titlePos[2]) + titleSize;
     } else {
       titleX = parseInt(config.general.image_padding) + parseInt(config.general.border_width);
       titleY = titleX + titleSize;
-      let heightAllow = parseInt(config.general.title_height);
+      var heightAllow = parseInt(config.general.title_height);
 
       if (heightAllow > titleY) {
         titleY = heightAllow;
@@ -25421,8 +25887,8 @@
 
     titleLoc = new paperFull.Point(titleX, titleY);
 
-    for (let i = 0; i < cvitTitle.length; i++) {
-      let title = new paperFull.PointText(titleLoc);
+    for (var i = 0; i < cvitTitle.length; i++) {
+      var title = new paperFull.PointText(titleLoc);
       title.fontFamily = config.general.title_font_face;
       title.content = cvitTitle[i];
       title.fontSize = titleSize;
@@ -25446,7 +25912,7 @@
 
 
   function _setMeasure(data, view, config, key, cDataGroup) {
-    let mb = {
+    var mb = {
       min: null,
       max: null,
       valueType: config[key].value_type,
@@ -25454,7 +25920,7 @@
       generateBin: '',
       countClasses: config[key]['count_classes']
     };
-    let cc = config[key]['count_classes'];
+    var cc = config[key]['count_classes'];
     mb.generateBin = !config[key]['generate_bins'] ? 'pre' : config[key]['bin_size'] ? 'size' : config[key]['bin_count'] ? 'count' : 'auto';
     if (mb.generateBin === 'size') mb.range[0] = config[key]['bin_size'];
     /** calculation of data groups */
@@ -25463,15 +25929,15 @@
       mb.valueType = 'value_attr';
       /** calculate range and bin */
 
-      view.chrOrder.forEach(chr => {
+      view.chrOrder.forEach(function (chr) {
         if (data[cDataGroup[0]] && data[cDataGroup[0]][chr]) {
-          let itree = data[cDataGroup[0]][chr].itree;
+          var itree = data[cDataGroup[0]][chr].itree;
           /** calculate bins, can work with any measure type */
 
-          let ct = itree.all().length;
-          let nBins = mb.generateBin === 'count' ? config[key]['bin_count'] : Math.ceil(Math.pow(2 * ct, 1 / 3));
-          let target = data['chromosome'][chr].features[0];
-          let range = (target.end - target.start) / nBins; // if count add range to array, if auto see if this is the smallest range and if so, replace;
+          var ct = itree.all().length;
+          var nBins = mb.generateBin === 'count' ? config[key]['bin_count'] : Math.ceil(Math.pow(2 * ct, 1 / 3));
+          var target = data['chromosome'][chr].features[0];
+          var range = (target.end - target.start) / nBins; // if count add range to array, if auto see if this is the smallest range and if so, replace;
 
           if (mb.generateBin === 'count') {
             // count maintains independent range-sizes
@@ -25487,39 +25953,39 @@
       });
       /** generate new set of features to populate histogram */
 
-      view.chrOrder.forEach((chr, i) => {
+      view.chrOrder.forEach(function (chr, i) {
         if (data[cDataGroup[0]] && data[cDataGroup[0]][chr]) {
-          let itree = data[cDataGroup[0]][chr].itree;
-          let target = data['chromosome'][chr].features[0];
-          let viewTarget = data[cDataGroup[0]][chr].features[0];
-          let ct = 0;
-          let r = mb.generateBin !== 'count' ? mb.range[0] : mb.range[i];
+          var itree = data[cDataGroup[0]][chr].itree;
+          var target = data['chromosome'][chr].features[0];
+          var viewTarget = data[cDataGroup[0]][chr].features[0];
+          var ct = 0;
+          var r = mb.generateBin !== 'count' ? mb.range[0] : mb.range[i];
           /** fudge range to not overflow backbone  ceil as you want at least 1 bin per bb*/
 
-          let bin = Math.ceil(Math.abs(target.end - target.start) / r);
+          var bin = Math.ceil(Math.abs(target.end - target.start) / r);
           r = Math.abs(target.end - target.start) / bin;
-          let pos = target.start;
-          let end = target.end;
-          let measureFeatures = [];
+          var pos = target.start;
+          var end = target.end;
+          var measureFeatures = [];
           /** generate features */
 
-          for (pos; pos <= end && ct < bin; pos += r) {
-            let itemcount = 0;
-            let val = itree.search({
+          var _loop2 = function _loop2() {
+            var itemcount = 0;
+            var val = itree.search({
               minX: pos,
               maxX: pos + r,
               minY: 0,
               maxY: 0
             });
-            let countItem = {};
+            var countItem = {};
 
             if (cc) {
               // count classes for overall use
-              val.forEach(feature => {
+              val.forEach(function (feature) {
                 feature = feature.data;
 
                 if (feature.attribute.hasOwnProperty('class')) {
-                  let fclass = feature.attribute.class;
+                  var fclass = feature.attribute["class"];
 
                   if (view.colorClasses.hasOwnProperty(fclass)) {
                     if (!countItem.hasOwnProperty(fclass)) countItem[fclass] = 0;
@@ -25544,7 +26010,7 @@
               strand: '.',
               frame: '.',
               attribute: {
-                name: `bin${ct}`,
+                name: "bin".concat(ct),
                 value: itemcount,
                 note: 'generated by cmap'
               }
@@ -25552,10 +26018,10 @@
             ct++;
 
             if (cc) {
-              let cCount = 0;
-              let measureAttributes = measureFeatures[measureFeatures.length - 1].attribute;
+              var cCount = 0;
+              var measureAttributes = measureFeatures[measureFeatures.length - 1].attribute;
 
-              for (let cclass in countItem) {
+              for (var cclass in countItem) {
                 if (countItem.hasOwnProperty(cclass)) {
                   measureAttributes[cclass] = countItem[cclass];
                   cCount += countItem[cclass];
@@ -25576,6 +26042,10 @@
             } else {
               mb.max = config[key]['bin_max'];
             }
+          };
+
+          for (pos; pos <= end && ct < bin; pos += r) {
+            _loop2();
           }
 
           data[cDataGroup[0]][chr].calcFeatures = measureFeatures;
@@ -25583,15 +26053,18 @@
       });
     } else {
       /** calculate min/max */
-      view.chrOrder.forEach(chr => {
-        if (data[cDataGroup[0]] && data[cDataGroup[0]][chr]) {
+      view.chrOrder.forEach(function (chr) {
+        if (config[key].value_distribution == 'reference') {
+          mb.min = 0;
+          mb.max = 1;
+        } else if (data[cDataGroup[0]] && data[cDataGroup[0]][chr]) {
           if (cc) {
-            data[cDataGroup[0]][chr].features.forEach(feature => {
-              let count = 0;
-              let val = mb.valueType === 'value_attr' ? feature.attribute.value : feature.scoreCol;
+            data[cDataGroup[0]][chr].features.forEach(function (feature) {
+              var count = 0;
+              var val = mb.valueType === 'value_attr' ? feature.attribute.value : feature.scoreCol;
               if (!val) val = 0;
 
-              for (let fkey in view.colorClasses) {
+              for (var fkey in view.colorClasses) {
                 if (view.colorClasses.hasOwnProperty(fkey)) {
                   fkey = fkey.toLowerCase();
 
@@ -25619,10 +26092,10 @@
               }
             });
           } else {
-            let chrGroup = data[cDataGroup[0]][chr];
-            let min = mb.valueType === 'value_attr' ? chrGroup.minScore.value : chrGroup.minScore.scoreCol;
+            var chrGroup = data[cDataGroup[0]][chr];
+            var min = mb.valueType === 'value_attr' ? chrGroup.minScore.value : chrGroup.minScore.scoreCol;
             mb.min = min < mb.min || mb.min === null ? min : mb.min;
-            let max = mb.valueType === 'value_attr' ? chrGroup.maxScore.value : chrGroup.maxScore.scoreCol;
+            var max = mb.valueType === 'value_attr' ? chrGroup.maxScore.value : chrGroup.maxScore.scoreCol;
             mb.max = max > mb.max ? max : mb.max;
           }
         }
@@ -25635,14 +26108,17 @@
     if (mb.min > config[key].min) mb.min = config[key].min;
     if (config[key]['bin_min']) mb.min = config[key]['bin_min']; // transform from linear if needed.
 
-    if (config[key].value_distribution !== 'linear') {
+    if (config[key].value_distribution === 'reference') {
+      mb.min = 0;
+      mb.max = 1;
+    } else if (config[key].value_distribution !== 'linear') {
       mb.min = transformValue(mb.min, config[key].value_distribution, config[key].value_base);
       mb.max = transformValue(mb.max, config[key].value_distribution, config[key].value_base);
     } // min should always be < max
 
 
     if (mb.min > mb.max) {
-      const tmp = mb.max;
+      var tmp = mb.max;
       mb.max = mb.min;
       mb.min = tmp;
     }
@@ -25650,259 +26126,346 @@
     return mb;
   }
 
-  class CvitCanvas extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
+  var CvitCanvas =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitCanvas, _Component);
+
+    function CvitCanvas(props) {
+      var _this;
+
+      _classCallCheck(this, CvitCanvas);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(CvitCanvas).call(this, props));
+      _this.state = {
         isMouseDown: false
       };
       /** Bind mouse move events for click-and-drag events */
 
-      this.onMouseDown = this.onMouseDown.bind(this);
-      this.onMouseUp = this.onMouseUp.bind(this);
-      this.onMouseMove = this.onMouseMove.bind(this);
+      _this.onMouseDown = _this.onMouseDown.bind(_assertThisInitialized(_this));
+      _this.onMouseUp = _this.onMouseUp.bind(_assertThisInitialized(_this));
+      _this.onMouseMove = _this.onMouseMove.bind(_assertThisInitialized(_this));
+      return _this;
     }
 
-    layoutCanvasView(data, config, view) {
-      let zoom = 1;
-      if (paperFull.view !== null) zoom = paperFull.view.zoom;
-      if (paperFull.project) paperFull.project.remove();
-      paperFull.setup(this.base.children[0]);
-      let layer = new paperFull.Layer();
-      layer.name = 'cvitLayer';
-      paperFull.view.zoom = zoom;
-      layoutView(data, config, view);
-      paperFull.view.draw();
-      this.props.setDirty(false);
-    }
-
-    componentDidMount() {
-      if (paperFull.view) paperFull.view.draw();
-
-      if (this.props.dirty) {
-        //only update paper state if there is reason to (changed config or new data)
-        this.layoutCanvasView(this.props.cvitData, this.props.cvitConfig, this.props.cvitView);
-      }
-    }
-
-    componentWillReceiveProps(nextProps, nextContext) {
-      if (paperFull.view) paperFull.view.draw();
-    }
-
-    componentWillUpdate(nextProps, nextState, nextContext) {
-      if (paperFull.view) {
+    _createClass(CvitCanvas, [{
+      key: "layoutCanvasView",
+      value: function layoutCanvasView(data, config, view) {
+        this.props.setDirty(false);
+        var zoom = 1;
+        if (paperFull.view !== null) zoom = paperFull.view.zoom;
+        if (paperFull.project) paperFull.project.remove();
+        paperFull.setup(this.base.children[0]);
+        var layer = new paperFull.Layer();
+        layer.name = 'cvitLayer';
+        paperFull.view.zoom = zoom;
+        layoutView(data, config, view);
+        this.props.updateStatus('');
         paperFull.view.draw();
       }
-    }
+    }, {
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        if (paperFull.view) paperFull.view.draw();
 
-    componentDidUpdate(previousProps, previousState, previousContext) {
-      if (paperFull.view) {
-        paperFull.view.draw();
-
-        if (this.props.dirty) {
-          //redraw layout on same canvas if dirty update
+        if (this.props.dirty && this.props.active === "redraw") {
+          //only update paper state if there is reason to (changed config or new data)
           this.layoutCanvasView(this.props.cvitData, this.props.cvitConfig, this.props.cvitView);
         }
       }
-    }
-
-    zoomOnMouse(e) {
-      e.preventDefault();
-      let evtPt = paperFull.view.getEventPoint(e);
-      let oz = paperFull.project.getActiveLayer().zoom;
-      let nz = calculateZoomAndPan(oz, e.deltaY, evtPt); // panCanvas(nz[1].multiply(-1));
-
-      zoomCanvas(nz, oz);
-    }
-
-    onMouseUp(e) {
-      this.props.cvitView.setPopover({
-        visible: false
-      });
-      this.setState({
-        isMouseDown: false
-      });
-
-      if (paperFull.tool.omu) {
-        paperFull.tool.omu(e);
+    }, {
+      key: "componentWillReceiveProps",
+      value: function componentWillReceiveProps(nextProps, nextContext) {
+        if (paperFull.view) paperFull.view.draw();
       }
-
-      paperFull.view.draw();
-    }
-
-    onMouseDown(e) {
-      e.preventDefault();
-      this.setState({
-        isMouseDown: true
-      });
-
-      if (paperFull.tool.omd) {
-        paperFull.tool.omd(e);
-      }
-
-      paperFull.view.draw();
-    }
-
-    onMouseMove(e) {
-      e.preventDefault();
-
-      if (this.state.isMouseDown) {
-        paperFull.tool.omm(e); //tools are set in overlay_controls/tool
-      } //paper.view.draw();
-
-    }
-
-    onClick(e) {
-      e.preventDefault();
-    }
-
-    render(props, state) {
-      let canvas = props.cvitView.canvas;
-      let computedStyle = {
-        backgroundColor: canvas.color,
-        height: canvas.height,
-        width: canvas.width ? canvas.width : '100%'
-      };
-      return h("div", {
-        className: props.displayControls === 'none' ? 'twelve columns' : 'eleven columns',
-        style: props.displayControls === 'none' ? {
-          maxWidth: '100%'
-        } : {},
-        id: 'cvit-display'
-      }, h("canvas", {
-        id: 'cvit-canvas',
-        style: computedStyle,
-        onWheel: props.displayControls !== 'none' ? this.zoomOnMouse : null,
-        onClick: this.onClick,
-        onMouseDown: this.onMouseDown,
-        onMouseUp: this.onMouseUp,
-        onMouseMove: this.onMouseMove,
-        "data-paper-resize": true
-      }));
-    }
-
-  }
-
-  class ExportModal extends Component {
-    constructor() {
-      super();
-      this.state = {
-        name: 'cvit',
-        format: 'svg',
-        quality: .95
-      };
-    }
-
-    exportImage(blob) {
-      let url = URL.createObjectURL(blob);
-      this.saveImage(url);
-    }
-
-    saveImage(url) {
-      let name = this.state.name !== '' ? this.state.name : 'cvit';
-      name += `.${this.state.format}`;
-      let link = document.createElement('a');
-      link.download = name;
-      link.href = url;
-      document.body.appendChild(link);
-      link.click();
-    }
-
-    onClick() {
-      if (this.state.format === 'svg') {
-        let url = 'data:image/svg+xml;utf8,' + encodeURIComponent(paperFull.project.exportSVG({
-          asString: true
-        }));
-        this.saveImage(url);
-      } else {
-        paperFull.project.view.element.toBlob(blob => this.exportImage(blob));
-      }
-    }
-
-    onInput(evt) {
-      this.setState({
-        name: evt.target.value
-      });
-    }
-
-    onSelect(evt) {
-      this.setState({
-        format: evt.target.value
-      });
-    }
-
-    render(props, state) {
-      return h("div", {
-        className: 'twelve columns cvit cvit-modal',
-        id: 'export-modal'
-      }, h("h4", null, " Export Image "), h("p", null, " Export the current view as an image."), h("hr", null), h("form", {
-        style: {
-          width: '100%'
+    }, {
+      key: "componentWillUpdate",
+      value: function componentWillUpdate(nextProps, nextState, nextContext) {
+        if (paperFull.view) {
+          paperFull.view.draw();
         }
-      }, h("h5", null, " Export Settings: "), h("tbody", null, h("tr", null, h("td", null, h("span", null, "File Name: ")), h("td", null, h("input", {
-        type: 'text',
-        value: state.name,
-        onInput: evt => this.onInput(evt),
-        placeholder: 'cvit'
-      }))), h("tr", null, h("td", null, " ", h("span", null, " File Type: "), " "), h("td", null, h("label", null, h("input", {
-        id: 'opt-svg',
-        type: 'radio',
-        value: 'svg',
-        onChange: evt => this.onSelect(evt),
-        checked: state.format === 'svg'
-      }), h("span", null, " svg "))), h("td", null, h("label", null, h("input", {
-        id: 'opt-png',
-        type: 'radio',
-        value: 'png',
-        onChange: evt => this.onSelect(evt),
-        checked: state.format === 'png'
-      }), h("span", null, " png ")))))), h("button", {
-        className: 'modal-confirm',
-        onClick: () => this.onClick()
-      }, " Export Image "));
-    }
+      }
+    }, {
+      key: "componentDidUpdate",
+      value: function componentDidUpdate(previousProps, previousState, previousContext) {
+        if (paperFull.view) {
+          paperFull.view.draw();
 
-  }
+          if (this.props.dirty && this.props.active === 'redraw') {
+            //redraw layout on same canvas if dirty update
+            this.layoutCanvasView(this.props.cvitData, this.props.cvitConfig, this.props.cvitView);
+          }
+        }
+      }
+    }, {
+      key: "zoomOnMouse",
+      value: function zoomOnMouse(e) {
+        e.preventDefault();
+        var evtPt = paperFull.view.getEventPoint(e);
+        var oz = paperFull.project.getActiveLayer().zoom;
+        var nz = calculateZoomAndPan(oz, e.deltaY, evtPt); // panCanvas(nz[1].multiply(-1));
 
-  class ImportModal extends Component {
-    constructor() {
-      super();
-      this.state = {
+        zoomCanvas(nz, oz);
+      }
+    }, {
+      key: "onMouseUp",
+      value: function onMouseUp(e) {
+        this.props.cvitView.setPopover({
+          visible: false
+        });
+        this.setState({
+          isMouseDown: false
+        });
+
+        if (paperFull.tool.omu) {
+          paperFull.tool.omu(e);
+        }
+
+        paperFull.view.draw();
+      }
+    }, {
+      key: "onMouseDown",
+      value: function onMouseDown(e) {
+        e.preventDefault();
+        this.setState({
+          isMouseDown: true
+        });
+
+        if (paperFull.tool.omd) {
+          paperFull.tool.omd(e);
+        }
+
+        paperFull.view.draw();
+      }
+    }, {
+      key: "onMouseMove",
+      value: function onMouseMove(e) {
+        e.preventDefault();
+
+        if (this.state.isMouseDown) {
+          paperFull.tool.omm(e); //tools are set in overlay_controls/tool
+        } //paper.view.draw();
+
+      }
+    }, {
+      key: "onClick",
+      value: function onClick(e) {
+        e.preventDefault();
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        var canvas = props.cvitView.canvas;
+        var computedStyle = {
+          backgroundColor: canvas.color,
+          height: canvas.height,
+          width: canvas.width ? canvas.width : '100%'
+        };
+        return h("div", {
+          className: props.displayControls === 'none' ? 'twelve columns' : 'eleven columns',
+          style: props.displayControls === 'none' ? {
+            maxWidth: '100%'
+          } : {},
+          id: 'cvit-display'
+        }, h("canvas", {
+          id: 'cvit-canvas',
+          style: computedStyle,
+          onWheel: props.displayControls !== 'none' ? this.zoomOnMouse : null,
+          onClick: this.onClick,
+          onMouseDown: this.onMouseDown,
+          onMouseUp: this.onMouseUp,
+          onMouseMove: this.onMouseMove,
+          "data-paper-resize": true
+        }));
+      }
+    }]);
+
+    return CvitCanvas;
+  }(Component);
+
+  var ExportModal =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(ExportModal, _Component);
+
+    function ExportModal() {
+      var _this;
+
+      _classCallCheck(this, ExportModal);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(ExportModal).call(this));
+      _this.state = {
         name: 'cvit',
         format: 'svg',
         quality: .95
       };
+      return _this;
     }
 
-    render(props, state) {
-      return h("div", {
-        className: 'twelve columns cvit cvit-modal',
-        id: 'export-modal'
-      }, h("h4", null, " Import Data "), h("p", null, " Import your data locally to view it alongside the current image."), h("hr", null), h("h4", null, " This Feature Is Under Development "));
+    _createClass(ExportModal, [{
+      key: "exportImage",
+      value: function exportImage(blob) {
+        var url = URL.createObjectURL(blob);
+        this.saveImage(url);
+      }
+    }, {
+      key: "saveImage",
+      value: function saveImage(url) {
+        var name = this.state.name !== '' ? this.state.name : 'cvit';
+        name += ".".concat(this.state.format);
+        var link = document.createElement('a');
+        link.download = name;
+        link.href = url;
+        document.body.appendChild(link);
+        link.click();
+      }
+    }, {
+      key: "onClick",
+      value: function onClick() {
+        var _this2 = this;
+
+        if (this.state.format === 'svg') {
+          var url = 'data:image/svg+xml;utf8,' + encodeURIComponent(paperFull.project.exportSVG({
+            asString: true
+          }));
+          this.saveImage(url);
+        } else {
+          paperFull.project.view.element.toBlob(function (blob) {
+            return _this2.exportImage(blob);
+          });
+        }
+      }
+    }, {
+      key: "onInput",
+      value: function onInput(evt) {
+        this.setState({
+          name: evt.target.value
+        });
+      }
+    }, {
+      key: "onSelect",
+      value: function onSelect(evt) {
+        this.setState({
+          format: evt.target.value
+        });
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        var _this3 = this;
+
+        return h("div", {
+          className: 'twelve columns cvit cvit-modal',
+          id: 'export-modal'
+        }, h("h4", null, " Export Image "), h("p", null, " Export the current view as an image."), h("hr", null), h("form", {
+          style: {
+            width: '100%'
+          }
+        }, h("h5", null, " Export Settings: "), h("tbody", null, h("tr", null, h("td", null, h("span", null, "File Name: ")), h("td", null, h("input", {
+          type: 'text',
+          value: state.name,
+          onInput: function onInput(evt) {
+            return _this3.onInput(evt);
+          },
+          placeholder: 'cvit'
+        }))), h("tr", null, h("td", null, " ", h("span", null, " File Type: "), " "), h("td", null, h("label", null, h("input", {
+          id: 'opt-svg',
+          type: 'radio',
+          value: 'svg',
+          onChange: function onChange(evt) {
+            return _this3.onSelect(evt);
+          },
+          checked: state.format === 'svg'
+        }), h("span", null, " svg "))), h("td", null, h("label", null, h("input", {
+          id: 'opt-png',
+          type: 'radio',
+          value: 'png',
+          onChange: function onChange(evt) {
+            return _this3.onSelect(evt);
+          },
+          checked: state.format === 'png'
+        }), h("span", null, " png ")))))), h("button", {
+          className: 'modal-confirm',
+          onClick: function onClick() {
+            return _this3.onClick();
+          }
+        }, " Export Image "));
+      }
+    }]);
+
+    return ExportModal;
+  }(Component);
+
+  var ImportModal =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(ImportModal, _Component);
+
+    function ImportModal() {
+      var _this;
+
+      _classCallCheck(this, ImportModal);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(ImportModal).call(this));
+      _this.state = {
+        name: 'cvit',
+        format: 'svg',
+        quality: .95
+      };
+      return _this;
     }
 
-  }
+    _createClass(ImportModal, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("div", {
+          className: 'twelve columns cvit cvit-modal',
+          id: 'export-modal'
+        }, h("h4", null, " Import Data "), h("p", null, " Import your data locally to view it alongside the current image."), h("hr", null), h("h4", null, " This Feature Is Under Development "));
+      }
+    }]);
 
-  class HelpModal extends Component {
-    constructor() {
-      super();
+    return ImportModal;
+  }(Component);
+
+  var HelpModal =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(HelpModal, _Component);
+
+    function HelpModal() {
+      _classCallCheck(this, HelpModal);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(HelpModal).call(this));
     }
 
-    render(props, state) {
-      return h("div", {
-        className: 'twelve columns cvit cvit-modal',
-        id: 'export-modal'
-      }, h("h4", null, " Help and About "), h("hr", null), h("h5", null, "About"), h("p", null, h("strong", null, "CViTjs"), " - Chromosome Viewing Tool"), h("p", null, "Enabling quick visualizations of features on linkage groups, pseudochromosomes or cytogenic maps. Intended to be used for whole-genome visualisations."), h("p", null, "Development supported by the USDA-ARS, Corn Insects and Crop Genomics Research Unit."), h("h5", null, "Additional Help"), h("p", null, "Additional help and source may be found ", h("a", {
-        href: 'https://github.com/LegumeFederation/cvitjs'
-      }, "here")));
-    }
+    _createClass(HelpModal, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("div", {
+          className: 'twelve columns cvit cvit-modal',
+          id: 'export-modal'
+        }, h("h4", null, " Help and About "), h("hr", null), h("h5", null, "About"), h("p", null, h("strong", null, "CViTjs"), " - Chromosome Viewing Tool"), h("p", null, "Enabling quick visualizations of features on linkage groups, pseudochromosomes or cytogenic maps. Intended to be used for whole-genome visualisations."), h("p", null, "Development supported by the USDA-ARS, Corn Insects and Crop Genomics Research Unit."), h("h5", null, "Additional Help"), h("p", null, "Additional help and source may be found ", h("a", {
+          href: 'https://github.com/LegumeFederation/cvitjs'
+        }, "here")));
+      }
+    }]);
 
-  }
+    return HelpModal;
+  }(Component);
 
-  class ColorModal extends Component {
-    constructor() {
-      super();
-      this.state = {
+  var ColorModal =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(ColorModal, _Component);
+
+    function ColorModal() {
+      var _this;
+
+      _classCallCheck(this, ColorModal);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(ColorModal).call(this));
+      _this.state = {
         pointer: null,
         pGra: null,
         sSlide: null,
@@ -25910,766 +26473,982 @@
         aSlide: null,
         aGra: null,
         sRad: null,
-        colPrev: null
+        colPrev: 'black'
       };
-      this.onConfirm = this.onConfirm.bind(this);
-      this.onCancel = this.onCancel.bind(this);
+      _this.onConfirm = _this.onConfirm.bind(_assertThisInitialized(_this));
+      _this.onCancel = _this.onCancel.bind(_assertThisInitialized(_this));
+      return _this;
     }
 
-    componentDidUpdate(previousProps, previousState, previousContext) {
-      if (previousProps.target !== this.props.target) {
-        let s = this.state;
+    _createClass(ColorModal, [{
+      key: "componentDidUpdate",
+      value: function componentDidUpdate(previousProps, previousState, previousContext) {
+        if (previousProps.target !== this.props.target) {
+          var _this$state = this.state,
+              pointer = _this$state.pointer,
+              pGra = _this$state.pGra,
+              sSlide = _this$state.sSlide,
+              aSlide = _this$state.aSlide,
+              aGra = _this$state.aGra,
+              sRad = _this$state.sRad,
+              colPrev = _this$state.colPrev;
+          this.setPosition(pointer, pGra, sSlide, sGra, aSlide, aGra, this.props.cColors[this.props.target]);
+          this.changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev);
+        }
+      }
+    }, {
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this2 = this;
+
+        var _this$state2 = this.state,
+            pointer = _this$state2.pointer,
+            pGra = _this$state2.pGra,
+            sSlide = _this$state2.sSlide,
+            sGra = _this$state2.sGra,
+            aSlide = _this$state2.aSlide,
+            aGra = _this$state2.aGra,
+            sRad = _this$state2.sRad,
+            colPrev = _this$state2.colPrev;
+        if (paperFull.projects[1]) paperFull.projects[1].remove();
+        paperFull.setup(document.querySelector('#select-canvas'));
+        var topLeft = new paperFull.Point(10, 10);
+        var bottomRight = new paperFull.Point(240, 120);
+        var topRight = new paperFull.Point(240, 10);
+        var leftOffset = [20, 0];
+        var rightOffset = [40, 0];
+        new paperFull.Path.Rectangle({
+          topLeft: topLeft,
+          bottomRight: bottomRight,
+          fillColor: {
+            gradient: {
+              stops: ['#F00', '#FF0', '#0F0', '#0FF', '#00F', '#F0F', '#F00']
+            },
+            origin: topLeft,
+            destination: topRight
+          },
+          strokeColor: 'black',
+          strokeWidth: 1
+        });
+        pGra = new paperFull.Path.Rectangle({
+          topLeft: topLeft,
+          bottomRight: bottomRight,
+          fillColor: {
+            gradient: {
+              stops: [new paperFull.Color(0, 0, 0, 0), new paperFull.Color(0, 0, 0, 1)]
+            },
+            origin: topRight,
+            destination: bottomRight
+          }
+        });
+        topLeft = topRight.add(leftOffset);
+        bottomRight = bottomRight.add(rightOffset);
+        topRight = topRight.add(rightOffset);
+        sRad = new paperFull.Path.Rectangle({
+          topLeft: topLeft,
+          bottomRight: bottomRight,
+          fillColor: 'black',
+          strokeColor: 'black',
+          strokeWidth: 1
+        });
+        sGra = sRad.clone();
+        sGra.fillColor = {
+          gradient: {
+            stops: [new paperFull.Color(1, 1, 1, 0), new paperFull.Color(1, 1, 1, 1)]
+          },
+          origin: topRight,
+          destination: bottomRight
+        };
+        topLeft = topRight.add(leftOffset);
+        bottomRight = bottomRight.add(rightOffset);
+        topRight = topRight.add(rightOffset);
+        aGra = new paperFull.Path.Rectangle({
+          topLeft: topLeft,
+          bottomRight: bottomRight,
+          fillColor: {
+            gradient: {
+              stops: [new paperFull.Color(1, 1, 1, 1), new paperFull.Color(1, 1, 1, 0)]
+            },
+            origin: topRight,
+            destination: bottomRight
+          },
+          strokeColor: 'black',
+          strokeWidth: 1
+        });
+        var colBox = new paperFull.Path.Rectangle({
+          topLeft: [10, 140],
+          bottomRight: bottomRight.add([0, 60]),
+          fillColor: 'white',
+          strokeColor: 'black',
+          strokeWidth: 1
+        });
+        new paperFull.CompoundPath({
+          children: [new paperFull.Path.Circle({
+            center: colBox.position,
+            radius: 20
+          }), new paperFull.Path.Circle({
+            center: colBox.position,
+            radius: 10
+          })],
+          fillColor: 'black'
+        });
+        colPrev = new paperFull.Path.Rectangle({
+          topLeft: [10, 140],
+          bottomRight: bottomRight.add([0, 60]),
+          fillColor: 'black',
+          strokeColor: 'black',
+          strokeWidth: 1
+        }); //// setup colorbox pointer for hue and brightness selection
+
+        pointer = new paperFull.CompoundPath({
+          children: [new paperFull.Path.Line({
+            from: [25, 20],
+            to: [25, 30]
+          }), new paperFull.Path.Line({
+            from: [20, 25],
+            to: [30, 25]
+          })]
+        });
+        pointer.strokeColor = new paperFull.Color(0.6);
+        pointer.position = pGra.bounds.bottomRight; // Setup sliders for saturation and alpha sliders
+
+        var q = new paperFull.Point(10, 10);
+        var w = new paperFull.Size(25, 10);
+        sSlide = new paperFull.Path.Rectangle(q, w);
+        sSlide.fillColor = new paperFull.Color(0.6);
+        sSlide.strokeColor = 'black';
+        sSlide.strokeWidth = 1;
+        sSlide.position = sGra.position;
+        sSlide.position.y = sGra.bounds.topLeft.y;
+        aSlide = sSlide.clone();
+        aSlide.position = aGra.position;
+        aSlide.position.y = aGra.bounds.topLeft.y;
+        /** set pointer position and box colors */
+
+        this.setPosition(pointer, pGra, sSlide, sGra, aSlide, aGra, this.props.cColors[this.props.target]);
+        this.changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, this.props.cColors[this.props.target]); //this.changeColor(pointer,pGra,sSlide,sGra,aSlide,aGra,sRad,colPrev);
+        //paper.view.draw();
+        //  let s = this.state;
+
+        pGra.onMouseDown = function (e) {
+          pointer.position = e.point;
+
+          _this2.changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev);
+        };
+
+        pGra.onMouseDrag = pGra.onMouseDown; // Mouse control for sliders
+
+        sGra.onMouseDown = function (e) {
+          if (sGra.bounds.topLeft.y <= e.point.y && e.point.y <= sGra.bounds.bottomLeft.y) {
+            sSlide.position.y = e.point.y;
+          }
+
+          _this2.changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev);
+        };
+
+        sGra.onMouseDrag = sGra.onMouseDown;
+        sSlide.onMouseDown = sGra.onMouseDown;
+        sSlide.onMouseDrag = sGra.onMouseDown;
+
+        aGra.onMouseDown = function (e) {
+          if (aGra.bounds.topLeft.y <= e.point.y && e.point.y <= aGra.bounds.bottomLeft.y) {
+            aSlide.position.y = e.point.y;
+          }
+
+          _this2.changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev);
+        };
+
+        aGra.onMouseDrag = aGra.onMouseDown;
+        aSlide.onMouseDown = aGra.onMouseDown;
+        aSlide.onMouseDrag = aGra.onMouseDown;
+        this.setState({
+          pointer: pointer,
+          pGra: pGra,
+          sSlide: sSlide,
+          sGra: sGra,
+          aSlide: aSlide,
+          aGra: aGra,
+          sRad: sRad,
+          colPrev: colPrev
+        });
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        paperFull.projects[0].activate();
+        if (paperFull.projects[1]) paperFull.projects[1].remove();
+      }
+    }, {
+      key: "setPosition",
+      value: function setPosition(pointer, pGra, sSlide, sGra, aSlide, aGra, color) {
+        pointer.position.x = pGra.bounds.width * color.hue / 360 + pGra.topLeft.x;
+        pointer.position.y = pGra.bounds.height * -color.brightness + pGra.bounds.height + pGra.bounds.topLeft.y;
+        sSlide.position.y = sGra.bounds.height * -color.saturation + sGra.bounds.height + sGra.bounds.topLeft.y;
+        aSlide.position.y = aGra.bounds.height * -color.alpha + aGra.bounds.height + aGra.bounds.topLeft.y;
+        this.setState({
+          pointer: pointer,
+          sSlide: sSlide,
+          aSlide: aSlide
+        });
+      }
+    }, {
+      key: "changeColor",
+      value: function changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev) {
+        var h$$1 = (pointer.position.x - pGra.topLeft.x) / pGra.bounds.width * 360;
+        var b = 1 - (pointer.position.y - pGra.topLeft.y) / pGra.bounds.height;
+        var s = 1 - (sSlide.position.y - sGra.bounds.topLeft.y) / sGra.bounds.height;
+        var a = 1 - (aSlide.position.y - aGra.bounds.topLeft.y) / aGra.bounds.height;
+        sRad.fillColor.hue = h$$1;
+        sRad.fillColor.brightness = b;
+        sRad.fillColor.saturation = 1;
+        var sG1 = new paperFull.Color(sRad.fillColor);
+        sG1.saturation = 1;
+        var sG2 = new paperFull.Color(sG1);
+        sG2.saturation = 0;
+        sGra.fillColor.gradient.stops = [sG1, sG2];
+        var aG1 = new paperFull.Color(sG1);
+        aG1.saturation = s;
+        var aG2 = new paperFull.Color(aG1);
+        aG2.alpha = 0;
+        aGra.fillColor.gradient.stops = [aG1, aG2];
+        var prev = new paperFull.Color(aG1);
+        prev.alpha = a;
+        colPrev.fillColor = prev;
+        this.setState({
+          pointer: pointer,
+          pGra: pGra,
+          sSlide: sSlide,
+          sGra: sGra,
+          aSlide: aSlide,
+          aGra: aGra,
+          sRad: sRad,
+          colPrev: colPrev
+        });
+        paperFull.view.draw();
+      }
+    }, {
+      key: "onCancel",
+      value: function onCancel(e) {
+        e.preventDefault();
+        var s = this.state;
         this.setPosition(s.pointer, s.pGra, s.sSlide, s.sGra, s.aSlide, s.aGra, this.props.cColors[this.props.target]);
         this.changeColor(s.pointer, s.pGra, s.sSlide, s.sGra, s.aSlide, s.aGra, s.sRad, s.colPrev);
       }
-    }
-
-    componentDidMount() {
-      if (paperFull.projects[1]) paperFull.projects[1].remove();
-      paperFull.setup(document.querySelector('#select-canvas'));
-      let topLeft = new paperFull.Point(10, 10);
-      let bottomRight = new paperFull.Point(240, 120);
-      let topRight = new paperFull.Point(240, 10);
-      let leftOffset = [20, 0];
-      let rightOffset = [40, 0];
-      new paperFull.Path.Rectangle({
-        topLeft: topLeft,
-        bottomRight: bottomRight,
-        fillColor: {
-          gradient: {
-            stops: ['#F00', '#FF0', '#0F0', '#0FF', '#00F', '#F0F', '#F00']
-          },
-          origin: topLeft,
-          destination: topRight
-        },
-        strokeColor: 'black',
-        strokeWidth: 1
-      });
-      let pGra = new paperFull.Path.Rectangle({
-        topLeft: topLeft,
-        bottomRight: bottomRight,
-        fillColor: {
-          gradient: {
-            stops: [new paperFull.Color(0, 0, 0, 0), new paperFull.Color(0, 0, 0, 1)]
-          },
-          origin: topRight,
-          destination: bottomRight
-        }
-      });
-      topLeft = topRight.add(leftOffset);
-      bottomRight = bottomRight.add(rightOffset);
-      topRight = topRight.add(rightOffset);
-      let sRad = new paperFull.Path.Rectangle({
-        topLeft: topLeft,
-        bottomRight: bottomRight,
-        fillColor: 'black',
-        strokeColor: 'black',
-        strokeWidth: 1
-      });
-      let sGra = sRad.clone();
-      sGra.fillColor = {
-        gradient: {
-          stops: [new paperFull.Color(1, 1, 1, 0), new paperFull.Color(1, 1, 1, 1)]
-        },
-        origin: topRight,
-        destination: bottomRight
-      };
-      topLeft = topRight.add(leftOffset);
-      bottomRight = bottomRight.add(rightOffset);
-      topRight = topRight.add(rightOffset);
-      let aGra = new paperFull.Path.Rectangle({
-        topLeft: topLeft,
-        bottomRight: bottomRight,
-        fillColor: {
-          gradient: {
-            stops: [new paperFull.Color(1, 1, 1, 1), new paperFull.Color(1, 1, 1, 0)]
-          },
-          origin: topRight,
-          destination: bottomRight
-        },
-        strokeColor: 'black',
-        strokeWidth: 1
-      });
-      let colBox = new paperFull.Path.Rectangle({
-        topLeft: [10, 140],
-        bottomRight: bottomRight.add([0, 60]),
-        fillColor: 'white',
-        strokeColor: 'black',
-        strokeWidth: 1
-      });
-      new paperFull.CompoundPath({
-        children: [new paperFull.Path.Circle({
-          center: colBox.position,
-          radius: 20
-        }), new paperFull.Path.Circle({
-          center: colBox.position,
-          radius: 10
-        })],
-        fillColor: 'black'
-      });
-      let colPrev = new paperFull.Path.Rectangle({
-        topLeft: [10, 140],
-        bottomRight: bottomRight.add([0, 60]),
-        fillColor: 'black',
-        strokeColor: 'black',
-        strokeWidth: 1
-      }); // setup colorbox pointer for hue and brightness selection
-
-      let pointer = new paperFull.CompoundPath({
-        children: [new paperFull.Path.Line({
-          from: [25, 20],
-          to: [25, 30]
-        }), new paperFull.Path.Line({
-          from: [20, 25],
-          to: [30, 25]
-        })],
-        strokeColor: 'black'
-      });
-      pointer.strokeColor = new paperFull.Color(0.6);
-      pointer.position = pGra.bounds.bottomRight; // Setup sliders for saturation and alpha sliders
-
-      let q = new paperFull.Point(10, 10);
-      let w = new paperFull.Size(25, 10);
-      let sSlide = new paperFull.Path.Rectangle(q, w);
-      sSlide.fillColor = new paperFull.Color(0.6);
-      sSlide.strokeColor = 'black';
-      sSlide.strokeWidth = 1;
-      sSlide.position = sGra.position;
-      sSlide.position.y = sGra.bounds.topLeft.y;
-      let aSlide = sSlide.clone();
-      aSlide.position = aGra.position;
-      aSlide.position.y = aGra.bounds.topLeft.y;
-      /** set pointer position and box colors */
-
-      this.setPosition(pointer, pGra, sSlide, sGra, aSlide, aGra, this.props.cColors[this.props.target]);
-      this.changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev);
-      this.changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev);
-      paperFull.view.draw();
-      let s = this.state;
-
-      pGra.onMouseDown = e => {
-        pointer.position = e.point;
-        this.changeColor(s.pointer, s.pGra, s.sSlide, s.sGra, s.aSlide, s.aGra, s.sRad, s.colPrev);
-      };
-
-      pGra.onMouseDrag = pGra.onMouseDown; // Mouse control for sliders
-
-      sGra.onMouseDown = e => {
-        if (sGra.bounds.topLeft.y <= e.point.y && e.point.y <= sGra.bounds.bottomLeft.y) {
-          sSlide.position.y = e.point.y;
-        }
-
-        this.changeColor(s.pointer, s.pGra, s.sSlide, s.sGra, s.aSlide, s.aGra, s.sRad, s.colPrev);
-      };
-
-      sGra.onMouseDrag = sGra.onMouseDown;
-      sSlide.onMouseDown = sGra.onMouseDown;
-      sSlide.onMouseDrag = sGra.onMouseDown;
-
-      aGra.onMouseDown = e => {
-        if (aGra.bounds.topLeft.y <= e.point.y && e.point.y <= aGra.bounds.bottomLeft.y) {
-          aSlide.position.y = e.point.y;
-        }
-
-        this.changeColor(s.pointer, s.pGra, s.sSlide, s.sGra, s.aSlide, s.aGra, s.sRad, s.colPrev);
-      };
-
-      aGra.onMouseDrag = aGra.onMouseDown;
-      aSlide.onMouseDown = aGra.onMouseDown;
-      aSlide.onMouseDrag = aGra.onMouseDown;
-      this.setState({
-        pointer: pointer,
-        pGra: pGra,
-        sSlide: sSlide,
-        sGra: sGra,
-        aSlide: aSlide,
-        aGra: aGra,
-        sRad: sRad,
-        colPrev: colPrev
-      });
-    }
-
-    componentWillUnmount() {
-      paperFull.projects[0].activate();
-      if (paperFull.projects[1]) paperFull.projects[1].remove();
-    }
-
-    setPosition(pointer, pGra, sSlide, sGra, aSlide, aGra, color) {
-      pointer.position.x = pGra.bounds.width * color.hue / 360 + pGra.topLeft.x;
-      pointer.position.y = pGra.bounds.height * -color.brightness + pGra.bounds.height + pGra.bounds.topLeft.y;
-      sSlide.position.y = sGra.bounds.height * -color.saturation + sGra.bounds.height + sGra.bounds.topLeft.y;
-      aSlide.position.y = aGra.bounds.height * -color.alpha + aGra.bounds.height + aGra.bounds.topLeft.y;
-      this.setState({
-        pointer: pointer,
-        sSlide: sSlide,
-        aSlide: aSlide
-      });
-    }
-
-    changeColor(pointer, pGra, sSlide, sGra, aSlide, aGra, sRad, colPrev) {
-      let h$$1 = (pointer.position.x - pGra.topLeft.x) / pGra.bounds.width * 360;
-      let b = 1 - (pointer.position.y - pGra.topLeft.y) / pGra.bounds.height;
-      let s = 1 - (sSlide.position.y - sGra.bounds.topLeft.y) / sGra.bounds.height;
-      let a = 1 - (aSlide.position.y - aGra.bounds.topLeft.y) / aGra.bounds.height;
-      sRad.fillColor.hue = h$$1;
-      sRad.fillColor.brightness = b;
-      sRad.fillColor.saturation = 1;
-      let sG1 = new paperFull.Color(sRad.fillColor);
-      sG1.saturation = 1;
-      let sG2 = new paperFull.Color(sG1);
-      sG2.saturation = 0;
-      sGra.fillColor.gradient.stops = [sG1, sG2];
-      let aG1 = new paperFull.Color(sG1);
-      aG1.saturation = s;
-      let aG2 = new paperFull.Color(aG1);
-      aG2.alpha = 0;
-      aGra.fillColor.gradient.stops = [aG1, aG2];
-      let prev = new paperFull.Color(aG1);
-      prev.alpha = a;
-      colPrev.fillColor = prev;
-      paperFull.view.draw();
-      this.setState({
-        pointer: pointer,
-        pGra: pGra,
-        sSlide: sSlide,
-        sGra: sGra,
-        aSlide: aSlide,
-        aGra: aGra,
-        sRad: sRad,
-        colPrev: colPrev
-      });
-    }
-
-    onCancel(e) {
-      e.preventDefault();
-      let s = this.state;
-      this.setPosition(s.pointer, s.pGra, s.sSlide, s.sGra, s.aSlide, s.aGra, this.props.cColors[this.props.target]);
-      this.changeColor(s.pointer, s.pGra, s.sSlide, s.sGra, s.aSlide, s.aGra, s.sRad, s.colPrev);
-    }
-
-    onConfirm(e) {
-      e.preventDefault();
-      this.props.setColor(this.props.target, this.state.colPrev.fillColor);
-    }
-
-    render(props, state) {
-      return h("div", {
-        className: 'eleven columns cvit cvit-modal',
-        id: 'export-modal'
-      }, h("h4", null, " Color Select "), props.target === 'color1' ? h("p", null, " Change the stroke color and width of the freedraw and rectangle tools.") : h("p", null, " Change the fill color of the rectangle tool."), h("hr", null), h("div", null, h("canvas", {
-        id: 'select-canvas',
-        width: 500,
-        height: 200
-      })), h("div", null, h("button", {
-        className: 'modal-confirm',
-        onClick: this.onConfirm
-      }, "Select Color"), h("button", {
-        className: 'modal-confirm',
-        onClick: this.onCancel
-      }, "Reset")));
-    }
-
-  }
-
-  class CvitModal extends Component {
-    static chooseModal(props) {
-      let test = props.active;
-      if (/color.*/.test(test)) test = 'color';
-
-      switch (test) {
-        case 'export':
-          return h(ExportModal, null);
-
-        case 'import':
-          return h(ImportModal, null);
-
-        case 'help':
-          return h(HelpModal, null);
-
-        case 'color':
-          return h(ColorModal, {
-            target: props.active,
-            cColors: props.cColors,
-            setColor: props.setColor
-          });
-
-        default:
-          return h("div", null, " This Menu Is Under Development ");
+    }, {
+      key: "onConfirm",
+      value: function onConfirm(e) {
+        e.preventDefault();
+        this.props.setColor(this.props.target, this.state.colPrev.fillColor);
       }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("div", {
+          className: 'eleven columns cvit cvit-modal',
+          id: 'export-modal'
+        }, h("h4", null, " Color Select "), props.target === 'color1' ? h("p", null, " Change the stroke color and width of the freedraw and rectangle tools.") : h("p", null, " Change the fill color of the rectangle tool."), h("hr", null), h("div", null, h("canvas", {
+          id: 'select-canvas',
+          width: 500,
+          height: 200
+        })), h("div", null, h("button", {
+          className: 'modal-confirm',
+          onClick: this.onConfirm
+        }, "Select Color"), h("button", {
+          className: 'modal-confirm',
+          onClick: this.onCancel
+        }, "Reset")));
+      }
+    }]);
+
+    return ColorModal;
+  }(Component);
+
+  var CvitModal =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitModal, _Component);
+
+    function CvitModal() {
+      _classCallCheck(this, CvitModal);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(CvitModal).apply(this, arguments));
     }
 
-    render(props, state) {
-      return CvitModal.chooseModal(props);
-    }
+    _createClass(CvitModal, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        return CvitModal.chooseModal(props);
+      }
+    }], [{
+      key: "chooseModal",
+      value: function chooseModal(props) {
+        var test = props.active;
+        if (/color.*/.test(test)) test = 'color';
 
-  }
+        switch (test) {
+          case 'export':
+            return h(ExportModal, null);
 
-  class ZoomTool extends Component {
-    constructor() {
-      super();
-      this.onClick = this.onClick.bind(this);
-    }
+          case 'import':
+            return h(ImportModal, null);
 
-    onClick(event) {
-      event.preventDefault();
-      let oz = paperFull.project.getActiveLayer().zoom || 1;
-      let nz = calculateZoomAndPan(oz, this.props.zoomDir, paperFull.view.center);
-      zoomCanvas({
-        zoom: nz.zoom
-      }, oz);
-      paperFull.view.draw();
-      this.props.changeModal('canvas');
-    }
+          case 'help':
+            return h(HelpModal, null);
 
-    render(props, state) {
-      return h("span", {
-        title: props.zoomDir === 1 ? 'Zoom In' : 'Zoom Out'
-      }, h("button", {
-        className: 'u-full-width cvit-button',
-        onClick: this.onClick
-      }, h("i", {
-        className: 'material-icons'
-      }, " ", props.zoomDir === 1 ? 'zoom_in' : 'zoom_out', " ")));
-    }
+          case 'color':
+            return h(ColorModal, {
+              target: props.active,
+              cColors: props.cColors,
+              setColor: props.setColor
+            });
 
-  }
-
-  class ResetTool extends Component {
-    onClick(event) {
-      event.preventDefault();
-      let al = paperFull.project.getActiveLayer();
-      let oz = al.zoom || 1;
-      let offset = paperFull.view.cvtCenter.subtract(al.children['cvitView'].position);
-      panCanvas(offset);
-      zoomCanvas({
-        zoom: 1
-      }, oz);
-      offset = paperFull.view.cvtCenter.subtract(al.children['cvitView'].position);
-      panCanvas(offset);
-      paperFull.view.draw();
-      this.props.changeModal('canvas');
-    }
-
-    render(props, state) {
-      return h("span", {
-        title: 'Reset Zoom and Pan'
-      }, h("button", {
-        className: 'u-full-width cvit-button',
-        onClick: e => this.onClick(e)
-      }, h("i", {
-        className: 'material-icons'
-      }, " ", 'all_out', " ")));
-    }
-
-  }
-
-  class PanTool extends Component {
-    constructor() {
-      super();
-      this.onClick = this.onClick.bind(this);
-      this.state = {
-        tool: null
-      };
-    }
-
-    componentDidMount() {
-      let tool = new paperFull.Tool();
-      tool.name = 'pan';
-
-      tool.omd = () => {
-        document.body.style.cursor = 'all-scroll';
-      };
-
-      tool.omm = e => {
-        panCanvas({
-          x: e.movementX,
-          y: e.movementY
-        });
-      };
-
-      tool.omu = () => {
-        document.body.style.cursor = 'default';
-      };
-
-      tool.activate();
-      this.setState({
-        tool: tool
-      });
-    }
-
-    componentWillUnmount() {
-      this.state.tool.remove();
-    }
-
-    onClick(e) {
-      e.preventDefault();
-      this.props.selectTool('pan');
-      this.state.tool.activate();
-      this.props.changeModal('canvas');
-    }
-
-    render(props, state) {
-      return h("span", {
-        title: 'Pan View'
-      }, h("button", {
-        className: 'u-full-width cvit-button',
-        onClick: this.onClick,
-        disabled: props.active === 'pan'
-      }, h("i", {
-        className: 'material-icons'
-      }, " ", 'pan_tool', " ")));
-    }
-
-  }
-
-  class FreeTool extends Component {
-    constructor() {
-      super();
-      this.onClick = this.onClick.bind(this);
-      this.state = {
-        tool: null
-      };
-    }
-
-    componentDidMount() {
-      let tool = new paperFull.Tool();
-      tool.name = 'free';
-
-      tool.omd = e => {
-        // mouse down
-        if (!paperFull.project.toolStroke) {
-          paperFull.project.toolStroke = 2;
+          default:
+            return h("div", null, " This Menu Is Under Development ");
         }
+      }
+    }]);
 
-        let path = new paperFull.Path();
-        let point = new paperFull.Point(e.layerX, e.layerY);
-        path.add(point);
-        path.strokeWidth = paperFull.project.toolStroke;
-        path.isErasable = true;
-        path.strokeColor = this.props.colors.color1;
-        tool.path = path;
-      };
+    return CvitModal;
+  }(Component);
 
-      tool.omm = e => {
-        // mouse move
-        let point = new paperFull.Point(e.layerX, e.layerY);
-        tool.path.add(point);
-      };
+  var ZoomTool =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(ZoomTool, _Component);
 
-      tool.omu = () => {
-        //mouse up
-        tool.path.simplify(10);
-      };
+    function ZoomTool() {
+      var _this;
 
-      this.setState({
-        tool: tool
-      });
+      _classCallCheck(this, ZoomTool);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(ZoomTool).call(this));
+      _this.onClick = _this.onClick.bind(_assertThisInitialized(_this));
+      return _this;
     }
 
-    componentWillUnmount() {
-      this.state.tool.remove();
+    _createClass(ZoomTool, [{
+      key: "onClick",
+      value: function onClick(event) {
+        event.preventDefault();
+        var oz = paperFull.project.getActiveLayer().zoom || 1;
+        var nz = calculateZoomAndPan(oz, this.props.zoomDir, paperFull.view.center);
+        zoomCanvas({
+          zoom: nz.zoom
+        }, oz);
+        paperFull.view.draw();
+        this.props.changeModal('canvas');
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("span", {
+          title: props.zoomDir === 1 ? 'Zoom In' : 'Zoom Out'
+        }, h("button", {
+          className: 'u-full-width cvit-button',
+          onClick: this.onClick
+        }, h("i", {
+          className: 'material-icons'
+        }, " ", props.zoomDir === 1 ? 'zoom_in' : 'zoom_out', " ")));
+      }
+    }]);
+
+    return ZoomTool;
+  }(Component);
+
+  var ResetTool =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(ResetTool, _Component);
+
+    function ResetTool() {
+      _classCallCheck(this, ResetTool);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(ResetTool).apply(this, arguments));
     }
 
-    onClick(event) {
-      event.preventDefault();
-      this.props.selectTool('free');
-      this.state.tool.activate();
-      this.props.changeModal('canvas');
-    }
+    _createClass(ResetTool, [{
+      key: "onClick",
+      value: function onClick(event) {
+        event.preventDefault();
+        var al = paperFull.project.getActiveLayer();
+        var oz = al.zoom || 1;
+        var offset = paperFull.view.cvtCenter.subtract(al.children['cvitView'].position);
+        panCanvas(offset);
+        zoomCanvas({
+          zoom: 1
+        }, oz);
+        offset = paperFull.view.cvtCenter.subtract(al.children['cvitView'].position);
+        panCanvas(offset);
+        paperFull.view.draw();
+        this.props.changeModal('canvas');
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        var _this = this;
 
-    render(props, state) {
-      return h("span", {
-        title: 'Free Draw'
-      }, h("button", {
-        className: 'u-full-width cvit-button',
-        onClick: this.onClick,
-        disabled: props.active === 'free'
-      }, h("i", {
-        className: 'material-icons'
-      }, " ", 'create', " ")));
-    }
-
-  }
-
-  class EraserTool extends Component {
-    constructor() {
-      super();
-      this.state = {
-        tool: null
-      };
-      this.onClick = this.onClick.bind(this);
-    }
-
-    componentDidMount() {
-      let tool = new paperFull.Tool();
-      let hitOptions = {
-        segments: true,
-        stroke: true,
-        fill: true,
-        tolerance: 5
-      };
-
-      tool.omd = e => {
-        let hitTest = paperFull.project.hitTest(new paperFull.Point(e.layerX, e.layerY), hitOptions);
-
-        if (hitTest.item.isErasable) {
-          hitTest.item.remove();
-        }
-      };
-
-      tool.name = 'eraser';
-      this.setState({
-        tool: tool
-      });
-    }
-
-    componentWillUnmount() {
-      this.state.tool.remove();
-    }
-
-    onClick(e) {
-      e.preventDefault();
-      this.props.selectTool('erase');
-      this.state.tool.activate();
-      this.props.changeModal('canvas');
-    }
-
-    render(props, state) {
-      return h("span", {
-        title: 'Eraser'
-      }, h("button", {
-        className: 'u-full-width cvit-button',
-        onClick: this.onClick,
-        disabled: props.active === 'erase'
-      }, h("i", {
-        className: 'material-icons'
-      }, " ", 'remove', " ")));
-    }
-
-  }
-
-  /**
-   * Tool for drawing rectangles for picture annotation.
-   */
-
-  class RectTool extends Component {
-    constructor() {
-      super();
-      this.onClick = this.onClick.bind(this);
-      this.state = {
-        tool: null
-      };
-    }
-
-    drawRect(start, end) {
-      let box = new paperFull.Path.Rectangle(start, end);
-      box.strokeWidth = 2;
-      box.strokeColor = this.props.colors.color1;
-      box.dashArray = [2, 2];
-      box.isErasable = true;
-      box.fillColor = this.props.colors.color2;
-      paperFull.view.draw();
-      return box;
-    }
-
-    componentDidMount() {
-      let tool = new paperFull.Tool();
-      tool.name = 'rect';
-
-      tool.omd = e => {
-        // mouse down
-        document.body.style.cursor = 'crosshair'; // if (!paper.project.color1) {
-        //   paper.project.color1 = new paper.Color(0, 0, 0, 1);
-        // }
-        // if (!paper.project.color2) {
-        //   paper.project.color2 = new paper.Color(0.7, 0.8, 0.8, 0.4);
-        // }
-
-        let pt = new paperFull.Point(e.layerX, e.layerY);
-        tool.box = this.drawRect(pt, pt);
-        tool.dwnPt = pt;
-      };
-
-      tool.omm = e => {
-        // mouse move
-        this.state.tool.box.remove();
-        let pt = new paperFull.Point(e.layerX, e.layerY);
-        tool.box = this.drawRect(tool.dwnPt, pt);
-      };
-
-      tool.omu = e => {
-        //mouse up
-        this.state.tool.box.remove();
-        let pt = new paperFull.Point(e.layerX, e.layerY);
-        tool.box = this.drawRect(tool.dwnPt, pt);
-        document.body.style.cursor = 'default';
-      };
-
-      this.setState({
-        tool: tool
-      });
-    }
-
-    componentWillUnmount() {
-      this.state.tool.remove();
-    }
-
-    onClick(e) {
-      e.preventDefault();
-      this.props.selectTool('rect');
-      this.state.tool.activate();
-    }
-
-    render(props, state) {
-      return h("span", {
-        title: 'Draw Rectangle'
-      }, h("button", {
-        className: 'u-full-width cvit-button',
-        onClick: this.onClick,
-        disabled: props.active === 'rect'
-      }, h("i", {
-        className: 'material-icons'
-      }, " ", 'crop_square', " ")));
-    }
-
-  }
-
-  /**
-   * Tool for drawing rectangles for picture annotation.
-   */
-
-  class ColorSelector extends Component {
-    constructor(props) {
-      super(props);
-      this.onClick = this.onClick.bind(this);
-    }
-
-    onClick(e) {
-      e.preventDefault();
-      this.props.changeModal(this.props.target);
-    }
-
-    render(props, state) {
-      return h("span", {
-        title: props.target === 'color1' ? 'Select Line Color' : 'Select Fill Color'
-      }, h("button", {
-        className: 'u-full-width cvit-button',
-        onClick: this.onClick
-      }, h("i", {
-        className: 'material-icons',
-        style: {
-          color: props.color.toCSS()
-        }
-      }, 'stop')));
-    }
-
-  }
-
-  class CvitControls extends Component {
-    render(props, state) {
-      return h("div", {
-        className: 'one column',
-        id: 'cvit-controls'
-      }, h("div", {
-        className: 'control-label'
-      }, h("span", null, " Zoom ")), h(ZoomTool, {
-        changeModal: props.changeModal,
-        zoomDir: 1
-      }), h(ZoomTool, {
-        changeModal: props.changeModal,
-        zoomDir: -1
-      }), h(ResetTool, {
-        changeModal: props.changeModal
-      }), h("hr", null), props.displayControls === 'full' ? h("div", null, h("div", {
-        className: 'control-label'
-      }, h("span", null, " Mouse ")), h(PanTool, {
-        changeModal: props.changeModal,
-        active: props.mouseTool,
-        selectTool: tool => props.selectTool(tool)
-      }), h(FreeTool, {
-        changeModal: props.changeModal,
-        active: props.mouseTool,
-        selectTool: tool => props.selectTool(tool),
-        colors: props.cColors
-      }), h(RectTool, {
-        changeModal: props.changeModal,
-        active: props.mouseTool,
-        selectTool: tool => props.selectTool(tool),
-        colors: props.cColors
-      }), h(EraserTool, {
-        changeModal: props.changeModal,
-        active: props.mouseTool,
-        selectTool: tool => props.selectTool(tool)
-      }), h("hr", null)) : null, props.mouseTool === 'free' || props.mouseTool === 'rect' ? h(ColorSelector, {
-        changeModal: props.changeModal,
-        color: props.cColors.color1,
-        setColor: props.setColor,
-        target: 'color1'
-      }) : null, props.mouseTool === 'rect' ? h(ColorSelector, {
-        changeModal: props.changeModal,
-        color: props.cColors.color2,
-        setColor: props.setColor,
-        target: 'color2'
-      }) : null);
-    }
-
-  }
-
-  class CvitHeader$1 extends Component {
-    render(props, state) {
-      let active = props.cvitModel.active;
-      let ctrl = props.cvitModel.view.displayControls;
-      return h("div", {
-        className: 'row cvit',
-        id: 'cvit-main'
-      }, (active === 'canvas' || /color.*/.test(active)) && ctrl !== 'none' ? h(CvitControls, {
-        mouseTool: props.cvitModel.mouseTool,
-        selectTool: state => {
-          props.cvitModel.setTool(state);
-        },
-        changeModal: state => {
-          if (state !== active) {
-            props.cvitModel.setActive(state);
-          } else {
-            props.cvitModel.setActive('canvas');
+        return h("span", {
+          title: 'Reset Zoom and Pan'
+        }, h("button", {
+          className: 'u-full-width cvit-button',
+          onClick: function onClick(e) {
+            return _this.onClick(e);
           }
-        },
-        cColors: {
-          color1: props.cvitModel.color1,
-          color2: props.cvitModel.color2
-        },
-        setColor: (target, color) => props.cvitModel.setColor(target, color),
-        displayControls: ctrl
-      }) : null, active === 'canvas' ? h(CvitCanvas, {
-        cvitData: props.cvitModel.data,
-        cvitConfig: props.cvitModel.config,
-        cvitView: props.cvitModel.view,
-        dirty: props.cvitModel.dirty,
-        setDirty: newState => props.cvitModel.setDirty(newState),
-        popover: props.cvitModel.popoverConfig,
-        displayControls: ctrl
-      }) : active === 'status' ? h("div", {
-        className: 'twelve columns',
-        id: 'loading-div'
-      }, " \"Loading Cvit Canvas\" ") : h(CvitModal, {
-        active: active,
-        cColors: {
-          color1: props.cvitModel.color1,
-          color2: props.cvitModel.color2
-        },
-        setColor: (target, color) => props.cvitModel.setColor(target, color)
-      }));
+        }, h("i", {
+          className: 'material-icons'
+        }, " ", 'all_out', " ")));
+      }
+    }]);
+
+    return ResetTool;
+  }(Component);
+
+  var PanTool =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(PanTool, _Component);
+
+    function PanTool() {
+      var _this;
+
+      _classCallCheck(this, PanTool);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(PanTool).call(this));
+      _this.onClick = _this.onClick.bind(_assertThisInitialized(_this));
+      _this.state = {
+        tool: null
+      };
+      return _this;
     }
 
-  }
+    _createClass(PanTool, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var tool = new paperFull.Tool();
+        tool.name = 'pan';
+
+        tool.omd = function () {
+          document.body.style.cursor = 'all-scroll';
+        };
+
+        tool.omm = function (e) {
+          panCanvas({
+            x: e.movementX,
+            y: e.movementY
+          });
+        };
+
+        tool.omu = function () {
+          document.body.style.cursor = 'default';
+        };
+
+        tool.activate();
+        this.setState({
+          tool: tool
+        });
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        if (this.state.tool !== null) {
+          this.state.tool.remove();
+        }
+      }
+    }, {
+      key: "onClick",
+      value: function onClick(e) {
+        e.preventDefault();
+        this.props.selectTool('pan');
+        this.state.tool.activate();
+        this.props.changeModal('canvas');
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("span", {
+          title: 'Pan View'
+        }, h("button", {
+          className: 'u-full-width cvit-button',
+          onClick: this.onClick,
+          disabled: props.active === 'pan'
+        }, h("i", {
+          className: 'material-icons'
+        }, " ", 'pan_tool', " ")));
+      }
+    }]);
+
+    return PanTool;
+  }(Component);
+
+  var FreeTool =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(FreeTool, _Component);
+
+    function FreeTool() {
+      var _this;
+
+      _classCallCheck(this, FreeTool);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(FreeTool).call(this));
+      _this.onClick = _this.onClick.bind(_assertThisInitialized(_this));
+      _this.state = {
+        tool: null
+      };
+      return _this;
+    }
+
+    _createClass(FreeTool, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this2 = this;
+
+        var tool = new paperFull.Tool();
+        tool.name = 'free';
+
+        tool.omd = function (e) {
+          // mouse down
+          if (!paperFull.project.toolStroke) {
+            paperFull.project.toolStroke = 2;
+          }
+
+          var path = new paperFull.Path();
+          var point = new paperFull.Point(e.layerX, e.layerY);
+          path.add(point);
+          path.strokeWidth = paperFull.project.toolStroke;
+          path.isErasable = true;
+          path.strokeColor = _this2.props.colors.color1;
+          tool.path = path;
+        };
+
+        tool.omm = function (e) {
+          // mouse move
+          var point = new paperFull.Point(e.layerX, e.layerY);
+          tool.path.add(point);
+        };
+
+        tool.omu = function () {
+          //mouse up
+          tool.path.simplify(10);
+        };
+
+        this.setState({
+          tool: tool
+        });
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        if (this.state.tool !== null) {
+          this.state.tool.remove();
+        }
+      }
+    }, {
+      key: "onClick",
+      value: function onClick(event) {
+        event.preventDefault();
+        this.props.selectTool('free');
+        this.state.tool.activate();
+        this.props.changeModal('canvas');
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("span", {
+          title: 'Free Draw'
+        }, h("button", {
+          className: 'u-full-width cvit-button',
+          onClick: this.onClick,
+          disabled: props.active === 'free'
+        }, h("i", {
+          className: 'material-icons'
+        }, " ", 'create', " ")));
+      }
+    }]);
+
+    return FreeTool;
+  }(Component);
+
+  var EraserTool =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(EraserTool, _Component);
+
+    function EraserTool() {
+      var _this;
+
+      _classCallCheck(this, EraserTool);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(EraserTool).call(this));
+      _this.state = {
+        tool: null
+      };
+      _this.onClick = _this.onClick.bind(_assertThisInitialized(_this));
+      return _this;
+    }
+
+    _createClass(EraserTool, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var tool = new paperFull.Tool();
+        var hitOptions = {
+          segments: true,
+          stroke: true,
+          fill: true,
+          tolerance: 5
+        };
+
+        tool.omd = function (e) {
+          var hitTest = paperFull.project.hitTest(new paperFull.Point(e.layerX, e.layerY), hitOptions);
+
+          if (hitTest.item.isErasable) {
+            hitTest.item.remove();
+          }
+        };
+
+        tool.name = 'eraser';
+        this.setState({
+          tool: tool
+        });
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        if (this.state.tool !== null) {
+          this.state.tool.remove();
+        }
+      }
+    }, {
+      key: "onClick",
+      value: function onClick(e) {
+        e.preventDefault();
+        this.props.selectTool('erase');
+        this.state.tool.activate();
+        this.props.changeModal('canvas');
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("span", {
+          title: 'Eraser'
+        }, h("button", {
+          className: 'u-full-width cvit-button',
+          onClick: this.onClick,
+          disabled: props.active === 'erase'
+        }, h("i", {
+          className: 'material-icons'
+        }, " ", 'remove', " ")));
+      }
+    }]);
+
+    return EraserTool;
+  }(Component);
+
+  /**
+   * Tool for drawing rectangles for picture annotation.
+   */
+
+  var RectTool =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(RectTool, _Component);
+
+    function RectTool() {
+      var _this;
+
+      _classCallCheck(this, RectTool);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(RectTool).call(this));
+      _this.onClick = _this.onClick.bind(_assertThisInitialized(_this));
+      _this.state = {
+        tool: null
+      };
+      return _this;
+    }
+
+    _createClass(RectTool, [{
+      key: "drawRect",
+      value: function drawRect(start, end) {
+        var box = new paperFull.Path.Rectangle(start, end);
+        box.strokeWidth = 2;
+        box.strokeColor = this.props.colors.color1;
+        box.dashArray = [2, 2];
+        box.isErasable = true;
+        box.fillColor = this.props.colors.color2;
+        paperFull.view.draw();
+        return box;
+      }
+    }, {
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this2 = this;
+
+        var tool = new paperFull.Tool();
+        tool.name = 'rect';
+
+        tool.omd = function (e) {
+          // mouse down
+          document.body.style.cursor = 'crosshair'; // if (!paper.project.color1) {
+          //   paper.project.color1 = new paper.Color(0, 0, 0, 1);
+          // }
+          // if (!paper.project.color2) {
+          //   paper.project.color2 = new paper.Color(0.7, 0.8, 0.8, 0.4);
+          // }
+
+          var pt = new paperFull.Point(e.layerX, e.layerY);
+          tool.box = _this2.drawRect(pt, pt);
+          tool.dwnPt = pt;
+        };
+
+        tool.omm = function (e) {
+          // mouse move
+          _this2.state.tool.box.remove();
+
+          var pt = new paperFull.Point(e.layerX, e.layerY);
+          tool.box = _this2.drawRect(tool.dwnPt, pt);
+        };
+
+        tool.omu = function (e) {
+          //mouse up
+          _this2.state.tool.box.remove();
+
+          var pt = new paperFull.Point(e.layerX, e.layerY);
+          tool.box = _this2.drawRect(tool.dwnPt, pt);
+          document.body.style.cursor = 'default';
+        };
+
+        this.setState({
+          tool: tool
+        });
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        if (this.state.tool !== null) {
+          this.state.tool.remove();
+        }
+      }
+    }, {
+      key: "onClick",
+      value: function onClick(e) {
+        e.preventDefault();
+        this.props.selectTool('rect');
+        this.state.tool.activate();
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("span", {
+          title: 'Draw Rectangle'
+        }, h("button", {
+          className: 'u-full-width cvit-button',
+          onClick: this.onClick,
+          disabled: props.active === 'rect'
+        }, h("i", {
+          className: 'material-icons'
+        }, " ", 'crop_square', " ")));
+      }
+    }]);
+
+    return RectTool;
+  }(Component);
+
+  /**
+   * Tool for drawing rectangles for picture annotation.
+   */
+
+  var ColorSelector =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(ColorSelector, _Component);
+
+    function ColorSelector(props) {
+      var _this;
+
+      _classCallCheck(this, ColorSelector);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(ColorSelector).call(this, props));
+      _this.onClick = _this.onClick.bind(_assertThisInitialized(_this));
+      return _this;
+    }
+
+    _createClass(ColorSelector, [{
+      key: "onClick",
+      value: function onClick(e) {
+        e.preventDefault();
+        this.props.changeModal(this.props.target);
+      }
+    }, {
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("span", {
+          title: props.target === 'color1' ? 'Select Line Color' : 'Select Fill Color'
+        }, h("button", {
+          className: 'u-full-width cvit-button',
+          onClick: this.onClick
+        }, h("i", {
+          className: 'material-icons',
+          style: {
+            color: props.color.toCSS()
+          }
+        }, 'stop')));
+      }
+    }]);
+
+    return ColorSelector;
+  }(Component);
+
+  var CvitControls =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitControls, _Component);
+
+    function CvitControls() {
+      _classCallCheck(this, CvitControls);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(CvitControls).apply(this, arguments));
+    }
+
+    _createClass(CvitControls, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("div", {
+          className: 'one column',
+          id: 'cvit-controls'
+        }, h("div", {
+          className: 'control-label'
+        }, h("span", null, " Zoom ")), h(ZoomTool, {
+          changeModal: props.changeModal,
+          zoomDir: 1
+        }), h(ZoomTool, {
+          changeModal: props.changeModal,
+          zoomDir: -1
+        }), h(ResetTool, {
+          changeModal: props.changeModal
+        }), h("hr", null), props.displayControls === 'full' ? h("div", null, h("div", {
+          className: 'control-label'
+        }, h("span", null, " Mouse ")), h(PanTool, {
+          changeModal: props.changeModal,
+          active: props.mouseTool,
+          selectTool: function selectTool(tool) {
+            return props.selectTool(tool);
+          }
+        }), h(FreeTool, {
+          changeModal: props.changeModal,
+          active: props.mouseTool,
+          selectTool: function selectTool(tool) {
+            return props.selectTool(tool);
+          },
+          colors: props.cColors
+        }), h(RectTool, {
+          changeModal: props.changeModal,
+          active: props.mouseTool,
+          selectTool: function selectTool(tool) {
+            return props.selectTool(tool);
+          },
+          colors: props.cColors
+        }), h(EraserTool, {
+          changeModal: props.changeModal,
+          active: props.mouseTool,
+          selectTool: function selectTool(tool) {
+            return props.selectTool(tool);
+          }
+        }), h("hr", null)) : null, props.mouseTool === 'free' || props.mouseTool === 'rect' ? h(ColorSelector, {
+          changeModal: props.changeModal,
+          color: props.cColors.color1,
+          setColor: props.setColor,
+          target: 'color1'
+        }) : null, props.mouseTool === 'rect' ? h(ColorSelector, {
+          changeModal: props.changeModal,
+          color: props.cColors.color2,
+          setColor: props.setColor,
+          target: 'color2'
+        }) : null);
+      }
+    }]);
+
+    return CvitControls;
+  }(Component);
+
+  var CvitBody =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitBody, _Component);
+
+    function CvitBody() {
+      _classCallCheck(this, CvitBody);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(CvitBody).apply(this, arguments));
+    }
+
+    _createClass(CvitBody, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        var active = props.active;
+        var ctrl = props.view.displayControls;
+        return h("div", {
+          className: 'row cvit',
+          id: 'cvit-main'
+        }, (active === 'canvas' || /color.*/.test(active)) && ctrl !== 'none' ? h(CvitControls, {
+          mouseTool: props.mouseTool,
+          selectTool: function selectTool(state) {
+            props.setTool(state);
+          },
+          changeModal: function changeModal(state) {
+            if (state !== active) {
+              props.setActive(state);
+            } else {
+              props.setActive('canvas');
+            }
+          },
+          cColors: {
+            color1: props.color1,
+            color2: props.color2
+          },
+          setColor: function setColor(target, color) {
+            return props.setColor(target, color);
+          },
+          displayControls: ctrl
+        }) : null, active === 'canvas' || active === 'redraw' ? h(CvitCanvas, {
+          cvitData: props.data,
+          cvitConfig: props.config,
+          cvitView: props.view,
+          dirty: props.dirty,
+          active: props.active,
+          setDirty: function setDirty(newState) {
+            return props.setDirty(newState);
+          },
+          updateStatus: function updateStatus(status) {
+            return props.setStatus(status);
+          },
+          updateActive: function updateActive(status) {
+            return props.setActive(status);
+          },
+          popover: props.popoverConfig,
+          displayControls: ctrl
+        }) : active !== 'status' && active !== 'canvas' && active !== 'redraw' ? h(CvitModal, {
+          active: active,
+          cColors: {
+            color1: props.color1,
+            color2: props.color2
+          },
+          setColor: function setColor(target, color) {
+            return props.setColor(target, color);
+          }
+        }) : null);
+      }
+    }]);
+
+    return CvitBody;
+  }(Component);
 
   function popoverContents(data) {
-    let attributeContents = data.map(feature => {
-      let attributes = [];
+    var attributeContents = data.map(function (feature) {
+      var attributes = [];
 
-      for (let key in feature.attribute) {
+      for (var key in feature.attribute) {
         if (feature.attribute.hasOwnProperty(key)) {
-          attributes.push(h("tr", null, h("th", null, `${key}:`), h("td", null, feature.attribute[key])));
+          attributes.push(h("tr", null, h("th", null, "".concat(key, ":")), h("td", null, feature.attribute[key])));
         }
       }
 
@@ -26685,9 +27464,9 @@
           textAlign: 'center'
         }
       }, " Feature Information "))), h("tbody", null, h("tr", null, h("th", null, " Name: "), h("td", null, " ", feature.name || feature.attribute.id, " ")), h("tr", null, h("th", null, " Chromosome: "), h("td", null, " ", feature.seqName, " ")), h("tr", null, h("th", null, " Start:"), h("td", null, " ", feature.start, " ")), h("tr", null, h("th", null, " End:"), h("td", null, " ", feature.end, " ")), attributes)), h("br", null), h("a", {
-        href: `https://soybase.org/gb2/gbrowse/gmax2.0/?name=${feature.seqName}%3A${feature.start}..${feature.end}`
+        href: "https://soybase.org/gb2/gbrowse/gmax2.0/?name=".concat(feature.seqName, "%3A").concat(feature.start, "..").concat(feature.end)
       }, " View Region in Soybase GBrowse "), h("br", null), h("a", {
-        href: `https://legumeinfo.org/lis_context_viewer/search/lis/glyma.${feature.seqName}/${feature.start}-${feature.end}`
+        href: "https://legumeinfo.org/lis_context_viewer/search/lis/glyma.".concat(feature.seqName, "/").concat(feature.start, "-").concat(feature.end)
       }, " View Region in LIS Context Viewer "));
     });
     return h("div", {
@@ -26697,39 +27476,93 @@
     }, attributeContents));
   }
 
-  class InformationPopover extends Component {
-    constructor(props) {
-      super(props);
+  var InformationPopover =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(InformationPopover, _Component);
+
+    function InformationPopover(props) {
+      _classCallCheck(this, InformationPopover);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(InformationPopover).call(this, props));
     }
 
-    render(props, state) {
-      return h("div", {
-        id: 'cvit-popover',
-        style: {
-          top: props.popoverData.position.y,
-          left: props.popoverData.position.x
-        }
-      }, popoverContents(props.popoverData.data));
+    _createClass(InformationPopover, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("div", {
+          id: 'cvit-popover',
+          style: {
+            top: props.popoverData.position.y,
+            left: props.popoverData.position.x
+          }
+        }, popoverContents(props.popoverData.data));
+      }
+    }]);
+
+    return InformationPopover;
+  }(Component);
+
+  var CvitUI =
+  /*#__PURE__*/
+  function (_Component) {
+    _inherits(CvitUI, _Component);
+
+    function CvitUI() {
+      _classCallCheck(this, CvitUI);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(CvitUI).apply(this, arguments));
     }
 
-  }
+    _createClass(CvitUI, [{
+      key: "render",
+      value: function render$$1(props, state) {
+        return h("div", null, h(CvitStatus, {
+          status: props.cvitModel.status,
+          active: props.cvitModel.active
+        }), h(CvitHeader, {
+          cvitModel: props.cvitModel
+        }), h(CvitBody, {
+          active: props.cvitModel.active,
+          data: props.cvitModel.data,
+          config: props.cvitModel.config,
+          canvas: props.cvitModel.canvas,
+          dirty: props.cvitModel.dirty,
+          setDirty: function setDirty(state) {
+            props.cvitModel.setDirty(state);
+          },
+          view: props.cvitModel.view,
+          mouseTool: props.cvitModel.mouseTool,
+          setTool: function setTool(state) {
+            props.cvitModel.setTool(state);
+          },
+          setActive: function setActive(state) {
+            props.cvitModel.setActive(state);
+          },
+          setStatus: function setStatus(status) {
+            props.cvitModel.setStatus(status);
+          },
+          popoverConfig: props.cvitModel.popoverConfig,
+          color1: props.cvitModel.color1,
+          color2: props.cvitModel.color2,
+          setColor: function setColor(target, color) {
+            props.cvitModel.setColor(target, color);
+          },
+          cvitModel: props.cvitModel,
+          status: props.cvitModel.status
+        }), props.cvitModel.popoverConfig.visible ? h(InformationPopover, {
+          popoverData: props.cvitModel.popoverConfig
+        }) : null, h(CvitFooter, {
+          cvitModel: props.cvitModel
+        }));
+      }
+    }]);
 
-  class CvitUI extends Component {
-    render(props, state) {
-      return h("div", null, h(CvitHeader, {
-        cvitModel: props.cvitModel
-      }), h(CvitHeader$1, {
-        cvitModel: props.cvitModel
-      }), props.cvitModel.popoverConfig.visible ? h(InformationPopover, {
-        popoverData: props.cvitModel.popoverConfig
-      }) : null, h(CvitFooter, {
-        cvitModel: props.cvitModel
-      }));
-    }
-
-  }
+    return CvitUI;
+  }(Component);
 
   var has$1 = Object.prototype.hasOwnProperty;
+  var isArray$1 = Array.isArray;
 
   var hexTable = (function () {
       var array = [];
@@ -26745,7 +27578,7 @@
           var item = queue.pop();
           var obj = item.obj[item.prop];
 
-          if (Array.isArray(obj)) {
+          if (isArray$1(obj)) {
               var compacted = [];
 
               for (var j = 0; j < obj.length; ++j) {
@@ -26771,14 +27604,15 @@
   };
 
   var merge = function merge(target, source, options) {
+      /* eslint no-param-reassign: 0 */
       if (!source) {
           return target;
       }
 
       if (typeof source !== 'object') {
-          if (Array.isArray(target)) {
+          if (isArray$1(target)) {
               target.push(source);
-          } else if (typeof target === 'object') {
+          } else if (target && typeof target === 'object') {
               if ((options && (options.plainObjects || options.allowPrototypes)) || !has$1.call(Object.prototype, source)) {
                   target[source] = true;
               }
@@ -26789,20 +27623,21 @@
           return target;
       }
 
-      if (typeof target !== 'object') {
+      if (!target || typeof target !== 'object') {
           return [target].concat(source);
       }
 
       var mergeTarget = target;
-      if (Array.isArray(target) && !Array.isArray(source)) {
+      if (isArray$1(target) && !isArray$1(source)) {
           mergeTarget = arrayToObject(target, options);
       }
 
-      if (Array.isArray(target) && Array.isArray(source)) {
+      if (isArray$1(target) && isArray$1(source)) {
           source.forEach(function (item, i) {
               if (has$1.call(target, i)) {
-                  if (target[i] && typeof target[i] === 'object') {
-                      target[i] = merge(target[i], item, options);
+                  var targetItem = target[i];
+                  if (targetItem && typeof targetItem === 'object' && item && typeof item === 'object') {
+                      target[i] = merge(targetItem, item, options);
                   } else {
                       target.push(item);
                   }
@@ -26853,7 +27688,12 @@
           return str;
       }
 
-      var string = typeof str === 'string' ? str : String(str);
+      var string = str;
+      if (typeof str === 'symbol') {
+          string = Symbol.prototype.toString.call(str);
+      } else if (typeof str !== 'string') {
+          string = String(str);
+      }
 
       if (charset === 'iso-8859-1') {
           return escape(string).replace(/%u[0-9a-f]{4}/gi, function ($0) {
@@ -26933,7 +27773,7 @@
   };
 
   var isBuffer = function isBuffer(obj) {
-      if (obj === null || typeof obj === 'undefined') {
+      if (!obj || typeof obj !== 'object') {
           return false;
       }
 
@@ -26959,40 +27799,52 @@
   var replace = String.prototype.replace;
   var percentTwenties = /%20/g;
 
-  var formats = {
-      'default': 'RFC3986',
-      formatters: {
-          RFC1738: function (value) {
-              return replace.call(value, percentTwenties, '+');
-          },
-          RFC3986: function (value) {
-              return value;
-          }
-      },
+
+
+  var Format = {
       RFC1738: 'RFC1738',
       RFC3986: 'RFC3986'
   };
 
+  var formats = utils.assign(
+      {
+          'default': Format.RFC3986,
+          formatters: {
+              RFC1738: function (value) {
+                  return replace.call(value, percentTwenties, '+');
+              },
+              RFC3986: function (value) {
+                  return String(value);
+              }
+          }
+      },
+      Format
+  );
+
+  var has$2 = Object.prototype.hasOwnProperty;
+
   var arrayPrefixGenerators = {
-      brackets: function brackets(prefix) { // eslint-disable-line func-name-matching
+      brackets: function brackets(prefix) {
           return prefix + '[]';
       },
-      indices: function indices(prefix, key) { // eslint-disable-line func-name-matching
+      comma: 'comma',
+      indices: function indices(prefix, key) {
           return prefix + '[' + key + ']';
       },
-      repeat: function repeat(prefix) { // eslint-disable-line func-name-matching
+      repeat: function repeat(prefix) {
           return prefix;
       }
   };
 
-  var isArray$1 = Array.isArray;
+  var isArray$2 = Array.isArray;
   var push = Array.prototype.push;
   var pushToArray = function (arr, valueOrArray) {
-      push.apply(arr, isArray$1(valueOrArray) ? valueOrArray : [valueOrArray]);
+      push.apply(arr, isArray$2(valueOrArray) ? valueOrArray : [valueOrArray]);
   };
 
   var toISO = Date.prototype.toISOString;
 
+  var defaultFormat = formats['default'];
   var defaults = {
       addQueryPrefix: false,
       allowDots: false,
@@ -27002,16 +27854,26 @@
       encode: true,
       encoder: utils.encode,
       encodeValuesOnly: false,
+      format: defaultFormat,
+      formatter: formats.formatters[defaultFormat],
       // deprecated
       indices: false,
-      serializeDate: function serializeDate(date) { // eslint-disable-line func-name-matching
+      serializeDate: function serializeDate(date) {
           return toISO.call(date);
       },
       skipNulls: false,
       strictNullHandling: false
   };
 
-  var stringify = function stringify( // eslint-disable-line func-name-matching
+  var isNonNullishPrimitive = function isNonNullishPrimitive(v) {
+      return typeof v === 'string'
+          || typeof v === 'number'
+          || typeof v === 'boolean'
+          || typeof v === 'symbol'
+          || typeof v === 'bigint';
+  };
+
+  var stringify = function stringify(
       object,
       prefix,
       generateArrayPrefix,
@@ -27031,20 +27893,22 @@
           obj = filter(prefix, obj);
       } else if (obj instanceof Date) {
           obj = serializeDate(obj);
+      } else if (generateArrayPrefix === 'comma' && isArray$2(obj)) {
+          obj = obj.join(',');
       }
 
       if (obj === null) {
           if (strictNullHandling) {
-              return encoder && !encodeValuesOnly ? encoder(prefix, defaults.encoder, charset) : prefix;
+              return encoder && !encodeValuesOnly ? encoder(prefix, defaults.encoder, charset, 'key') : prefix;
           }
 
           obj = '';
       }
 
-      if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean' || utils.isBuffer(obj)) {
+      if (isNonNullishPrimitive(obj) || utils.isBuffer(obj)) {
           if (encoder) {
-              var keyValue = encodeValuesOnly ? prefix : encoder(prefix, defaults.encoder, charset);
-              return [formatter(keyValue) + '=' + formatter(encoder(obj, defaults.encoder, charset))];
+              var keyValue = encodeValuesOnly ? prefix : encoder(prefix, defaults.encoder, charset, 'key');
+              return [formatter(keyValue) + '=' + formatter(encoder(obj, defaults.encoder, charset, 'value'))];
           }
           return [formatter(prefix) + '=' + formatter(String(obj))];
       }
@@ -27056,7 +27920,7 @@
       }
 
       var objKeys;
-      if (Array.isArray(filter)) {
+      if (isArray$2(filter)) {
           objKeys = filter;
       } else {
           var keys = Object.keys(obj);
@@ -27070,10 +27934,10 @@
               continue;
           }
 
-          if (Array.isArray(obj)) {
+          if (isArray$2(obj)) {
               pushToArray(values, stringify(
                   obj[key],
-                  generateArrayPrefix(prefix, key),
+                  typeof generateArrayPrefix === 'function' ? generateArrayPrefix(prefix, key) : prefix,
                   generateArrayPrefix,
                   strictNullHandling,
                   skipNulls,
@@ -27108,41 +27972,63 @@
       return values;
   };
 
-  var stringify_1 = function (object, opts) {
-      var obj = object;
-      var options = opts ? utils.assign({}, opts) : {};
+  var normalizeStringifyOptions = function normalizeStringifyOptions(opts) {
+      if (!opts) {
+          return defaults;
+      }
 
-      if (options.encoder !== null && options.encoder !== undefined && typeof options.encoder !== 'function') {
+      if (opts.encoder !== null && opts.encoder !== undefined && typeof opts.encoder !== 'function') {
           throw new TypeError('Encoder has to be a function.');
       }
 
-      var delimiter = typeof options.delimiter === 'undefined' ? defaults.delimiter : options.delimiter;
-      var strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : defaults.strictNullHandling;
-      var skipNulls = typeof options.skipNulls === 'boolean' ? options.skipNulls : defaults.skipNulls;
-      var encode = typeof options.encode === 'boolean' ? options.encode : defaults.encode;
-      var encoder = typeof options.encoder === 'function' ? options.encoder : defaults.encoder;
-      var sort = typeof options.sort === 'function' ? options.sort : null;
-      var allowDots = typeof options.allowDots === 'undefined' ? defaults.allowDots : !!options.allowDots;
-      var serializeDate = typeof options.serializeDate === 'function' ? options.serializeDate : defaults.serializeDate;
-      var encodeValuesOnly = typeof options.encodeValuesOnly === 'boolean' ? options.encodeValuesOnly : defaults.encodeValuesOnly;
-      var charset = options.charset || defaults.charset;
-      if (typeof options.charset !== 'undefined' && options.charset !== 'utf-8' && options.charset !== 'iso-8859-1') {
-          throw new Error('The charset option must be either utf-8, iso-8859-1, or undefined');
+      var charset = opts.charset || defaults.charset;
+      if (typeof opts.charset !== 'undefined' && opts.charset !== 'utf-8' && opts.charset !== 'iso-8859-1') {
+          throw new TypeError('The charset option must be either utf-8, iso-8859-1, or undefined');
       }
 
-      if (typeof options.format === 'undefined') {
-          options.format = formats['default'];
-      } else if (!Object.prototype.hasOwnProperty.call(formats.formatters, options.format)) {
-          throw new TypeError('Unknown format option provided.');
+      var format = formats['default'];
+      if (typeof opts.format !== 'undefined') {
+          if (!has$2.call(formats.formatters, opts.format)) {
+              throw new TypeError('Unknown format option provided.');
+          }
+          format = opts.format;
       }
-      var formatter = formats.formatters[options.format];
+      var formatter = formats.formatters[format];
+
+      var filter = defaults.filter;
+      if (typeof opts.filter === 'function' || isArray$2(opts.filter)) {
+          filter = opts.filter;
+      }
+
+      return {
+          addQueryPrefix: typeof opts.addQueryPrefix === 'boolean' ? opts.addQueryPrefix : defaults.addQueryPrefix,
+          allowDots: typeof opts.allowDots === 'undefined' ? defaults.allowDots : !!opts.allowDots,
+          charset: charset,
+          charsetSentinel: typeof opts.charsetSentinel === 'boolean' ? opts.charsetSentinel : defaults.charsetSentinel,
+          delimiter: typeof opts.delimiter === 'undefined' ? defaults.delimiter : opts.delimiter,
+          encode: typeof opts.encode === 'boolean' ? opts.encode : defaults.encode,
+          encoder: typeof opts.encoder === 'function' ? opts.encoder : defaults.encoder,
+          encodeValuesOnly: typeof opts.encodeValuesOnly === 'boolean' ? opts.encodeValuesOnly : defaults.encodeValuesOnly,
+          filter: filter,
+          formatter: formatter,
+          serializeDate: typeof opts.serializeDate === 'function' ? opts.serializeDate : defaults.serializeDate,
+          skipNulls: typeof opts.skipNulls === 'boolean' ? opts.skipNulls : defaults.skipNulls,
+          sort: typeof opts.sort === 'function' ? opts.sort : null,
+          strictNullHandling: typeof opts.strictNullHandling === 'boolean' ? opts.strictNullHandling : defaults.strictNullHandling
+      };
+  };
+
+  var stringify_1 = function (object, opts) {
+      var obj = object;
+      var options = normalizeStringifyOptions(opts);
+
       var objKeys;
       var filter;
 
       if (typeof options.filter === 'function') {
           filter = options.filter;
           obj = filter('', obj);
-      } else if (Array.isArray(options.filter)) {
+      } else if (isArray$2(options.filter)) {
           filter = options.filter;
           objKeys = filter;
       }
@@ -27154,10 +28040,10 @@
       }
 
       var arrayFormat;
-      if (options.arrayFormat in arrayPrefixGenerators) {
-          arrayFormat = options.arrayFormat;
-      } else if ('indices' in options) {
-          arrayFormat = options.indices ? 'indices' : 'repeat';
+      if (opts && opts.arrayFormat in arrayPrefixGenerators) {
+          arrayFormat = opts.arrayFormat;
+      } else if (opts && 'indices' in opts) {
+          arrayFormat = opts.indices ? 'indices' : 'repeat';
       } else {
           arrayFormat = 'indices';
       }
@@ -27168,38 +28054,38 @@
           objKeys = Object.keys(obj);
       }
 
-      if (sort) {
-          objKeys.sort(sort);
+      if (options.sort) {
+          objKeys.sort(options.sort);
       }
 
       for (var i = 0; i < objKeys.length; ++i) {
           var key = objKeys[i];
 
-          if (skipNulls && obj[key] === null) {
+          if (options.skipNulls && obj[key] === null) {
               continue;
           }
           pushToArray(keys, stringify(
               obj[key],
               key,
               generateArrayPrefix,
-              strictNullHandling,
-              skipNulls,
-              encode ? encoder : null,
-              filter,
-              sort,
-              allowDots,
-              serializeDate,
-              formatter,
-              encodeValuesOnly,
-              charset
+              options.strictNullHandling,
+              options.skipNulls,
+              options.encode ? options.encoder : null,
+              options.filter,
+              options.sort,
+              options.allowDots,
+              options.serializeDate,
+              options.formatter,
+              options.encodeValuesOnly,
+              options.charset
           ));
       }
 
-      var joined = keys.join(delimiter);
+      var joined = keys.join(options.delimiter);
       var prefix = options.addQueryPrefix === true ? '?' : '';
 
       if (options.charsetSentinel) {
-          if (charset === 'iso-8859-1') {
+          if (options.charset === 'iso-8859-1') {
               // encodeURIComponent('&#10003;'), the "numeric entity" representation of a checkmark
               prefix += 'utf8=%26%2310003%3B&';
           } else {
@@ -27211,7 +28097,8 @@
       return joined.length > 0 ? prefix + joined : '';
   };
 
-  var has$2 = Object.prototype.hasOwnProperty;
+  var has$3 = Object.prototype.hasOwnProperty;
+  var isArray$3 = Array.isArray;
 
   var defaults$1 = {
       allowDots: false,
@@ -27219,6 +28106,7 @@
       arrayLimit: 20,
       charset: 'utf-8',
       charsetSentinel: false,
+      comma: false,
       decoder: utils.decode,
       delimiter: '&',
       depth: 5,
@@ -27280,17 +28168,26 @@
 
           var key, val;
           if (pos === -1) {
-              key = options.decoder(part, defaults$1.decoder, charset);
+              key = options.decoder(part, defaults$1.decoder, charset, 'key');
               val = options.strictNullHandling ? null : '';
           } else {
-              key = options.decoder(part.slice(0, pos), defaults$1.decoder, charset);
-              val = options.decoder(part.slice(pos + 1), defaults$1.decoder, charset);
+              key = options.decoder(part.slice(0, pos), defaults$1.decoder, charset, 'key');
+              val = options.decoder(part.slice(pos + 1), defaults$1.decoder, charset, 'value');
           }
 
           if (val && options.interpretNumericEntities && charset === 'iso-8859-1') {
               val = interpretNumericEntities(val);
           }
-          if (has$2.call(obj, key)) {
+
+          if (val && typeof val === 'string' && options.comma && val.indexOf(',') > -1) {
+              val = val.split(',');
+          }
+
+          if (part.indexOf('[]=') > -1) {
+              val = isArray$3(val) ? [val] : val;
+          }
+
+          if (has$3.call(obj, key)) {
               obj[key] = utils.combine(obj[key], val);
           } else {
               obj[key] = val;
@@ -27350,7 +28247,7 @@
 
       // Get the parent
 
-      var segment = brackets.exec(key);
+      var segment = options.depth > 0 && brackets.exec(key);
       var parent = segment ? key.slice(0, segment.index) : key;
 
       // Stash the parent if it exists
@@ -27358,7 +28255,7 @@
       var keys = [];
       if (parent) {
           // If we aren't using plain objects, optionally prefix keys that would overwrite object prototype properties
-          if (!options.plainObjects && has$2.call(Object.prototype, parent)) {
+          if (!options.plainObjects && has$3.call(Object.prototype, parent)) {
               if (!options.allowPrototypes) {
                   return;
               }
@@ -27370,9 +28267,9 @@
       // Loop through children appending to the array until we hit depth
 
       var i = 0;
-      while ((segment = child.exec(key)) !== null && i < options.depth) {
+      while (options.depth > 0 && (segment = child.exec(key)) !== null && i < options.depth) {
           i += 1;
-          if (!options.plainObjects && has$2.call(Object.prototype, segment[1].slice(1, -1))) {
+          if (!options.plainObjects && has$3.call(Object.prototype, segment[1].slice(1, -1))) {
               if (!options.allowPrototypes) {
                   return;
               }
@@ -27389,31 +28286,42 @@
       return parseObject(keys, val, options);
   };
 
-  var parse$1 = function (str, opts) {
-      var options = opts ? utils.assign({}, opts) : {};
+  var normalizeParseOptions = function normalizeParseOptions(opts) {
+      if (!opts) {
+          return defaults$1;
+      }
 
-      if (options.decoder !== null && options.decoder !== undefined && typeof options.decoder !== 'function') {
+      if (opts.decoder !== null && opts.decoder !== undefined && typeof opts.decoder !== 'function') {
           throw new TypeError('Decoder has to be a function.');
       }
 
-      options.ignoreQueryPrefix = options.ignoreQueryPrefix === true;
-      options.delimiter = typeof options.delimiter === 'string' || utils.isRegExp(options.delimiter) ? options.delimiter : defaults$1.delimiter;
-      options.depth = typeof options.depth === 'number' ? options.depth : defaults$1.depth;
-      options.arrayLimit = typeof options.arrayLimit === 'number' ? options.arrayLimit : defaults$1.arrayLimit;
-      options.parseArrays = options.parseArrays !== false;
-      options.decoder = typeof options.decoder === 'function' ? options.decoder : defaults$1.decoder;
-      options.allowDots = typeof options.allowDots === 'undefined' ? defaults$1.allowDots : !!options.allowDots;
-      options.plainObjects = typeof options.plainObjects === 'boolean' ? options.plainObjects : defaults$1.plainObjects;
-      options.allowPrototypes = typeof options.allowPrototypes === 'boolean' ? options.allowPrototypes : defaults$1.allowPrototypes;
-      options.parameterLimit = typeof options.parameterLimit === 'number' ? options.parameterLimit : defaults$1.parameterLimit;
-      options.strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : defaults$1.strictNullHandling;
-
-      if (typeof options.charset !== 'undefined' && options.charset !== 'utf-8' && options.charset !== 'iso-8859-1') {
+      if (typeof opts.charset !== 'undefined' && opts.charset !== 'utf-8' && opts.charset !== 'iso-8859-1') {
           throw new Error('The charset option must be either utf-8, iso-8859-1, or undefined');
       }
-      if (typeof options.charset === 'undefined') {
-          options.charset = defaults$1.charset;
-      }
+      var charset = typeof opts.charset === 'undefined' ? defaults$1.charset : opts.charset;
+
+      return {
+          allowDots: typeof opts.allowDots === 'undefined' ? defaults$1.allowDots : !!opts.allowDots,
+          allowPrototypes: typeof opts.allowPrototypes === 'boolean' ? opts.allowPrototypes : defaults$1.allowPrototypes,
+          arrayLimit: typeof opts.arrayLimit === 'number' ? opts.arrayLimit : defaults$1.arrayLimit,
+          charset: charset,
+          charsetSentinel: typeof opts.charsetSentinel === 'boolean' ? opts.charsetSentinel : defaults$1.charsetSentinel,
+          comma: typeof opts.comma === 'boolean' ? opts.comma : defaults$1.comma,
+          decoder: typeof opts.decoder === 'function' ? opts.decoder : defaults$1.decoder,
+          delimiter: typeof opts.delimiter === 'string' || utils.isRegExp(opts.delimiter) ? opts.delimiter : defaults$1.delimiter,
+          // eslint-disable-next-line no-implicit-coercion, no-extra-parens
+          depth: (typeof opts.depth === 'number' || opts.depth === false) ? +opts.depth : defaults$1.depth,
+          ignoreQueryPrefix: opts.ignoreQueryPrefix === true,
+          interpretNumericEntities: typeof opts.interpretNumericEntities === 'boolean' ? opts.interpretNumericEntities : defaults$1.interpretNumericEntities,
+          parameterLimit: typeof opts.parameterLimit === 'number' ? opts.parameterLimit : defaults$1.parameterLimit,
+          parseArrays: opts.parseArrays !== false,
+          plainObjects: typeof opts.plainObjects === 'boolean' ? opts.plainObjects : defaults$1.plainObjects,
+          strictNullHandling: typeof opts.strictNullHandling === 'boolean' ? opts.strictNullHandling : defaults$1.strictNullHandling
+      };
+  };
+
+  var parse$1 = function (str, opts) {
+      var options = normalizeParseOptions(opts);
 
       if (str === '' || str === null || typeof str === 'undefined') {
           return options.plainObjects ? Object.create(null) : {};
@@ -27440,13 +28348,12 @@
       stringify: stringify_1
   };
 
-  /**
-   * @file
-   * Singleton class for manipulating cvit through the query string.
-   */
+  var QueryString =
+  /*#__PURE__*/
+  function () {
+    function QueryString() {
+      _classCallCheck(this, QueryString);
 
-  class QueryString {
-    constructor() {
       this._data = [lib.parse(location.search, {
         ignoreQueryPrefix: true,
         encode: false,
@@ -27454,38 +28361,47 @@
       })] || [{}];
     }
 
-    get data() {
-      return this._data[0];
-    }
+    _createClass(QueryString, [{
+      key: "data",
+      get: function get() {
+        return this._data[0];
+      }
+    }, {
+      key: "tag",
+      get: function get() {
+        return this._data[0].data || 'general';
+      }
+    }, {
+      key: "config",
+      get: function get() {
+        return this._data[0].config || null;
+      }
+    }, {
+      key: "gff",
+      get: function get() {
+        var gff = this._data[0].gff || null;
+        if (typeof gff === 'string') gff = [gff];
+        return gff;
+      }
+    }]);
 
-    get tag() {
-      return this._data[0].data || 'general';
-    }
+    return QueryString;
+  }();
 
-    get config() {
-      return this._data[0].config || null;
-    }
-
-    get gff() {
-      let gff = this._data[0].gff || null;
-      if (typeof gff === 'string') gff = [gff];
-      return gff;
-    }
-
-  }
-
-  const instance = new QueryString();
+  var instance = new QueryString();
   Object.freeze(instance);
 
-  function parseGff(text, seqNames = [], aliases = {}) {
-    let parsed = {};
-    let gffLine = {}; // Break up gff by line, then test if line is not a comment (starts with #)
+  function parseGff(text) {
+    var seqNames = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var aliases = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var parsed = {};
+    var gffLine = {}; // Break up gff by line, then test if line is not a comment (starts with #)
     // if it is, do nothing, otherwise break up current line by tabs and
     // read into parsef File object. forEach is used for readability, can be
     // replaced by a for loop for performance.
 
-    let gff = text.split('\n');
-    gff.forEach(element => {
+    var gff = text.split('\n');
+    gff.forEach(function (element) {
       if (element.match(/^[^#]/)) {
         element = element.split('\t');
         gffLine = {
@@ -27502,9 +28418,9 @@
           // this makes it easier to test if an attribute exists later
           // this function is self-invoking
           attribute: function () {
-            let attributes = element[8].split(';');
-            let parsedAttributes = {};
-            attributes.forEach(attribute => {
+            var attributes = element[8].split(';');
+            var parsedAttributes = {};
+            attributes.forEach(function (attribute) {
               attribute = attribute.split('=');
               attribute[0] = attribute[0].toLowerCase();
               parsedAttributes[attribute[0]] = isNaN(attribute[1] - 0) ? attribute[1] : attribute[1] - 0; //parses a number as a number
@@ -27520,22 +28436,23 @@
 
         if (gffLine.feature === 'chromosome') {
           // build alias dictionary
-          let seqName = gffLine.seqName;
-          parsed.alias[seqName] = seqName;
+          var _seqName = gffLine.seqName;
+          parsed.alias[_seqName] = _seqName;
 
           if (gffLine.attribute.hasOwnProperty('alias')) {
-            let aliases = gffLine.attribute.alias.split(',');
-            aliases.forEach(alias => {
-              parsed.alias[alias] = seqName;
+            var _aliases = gffLine.attribute.alias.split(',');
+
+            _aliases.forEach(function (alias) {
+              parsed.alias[alias] = _seqName;
             });
           }
         }
 
-        let seqName = parsed.alias[gffLine.seqName] || gffLine.seqName; //gffLine.seqName is a fallover if chromosomes don't come first in file
+        var seqName = parsed.alias[gffLine.seqName] || gffLine.seqName; //gffLine.seqName is a fallover if chromosomes don't come first in file
 
         if (seqNames.length > 0) {
-          seqNames.some(seq => {
-            let re = new RegExp('.*' + seqName).test(seq);
+          seqNames.some(function (seq) {
+            var re = new RegExp('.*' + seqName).test(seq);
 
             if (re) {
               seqName = seq;
@@ -27574,7 +28491,7 @@
         }
 
         parsed[gffLine.feature].features.push(gffLine);
-        let sn = parsed[gffLine.feature][seqName];
+        var sn = parsed[gffLine.feature][seqName];
         sn.features.push(gffLine);
         /** preprocess for drawing as measure -0 to cast to number if possible */
 
@@ -27585,10 +28502,10 @@
           maxY: 0,
           data: gffLine
         });
-        let value = isNaN(gffLine.attribute.value - 0) ? null : gffLine.attribute.value - 0;
-        let scoreCol = isNaN(gffLine.score - 0) ? null : gffLine.score - 0;
-        let max = sn.maxScore;
-        let min = sn.minScore;
+        var value = isNaN(gffLine.attribute.value - 0) ? null : gffLine.attribute.value - 0;
+        var scoreCol = isNaN(gffLine.score - 0) ? null : gffLine.score - 0;
+        var max = sn.maxScore;
+        var min = sn.minScore;
         sn.maxScore = {
           value: value === null && max.value === null ? null : value > max.value ? value : max.value,
           scoreCol: scoreCol === null && max.scoreCol === null ? null : scoreCol > max.scoreCol ? scoreCol : max.scoreCol
@@ -27603,21 +28520,21 @@
   }
 
   function parseIni(text) {
-    let parsed = {};
-    let currentConfigKey = '';
-    let confItem;
-    let conf = text.split('\n');
-    conf.forEach(element => {
+    var parsed = {};
+    var currentConfigKey = '';
+    var confItem;
+    var conf = text.split('\n');
+    conf.forEach(function (element) {
       if (element.match(/^[^#;]/)) {
         //filter out comment lines # or ;
-        let match = element.match(/\[(.*)]/); //catch arrays/new config section
+        var match = element.match(/\[(.*)]/); //catch arrays/new config section
 
         if (match !== null) {
           //distinguish between [Configheader] key or something = [array]
           if (element.match(/=/)) {
             //something = array
             confItem = element.split('=');
-            let confArray = match[1].trim().split(/[\s]*,[\s]*/);
+            var confArray = match[1].trim().split(/[\s]*,[\s]*/);
 
             if (parsed[currentConfigKey][confItem[0].trim()]) {
               parsed[currentConfigKey][confItem[0].trim()].concat(confArray);
@@ -27634,7 +28551,7 @@
           confItem = element.split('=');
 
           if (confItem[1] && confItem[1].trim() !== '') {
-            let ci = confItem[1].trim();
+            var ci = confItem[1].trim();
             if (!isNaN(ci - 0)) ci = ci - 0;
 
             if (ci[0] === '{') {
@@ -27651,16 +28568,19 @@
     return parsed;
   }
 
-  function parseFile(location, format, fetchParam, strArray = [], aliasArray = {}) {
-    if (typeof location === 'object') {
+  function parseFile(location, format, fetchParam) {
+    var strArray = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : [];
+    var aliasArray = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {};
+
+    if (_typeof(location) === 'object') {
       return location;
     }
 
-    return fetch(location, fetchParam).then(response => {
-      const ct = response.headers.get("content-type");
+    return fetch(location, fetchParam).then(function (response) {
+      var ct = response.headers.get("content-type");
 
       if (response.status !== 200) {
-        throw new Error(`Problem loading ${location}: status ${response.status}`);
+        throw new Error("Problem loading ".concat(location, ": status ").concat(response.status));
       } else if (ct === 'application/json') {
         format = 'json';
         return response.json();
@@ -27668,7 +28588,7 @@
         return response.text();
       }
     }) //supported file types ini/gff are plaintext blobs
-    .then(responseText => {
+    .then(function (responseText) {
       switch (format) {
         case 'ini':
           return parseIni(responseText);
@@ -27682,7 +28602,9 @@
         default:
           throw new Error(format + ' is not a supported file format.');
       }
-    }).catch(e => console.error(e));
+    })["catch"](function (e) {
+      return console.error(e);
+    });
   }
 
   function defaultConfig() {
@@ -27868,23 +28790,30 @@
     };
   }
 
-  class Index {
+  var Index =
+  /*#__PURE__*/
+  function () {
     /**
      * Default constructor
      * @param {{viewConf:string, gff:Array.string}} passedConfig
      * @param {callback} sub
      */
-    constructor(passedConfig, sub) {
+    function Index(passedConfig, sub) {
+      var _this = this;
+
+      _classCallCheck(this, Index);
+
       this.cvitRoot = passedConfig.cvitRoot;
       this.onChanges = [sub];
       this._dirty = false;
-      let qs = instance;
+      var qs = instance;
       this._viewLayout = {};
       this._viewData = {};
       this.defaultViewConf = defaultConfig();
       this._viewConfig = {};
       this._tag = '';
       this._active = 'status';
+      this._status = 'Loading default view data.';
       this._mouseTool = 'pan';
       this._dataLoaded = new CustomEvent('baseDataLoaded');
       this._trigger = false;
@@ -27899,386 +28828,491 @@
         data: []
       };
       this._paperContext = paperFull;
-      parseFile(`${this.cvitRoot}cvit.conf`, 'ini', {}).then(response => this.baseConfig = response).then(() => {
-        this._dirty = true;
-        this._tag = 'data.';
+      parseFile("".concat(this.cvitRoot, "cvit.conf"), 'ini', {}).then(function (response) {
+        return _this.baseConfig = response;
+      }).then(function () {
+        _this._tag = 'data.';
 
         if (passedConfig.hasOwnProperty('viewTag') && passedConfig.viewTag) {
-          this._tag += passedConfig.viewTag;
+          _this._tag += passedConfig.viewTag;
         } else if (qs && qs.tag !== 'general') {
-          this._tag += qs.tag;
+          _this._tag += qs.tag;
         } else {
-          if (this.baseConfig.general.hasOwnProperty('data_default')) {
-            this._tag += this.baseConfig.general.data_default;
+          if (_this.baseConfig.general.hasOwnProperty('data_default')) {
+            _this._tag += _this.baseConfig.general.data_default;
           } else {
             throw new Error('Default dataset has not been configured.');
           }
         }
 
-        let tag = this._tag;
-        let viewConfig = passedConfig.viewConf ? passedConfig.viewConf : this.baseConfig[tag].conf;
-        let dataSources = passedConfig.gff ? passedConfig.gff : qs && qs.gff ? qs.gff : typeof this.baseConfig[tag].defaultData === 'string' ? [this.baseConfig[tag].defaultData] : this.baseConfig[tag].defaultData; // set fetch parameters
+        var tag = _this._tag;
+        var viewConfig = passedConfig.viewConf ? passedConfig.viewConf : _this.baseConfig[tag].conf;
+        var dataSources = passedConfig.gff ? passedConfig.gff : qs && qs.gff ? qs.gff : typeof _this.baseConfig[tag].defaultData === 'string' ? [_this.baseConfig[tag].defaultData] : _this.baseConfig[tag].defaultData; // set fetch parameters
 
-        let pcFetchParam = passedConfig.hasOwnProperty('fetchParam') ? passedConfig.fetchParam : {};
-        let genFetchParam = this.baseConfig.general.hasOwnProperty('fetchParam') ? this.baseConfig.general.fetchParam : {};
-        this._fetchParam = this._combineObjects(genFetchParam, pcFetchParam); // Load configuration for view
+        var pcFetchParam = passedConfig.hasOwnProperty('fetchParam') ? passedConfig.fetchParam : {};
+        var genFetchParam = _this.baseConfig.general.hasOwnProperty('fetchParam') ? _this.baseConfig.general.fetchParam : {};
+        _this._fetchParam = _this._combineObjects(genFetchParam, pcFetchParam); // Load configuration for view
 
-        this.loadViewConfig(this.cvitRoot + viewConfig); // Load _viewData for view
+        _this.loadViewConfig(_this.cvitRoot + viewConfig); // Load _viewData for view
 
-        this.loadInitialData(dataSources);
 
-        this._inform();
-      }).catch(e => console.error(e));
+        _this.loadInitialData(dataSources);
+      })["catch"](function (e) {
+        return console.error(e);
+      });
     }
     /**
      * Getters/Setters
      */
 
 
-    get active() {
-      return this._active;
-    }
+    _createClass(Index, [{
+      key: "setColor",
+      value: function setColor(target, color) {
+        this[target] = color;
 
-    set active(view) {
-      this._active = view;
-    }
-
-    get config() {
-      return this._viewConfig;
-    }
-
-    get data() {
-      return this._viewData;
-    }
-
-    get dirty() {
-      return this._dirty;
-    }
-
-    set dirty(state) {
-      this._dirty = state;
-    }
-
-    get mouseTool() {
-      return this._mouseTool;
-    }
-
-    set mouseTool(tool) {
-      this._mouseTool = tool;
-    }
-
-    get paper() {
-      return this._paperContext;
-    }
-
-    get view() {
-      return this._viewLayout;
-    }
-
-    setActive(state) {
-      this.active = state;
-
-      this._inform();
-    }
-
-    setDirty(state) {
-      this.dirty = state;
-
-      this._inform();
-    }
-
-    get color1() {
-      return this._color1;
-    }
-
-    get color2() {
-      return this._color2;
-    }
-
-    set color1(color) {
-      this._color1 = color;
-    }
-
-    set color2(color) {
-      this._color2 = color;
-    }
-
-    get popoverConfig() {
-      return this._popoverConfig;
-    }
-
-    setColor(target, color) {
-      this[target] = color;
-      this.active = 'canvas';
-
-      this._inform();
-    }
-
-    setTool(state) {
-      this.mouseTool = state;
-
-      this._inform();
-    }
-
-    setPopover(props) {
-      for (let key in props) {
-        if (props.hasOwnProperty(key) && this._popoverConfig.hasOwnProperty(key)) {
-          this._popoverConfig[key] = props[key];
-        }
+        this._inform();
       }
+    }, {
+      key: "setActive",
+      value: function setActive(state) {
+        this.active = state;
 
-      this._inform();
-    }
-    /**
-     * Public Methods
-     */
+        this._inform();
+      }
+    }, {
+      key: "setDirty",
+      value: function setDirty(state) {
+        this.dirty = state;
 
+        if (state === false) {
+          this.active = 'canvas';
+        }
 
-    loadInitialData(files) {
-      files = files.map(file => this.cvitRoot + file);
-      this.loadData(files);
-    }
-    /**
-     * Load view _viewData from the passed file locations
-     * @param files
-     * @param fetchParam optional
-     */
+        this._inform();
+      }
+    }, {
+      key: "setStatus",
+      value: function setStatus(state) {
+        this.status = state;
 
+        this._inform();
+      }
+    }, {
+      key: "setTool",
+      value: function setTool(state) {
+        this.mouseTool = state;
 
-    loadData(files, fetchParam = {}) {
-      this._viewData = {};
-      files.forEach((file, i) => {
-        let fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : this._fetchParam.hasOwnProperty(file) ? this._fetchParam[file] : fetchParam;
-        this.appendData(file, fp).then(() => {
-          if (i === files.length - 1) {
-            this._dirty = true;
-
-            this._inform();
+        this._inform();
+      }
+    }, {
+      key: "setPopover",
+      value: function setPopover(props) {
+        for (var key in props) {
+          if (props.hasOwnProperty(key) && this._popoverConfig.hasOwnProperty(key)) {
+            this._popoverConfig[key] = props[key];
           }
-        }).catch(e => console.error(e));
-      });
-    }
-    /**
-     * Load _viewConfig from the passed file location
-     * @param file
-     * @param fetchParam optional
-     */
+        }
 
+        this._inform();
+      }
+      /**
+       * Public Methods
+       */
 
-    loadViewConfig(file, fetchParam = {}) {
-      this._viewConfig = {};
-      let fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : this._fetchParam.hasOwnProperty(file) ? this._fetchParam[file] : {};
-      parseFile(file, 'ini', fp) //get <config.ini/conf>
-      .then(response => this._viewConfig = this._combineObjects(this.defaultViewConf, response)) //overwrite default conf with passed data
-      .then(() => {
-        //set configuration info of custom types
-        for (let key in this._viewConfig) {
-          if (this._viewConfig.hasOwnProperty(key)) {
-            if (this._viewConfig[key].glyph) {
-              let append = this._viewConfig[key];
-              this._viewConfig[key] = this._combineObjects(JSON.parse(JSON.stringify(this._viewConfig[append.glyph])), append);
+    }, {
+      key: "loadInitialData",
+      value: function loadInitialData(files) {
+        var _this2 = this;
+
+        files = files.map(function (file) {
+          return _this2.cvitRoot + file;
+        });
+        this.loadData(files);
+      }
+      /**
+       * Load view _viewData from the passed file locations
+       * @param files
+       * @param fetchParam optional
+       */
+
+    }, {
+      key: "loadData",
+      value: function loadData(files) {
+        var _this3 = this;
+
+        var fetchParam = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        this.status = 'Loading view data.';
+        this._viewData = {};
+        files.forEach(function (file, i) {
+          var fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : _this3._fetchParam.hasOwnProperty(file) ? _this3._fetchParam[file] : fetchParam;
+
+          _this3.appendData(file, fp).then(function () {
+            if (i === files.length - 1) {
+              _this3.status = 'View data loaded';
+
+              _this3.setDirty(true);
+            }
+          })["catch"](function (e) {
+            _this3.setStatus("error loading data");
+
+            console.error(e);
+          });
+        });
+      }
+      /**
+       * Load _viewConfig from the passed file location
+       * @param file
+       * @param fetchParam optional
+       */
+
+    }, {
+      key: "loadViewConfig",
+      value: function loadViewConfig(file) {
+        var _this4 = this;
+
+        var fetchParam = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        this.status = 'Loading view configuration.';
+        this._viewConfig = {};
+        var fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : this._fetchParam.hasOwnProperty(file) ? this._fetchParam[file] : {};
+        parseFile(file, 'ini', fp) //get <config.ini/conf>
+        .then(function (response) {
+          return _this4._viewConfig = _this4._combineObjects(_this4.defaultViewConf, response);
+        }) //overwrite default conf with passed data
+        .then(function () {
+          //set configuration info of custom types
+          for (var key in _this4._viewConfig) {
+            if (_this4._viewConfig.hasOwnProperty(key)) {
+              if (_this4._viewConfig[key].glyph) {
+                var append = _this4._viewConfig[key];
+                _this4._viewConfig[key] = _this4._combineObjects(JSON.parse(JSON.stringify(_this4._viewConfig[append.glyph])), append);
+              }
             }
           }
-        }
-      }).then(() => {
-        this._dirty = true;
+        }).then(function () {
+          _this4.status = 'View config loaded.';
 
-        this._inform();
-      }).catch(e => console.error(e));
-    }
-    /**
-     * Append view _viewData from the passed file to existing dataset
-     * @param {string} file
-     * @param fetchParam
-     * @returns {promise}
-     */
+          _this4.setDirty(true);
+        })["catch"](function (e) {
+          _this4.setStatus("error loading view configuration");
 
-
-    appendData(file, fetchParam = {}) {
-      if (this._active !== 'status') {
-        this._active = 'status';
-
-        this._inform();
+          console.error(e);
+        });
       }
+      /**
+       * Append view _viewData from the passed file to existing dataset
+       * @param {string} file
+       * @param fetchParam
+       * @returns {promise}
+       */
 
-      let fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : this._fetchParam.hasOwnProperty(file) ? this._fetchParam[file] : fetchParam;
-      let aliases = this.data.hasOwnProperty('alias') ? this.data.alias : {};
-      return parseFile(file, 'gff', fp, this._viewLayout.chrOrder, aliases).then(response => this._viewData = this._combineObjects(this._viewData, response)).then(() => this._viewLayout.chrOrder = this._setChrOrder(this._viewData)).then(() => {
-        this._dirty = true;
+    }, {
+      key: "appendData",
+      value: function appendData(file) {
+        var _this5 = this;
 
-        this._inform();
-      }).catch(e => console.error(e));
-    }
+        var fetchParam = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-    appendGff(gff, fetchParam = {}) {
-      let fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : this._fetchParam.hasOwnProperty(file) ? this._fetchParam[file] : fetchParam;
-      parseFile(gff, 'gff', fp).then(response => this._viewData = this._combineObjects(this._viewData, response)).then(() => this._viewLayout.chrOrder = this._setChrOrder(this._viewData)).then(() => {
-        this._dirty = true;
+        if (this._active !== 'status') {
+          this.status = 'Appending data.';
+          this._active = 'status';
 
-        this._inform();
-      }).catch(e => console.error(e));
-    }
-    /**
-     * Private Methods
-     */
-
-    /**
-     * Callback to alert preact that model has updated and set _viewLayout
-     * @private
-     */
-
-
-    _inform() {
-      if (this._viewConfig.general && this._viewData.hasOwnProperty('chromosome') && this._dirty) {
-        this._viewLayout = this._setupView(this._viewData, this._viewConfig);
-        this._active = 'canvas';
-
-        if (!this._trigger) {
-          this._trigger = true;
-          document.dispatchEvent(this._dataLoaded);
+          this._inform();
         }
+
+        var fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : this._fetchParam.hasOwnProperty(file) ? this._fetchParam[file] : fetchParam;
+        var aliases = this.data.hasOwnProperty('alias') ? this.data.alias : {};
+        return parseFile(file, 'gff', fp, this._viewLayout.chrOrder, aliases).then(function (response) {
+          return _this5._viewData = _this5._combineObjects(_this5._viewData, response);
+        }).then(function () {
+          return _this5._viewLayout.chrOrder = _this5._setChrOrder(_this5._viewData);
+        }).then(function () {
+          _this5.status = 'Data appended.';
+
+          _this5.setDirty(true);
+        })["catch"](function (e) {
+          _this5.setStatus("error appending data");
+
+          console.error(e);
+        });
       }
+    }, {
+      key: "appendGff",
+      value: function appendGff(gff) {
+        var _this6 = this;
 
-      this.onChanges.forEach(callBack => callBack());
-    }
-    /**
-     * Deep combine append to base. Append will overwrite non-array
-     * lowest-level key-values and concat arrays.
-     * @param {object} base - base object (usually a default)
-     * @param {object} append - object to append
-     * @returns {*} edited base object
-     * @private
-     */
+        var fetchParam = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        this.status = 'Appending gff data.';
+        var fp = fetchParam.hasOwnProperty(file) ? fetchParam[file] : this._fetchParam.hasOwnProperty(file) ? this._fetchParam[file] : fetchParam;
+        parseFile(gff, 'gff', fp).then(function (response) {
+          return _this6._viewData = _this6._combineObjects(_this6._viewData, response);
+        }).then(function () {
+          return _this6._viewLayout.chrOrder = _this6._setChrOrder(_this6._viewData);
+        }).then(function () {
+          _this6.status = 'gff appended.';
 
+          _this6.setDirty(true);
+        })["catch"](function (e) {
+          _this6.setStatus("error appending gff data");
 
-    _combineObjects(base, append) {
-      if (typeof append !== 'object') return base;
+          console.error(e);
+        });
+      }
+      /**
+       * Private Methods
+       */
 
-      for (let key in append) {
-        /** add glyph/draw_as sub-configuration to given configuration object */
-        if (append[key].hasOwnProperty('glyph')) {
-          append[key] = this._combineObjects(JSON.parse(JSON.stringify(base[append[key]['glyph']])), append[key]);
+      /**
+       * Callback to alert preact that model has updated and set _viewLayout
+       * @private
+       */
+
+    }, {
+      key: "_inform",
+      value: function _inform() {
+        if (this._viewConfig.general && this._viewData.hasOwnProperty('chromosome') && this._dirty) {
+          this._viewLayout = this._setupView(this._viewData, this._viewConfig);
+          this._active = 'redraw';
+
+          if (!this._trigger) {
+            this._trigger = true;
+            document.dispatchEvent(this._dataLoaded);
+          }
         }
 
-        if (append[key].hasOwnProperty('draw_as')) {
-          append[key] = this._combineObjects(JSON.parse(JSON.stringify(base[append[key]['draw_as']])), append[key]);
-        }
+        this.onChanges.forEach(function (callBack) {
+          return callBack();
+        });
+      }
+      /**
+       * Deep combine append to base. Append will overwrite non-array
+       * lowest-level key-values and concat arrays.
+       * @param {object} base - base object (usually a default)
+       * @param {object} append - object to append
+       * @returns {*} edited base object
+       * @private
+       */
 
-        if (base.hasOwnProperty(key)) {
-          if (Array.isArray(base[key])) {
-            base[key] = base[key].concat(append[key]);
-          } else if (typeof base[key] === 'object') {
-            this._combineObjects(base[key], append[key]);
+    }, {
+      key: "_combineObjects",
+      value: function _combineObjects(base, append) {
+        if (_typeof(append) !== 'object') return base;
+
+        for (var key in append) {
+          /** add glyph/draw_as sub-configuration to given configuration object */
+          if (append[key] !== undefined) {
+            if (append[key].hasOwnProperty('glyph') && base[append[key]['glyph']]) {
+              append[key] = this._combineObjects(JSON.parse(JSON.stringify(base[append[key]['glyph']])), append[key]);
+            }
+
+            if (append[key].hasOwnProperty('draw_as') && base[append[key]['draw_as']]) {
+              append[key] = this._combineObjects(JSON.parse(JSON.stringify(base[append[key]['draw_as']])), append[key]);
+            }
+          }
+
+          if (base.hasOwnProperty(key)) {
+            if (Array.isArray(base[key])) {
+              base[key] = base[key].concat(append[key]);
+            } else if (_typeof(base[key]) === 'object') {
+              this._combineObjects(base[key], append[key]);
+            } else {
+              base[key] = append[key];
+            }
           } else {
             base[key] = append[key];
           }
-        } else {
-          base[key] = append[key];
         }
+
+        return base;
       }
+      /**
+       * Setups _viewLayout, which contains computed values based on
+       * the chromosome backbone.
+       * @param dataModel - data object
+       * @param viewConfig - config object
+       * @returns {{chrOrder: Array, yOffset: {offsetTop: number, offsetBottom: number}, canvas: {color: any, width: number, height: number}, min: number, xOffset: number, max: number, chrMax: *, chrWidth: number, zoom: number, chrMin: *, yScale: number}}
+       * @private
+       */
 
-      return base;
-    }
-    /**
-     * Setups _viewLayout, which contains computed values based on
-     * the chromosome backbone.
-     * @param dataModel - data object
-     * @param viewConfig - config object
-     * @returns {{chrOrder: Array, yOffset: {offsetTop: number, offsetBottom: number}, canvas: {color: any, width: number, height: number}, min: number, xOffset: number, max: number, chrMax: *, chrWidth: number, zoom: number, chrMin: *, yScale: number}}
-     * @private
-     */
+    }, {
+      key: "_setupView",
+      value: function _setupView(dataModel, viewConfig) {
+        var _this7 = this;
 
+        var chr = dataModel.hasOwnProperty('chromosome') ? dataModel.chromosome : null; //should never return null
+        // set up view limits
 
-    _setupView(dataModel, viewConfig) {
-      let chr = dataModel.hasOwnProperty('chromosome') ? dataModel.chromosome : null; //should never return null
-      // set up view limits
+        var viewSetup = {
+          min: viewConfig.general.ruler_min,
+          max: viewConfig.general.ruler_max,
+          chrMin: chr.features[0].seqName,
+          chrMax: chr.features[0].seqName,
+          chrOrder: [],
+          zoom: 0,
+          yScale: 1,
+          yOffset: {
+            offsetTop: parseInt(viewConfig.general.chrom_padding_top) || 0,
+            offsetBottom: parseInt(viewConfig.general.chrom_padding_bottom) || 0
+          },
+          xOffset: parseInt(viewConfig.general.image_padding),
+          chrWidth: parseInt(viewConfig.general.chrom_width),
+          canvas: {
+            width: this.baseConfig[this._tag].hasOwnProperty('width') ? parseInt(this.baseConfig[this._tag].width) : this.baseConfig['general'].hasOwnProperty('width') ? parseInt(this.baseConfig['general'].width) : 0,
+            height: this.baseConfig[this._tag].hasOwnProperty('height') ? parseInt(this.baseConfig[this._tag].height) : this.baseConfig['general'].hasOwnProperty('height') ? parseInt(this.baseConfig['general'].height) : 600,
+            color: this.baseConfig[this._tag].hasOwnProperty('canvasColor') ? parseInt(this.baseConfig[this._tag].canvasColor) : this.baseConfig['general'].hasOwnProperty('canvasColor') ? this.baseConfig['general'].canvasColor : 'white'
+          },
+          displayControls: this.baseConfig[this._tag].hasOwnProperty('displayControls') ? this.baseConfig[this._tag].displayControls : this.baseConfig['general'].hasOwnProperty('displayControls') ? this.baseConfig['general'].displayControls : 'full',
+          colorClasses: viewConfig.classes || {},
+          setPopover: function setPopover(props) {
+            return _this7.setPopover(props);
+          }
+        };
+        chr.features.forEach(function (data) {
+          var name = data.seqName;
 
-      let viewSetup = {
-        min: viewConfig.general.ruler_min,
-        max: viewConfig.general.ruler_max,
-        chrMin: chr.features[0].seqName,
-        chrMax: chr.features[0].seqName,
-        chrOrder: [],
-        zoom: 0,
-        yScale: 1,
-        yOffset: {
-          offsetTop: parseInt(viewConfig.general.chrom_padding_top) || 0,
-          offsetBottom: parseInt(viewConfig.general.chrom_padding_bottom) || 0
-        },
-        xOffset: parseInt(viewConfig.general.image_padding),
-        chrWidth: parseInt(viewConfig.general.chrom_width),
-        canvas: {
-          width: this.baseConfig[this._tag].hasOwnProperty('width') ? parseInt(this.baseConfig[this._tag].width) : this.baseConfig['general'].hasOwnProperty('width') ? parseInt(this.baseConfig['general'].width) : 0,
-          height: this.baseConfig[this._tag].hasOwnProperty('height') ? parseInt(this.baseConfig[this._tag].height) : this.baseConfig['general'].hasOwnProperty('height') ? parseInt(this.baseConfig['general'].height) : 600,
-          color: this.baseConfig[this._tag].hasOwnProperty('canvasColor') ? parseInt(this.baseConfig[this._tag].canvasColor) : this.baseConfig['general'].hasOwnProperty('canvasColor') ? this.baseConfig['general'].canvasColor : 'white'
-        },
-        displayControls: this.baseConfig[this._tag].hasOwnProperty('displayControls') ? this.baseConfig[this._tag].displayControls : this.baseConfig['general'].hasOwnProperty('displayControls') ? this.baseConfig['general'].displayControls : 'full',
-        colorClasses: viewConfig.classes || {},
-        setPopover: props => this.setPopover(props)
-      };
-      chr.features.forEach(data => {
-        let name = data.seqName;
+          if (data.start < viewSetup.min) {
+            viewSetup.min = data.start;
+            viewSetup.chrMin = name;
+          }
 
-        if (data.start < viewSetup.min) {
-          viewSetup.min = data.start;
-          viewSetup.chrMin = name;
-        }
+          if (data.end > viewSetup.max) {
+            viewSetup.max = data.end;
+            viewSetup.chrMax = name;
+          }
 
-        if (data.end > viewSetup.max) {
-          viewSetup.max = data.end;
-          viewSetup.chrMax = name;
-        }
+          viewSetup.chrOrder.push(name);
+        });
+        if (viewSetup.min > viewConfig.general.ruler_min) viewSetup.min = viewConfig.general.ruler_min;
+        if (viewSetup.max < viewConfig.general.ruler_max) viewSetup.max = viewConfig.general.ruler_max;
+        viewSetup.yScale = Index._setYScale(viewSetup.canvas.height, viewSetup.max, viewSetup.min, viewSetup.yOffset);
+        return viewSetup;
+      }
+    }, {
+      key: "_setChrOrder",
+      value: function _setChrOrder(viewData) {
+        var order = this._viewLayout.chrOrder || [];
 
-        viewSetup.chrOrder.push(name);
-      });
-      if (viewSetup.min > viewConfig.general.ruler_min) viewSetup.min = viewConfig.general.ruler_min;
-      if (viewSetup.max < viewConfig.general.ruler_max) viewSetup.max = viewConfig.general.ruler_max;
-      viewSetup.yScale = Index._setYScale(viewSetup.canvas.height, viewSetup.max, viewSetup.min, viewSetup.yOffset);
-      return viewSetup;
-    }
-
-    _setChrOrder(viewData) {
-      let order = this._viewLayout.chrOrder || [];
-
-      for (let key in viewData) {
-        if (viewData.hasOwnProperty(key)) {
-          for (let k in viewData[key]) {
-            if (viewData[key].hasOwnProperty(k) && k !== 'features' && order.indexOf(k) !== -1) {
-              order.push(k);
+        for (var key in viewData) {
+          if (viewData.hasOwnProperty(key)) {
+            for (var k in viewData[key]) {
+              if (viewData[key].hasOwnProperty(k) && k !== 'features' && order.indexOf(k) !== -1) {
+                order.push(k);
+              }
             }
           }
         }
+
+        return order;
       }
+      /**
+       * @description
+       * Set the y-scale factor for drawing on the canvas based on the actual
+       * canvas dimensions and the vertical padding.
+       * @param height
+       * @param {number} chrMax - Minimum position of target chromosome
+       * @param {number} chrMin - Maximum position of target chromosome
+       * @param {number} offsetTop
+       * @param {number} offsetBottom
+       * @returns {number} y-scale factor
+       * @private
+       */
 
-      return order;
-    }
-    /**
-     * @description
-     * Set the y-scale factor for drawing on the canvas based on the actual
-     * canvas dimensions and the vertical padding.
-     * @param height
-     * @param {number} chrMax - Minimum position of target chromosome
-     * @param {number} chrMin - Maximum position of target chromosome
-     * @param {number} offsetTop
-     * @param {number} offsetBottom
-     * @returns {number} y-scale factor
-     * @private
-     */
+    }, {
+      key: "active",
+      get: function get() {
+        return this._active;
+      },
+      set: function set(view) {
+        this._active = view;
+      }
+    }, {
+      key: "config",
+      get: function get() {
+        return this._viewConfig;
+      }
+    }, {
+      key: "data",
+      get: function get() {
+        return this._viewData;
+      }
+    }, {
+      key: "dirty",
+      get: function get() {
+        return this._dirty;
+      },
+      set: function set(state) {
+        this._dirty = state;
+      }
+    }, {
+      key: "mouseTool",
+      get: function get() {
+        return this._mouseTool;
+      },
+      set: function set(tool) {
+        this._mouseTool = tool;
+      }
+    }, {
+      key: "paper",
+      get: function get() {
+        return this._paperContext;
+      }
+    }, {
+      key: "view",
+      get: function get() {
+        return this._viewLayout;
+      }
+    }, {
+      key: "color1",
+      get: function get() {
+        return this._color1;
+      },
+      set: function set(color) {
+        this._color1 = color;
+      }
+    }, {
+      key: "color2",
+      get: function get() {
+        return this._color2;
+      },
+      set: function set(color) {
+        this._color2 = color;
+      }
+    }, {
+      key: "popoverConfig",
+      get: function get() {
+        return this._popoverConfig;
+      }
+    }, {
+      key: "status",
+      get: function get() {
+        return this._status;
+      },
+      set: function set(status) {
+        this._status = status;
+      }
+    }], [{
+      key: "_setYScale",
+      value: function _setYScale(height, chrMax, chrMin, _ref) {
+        var offsetTop = _ref.offsetTop,
+            _ref$offsetBottom = _ref.offsetBottom,
+            offsetBottom = _ref$offsetBottom === void 0 ? 0 : _ref$offsetBottom;
+        return (height - (offsetTop + offsetBottom)) / (chrMax - chrMin);
+      }
+    }]);
 
+    return Index;
+  }();
 
-    static _setYScale(height, chrMax, chrMin, {
-      offsetTop,
-      offsetBottom = 0
-    }) {
-      return (height - (offsetTop + offsetBottom)) / (chrMax - chrMin);
-    }
+  var CVIT =
+  /*#__PURE__*/
+  function () {
+    function CVIT(passedData) {
+      var _this = this;
 
-  }
+      _classCallCheck(this, CVIT);
 
-  class CVIT {
-    constructor(passedData) {
-      this.model = new Index(passedData, () => {
-        this._inform();
+      this.model = new Index(passedData, function () {
+        _this._inform();
       });
       this.ui = render(h(CvitUI, {
         cvitModel: this.model
@@ -28291,54 +29325,81 @@
      */
 
 
-    appendData(file, fetchConfig = {}) {
-      this.model.appendData(file, fetchConfig).then(() => {
-        this.model.setDirty(true);
-      });
-    }
+    _createClass(CVIT, [{
+      key: "appendData",
+      value: function appendData(file) {
+        var _this2 = this;
 
-    _parseFile(file, format, fetchConfig = {}) {
-      return parseFile(file, format, fetchConfig);
-    }
-    /**
-     * overwrite CViT view _viewData post load
-     * @param  files
-     * @param fetchConfig
-     */
+        var fetchConfig = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        this.model.appendData(file, fetchConfig).then(function () {
+          _this2.model.setDirty(true);
+        });
+      }
+    }, {
+      key: "_parseFile",
+      value: function _parseFile(file, format) {
+        var fetchConfig = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+        return parseFile(file, format, fetchConfig);
+      }
+      /**
+       * overwrite CViT view _viewData post load
+       * @param  files
+       * @param fetchConfig
+       */
 
+    }, {
+      key: "overwriteData",
+      value: function overwriteData(files) {
+        var _this3 = this;
 
-    overwriteData(files, fetchConfig = {}) {
-      this.model.setData(files, fetchConfig).then(() => {
-        this.model.setDirty(true);
-      });
-    }
-    /**
-     * overwrite CViT view configuration post load
-     * @param  file
-     * @param fetchConfig
-     */
+        var fetchConfig = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        this.model.setStatus('Adding new data.');
+        this.model.setData(files, fetchConfig).then(function () {
+          _this3.model.status = '';
 
+          _this3.model.setDirty(true);
+        });
+      }
+      /**
+       * overwrite CViT view configuration post load
+       * @param  file
+       * @param fetchConfig
+       */
 
-    overwriteConfig(file, fetchConfig = {}) {
-      this.model.loadViewConfig(file, fetchConfig).then(() => this.model.setDirty(true));
-    }
+    }, {
+      key: "overwriteConfig",
+      value: function overwriteConfig(file) {
+        var _this4 = this;
 
-    pingModel() {
-      console.log('ping', this.model);
-    }
-    /**
-     * Inform preact that the component's props have updated
-     * @private
-     */
+        var fetchConfig = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        this.model.setStatus('Adding new configuration.');
+        this.model.loadViewConfig(file, fetchConfig).then(function () {
+          _this4.model.status = '';
 
+          _this4.model.setDirty(true);
+        });
+      }
+    }, {
+      key: "pingModel",
+      value: function pingModel() {
+        console.log('ping', this.model);
+      }
+      /**
+       * Inform preact that the component's props have updated
+       * @private
+       */
 
-    _inform() {
-      render(h(CvitUI, {
-        cvitModel: this.model
-      }), document.querySelector('#cvit-app'), this.ui);
-    }
+    }, {
+      key: "_inform",
+      value: function _inform() {
+        render(h(CvitUI, {
+          cvitModel: this.model
+        }), document.querySelector('#cvit-app'), this.ui);
+      }
+    }]);
 
-  }
+    return CVIT;
+  }();
 
   /**
    * @file
@@ -28349,7 +29410,7 @@
    *
    */
 
-  const main = () => {
+  var main = function main() {
     //if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
     //  // support commonjs loading, if it exists.
     //  module.exports = CVIT;
@@ -28358,35 +29419,35 @@
     //  window.cvit = CVIT;
     //}
     //emit event when cvit _viewData is properly loaded
-    const evtName = 'DOMContentLoaded'; // add alternative config/gff locations priority order: HTML _viewData attribute > querystring > cvit.conf
+    var evtName = 'DOMContentLoaded'; // add alternative config/gff locations priority order: HTML _viewData attribute > querystring > cvit.conf
 
-    const loadedHandler = () => {
-      let dataset = document.getElementById('cvit-app').dataset;
+    var loadedHandler = function loadedHandler() {
+      var dataset = document.getElementById('cvit-app').dataset;
       console.log('cvitroot', dataset.cvitroot);
-      let dConf = dataset.config ? JSON.parse(dataset.config) : null;
-      let dTag = dataset.tag ? dataset.tag : null;
-      let dGff = dataset.gff ? JSON.parse(dataset.gff) : null;
-      let croot = dataset.cvitroot ? dataset.cvitroot : '';
-      let register = dataset.register ? dataset.register : true;
-      let configData = {
+      var dConf = dataset.config ? JSON.parse(dataset.config) : null;
+      var dTag = dataset.tag ? dataset.tag : null;
+      var dGff = dataset.gff ? JSON.parse(dataset.gff) : null;
+      var croot = dataset.cvitroot ? dataset.cvitroot : '';
+      var register = dataset.register ? dataset.register : true;
+      var configData = {
         viewConf: dConf,
         viewTag: dTag,
         gff: dGff,
         cvitRoot: croot
       };
 
-      let _cvit = new CVIT(configData);
+      var _cvit = new CVIT(configData);
 
       if (register) window.cvit = _cvit;
 
-      const postLoadHandler = () => {
+      var postLoadHandler = function postLoadHandler() {
         console.log('CViTjs:', 'Data successfully loaded');
         document.removeEventListener('baseDataLoaded', postLoadHandler);
       };
       /** example loading post-creation data */
 
       /*
-       const postLoadHandler = () => {
+        const postLoadHandler = () => {
         //_cvit.appendData('data/test5/data2.gff');
         document.removeEventListener('baseDataLoaded',postLoadHandler);
       };

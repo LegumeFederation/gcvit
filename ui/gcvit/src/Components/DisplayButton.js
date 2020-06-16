@@ -21,6 +21,7 @@ export default class DisplayButton extends React.Component {
      * craft request for new gff if needed, then re-render cvit canvas with new options
      */
     onSubmit = () => {
+	this.props.setKey();
         const { selected, options } = this.props;
         const {priorRequest} = this.state;
         let {headers} = this.props
