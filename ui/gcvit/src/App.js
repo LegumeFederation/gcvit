@@ -13,6 +13,7 @@ import HelpModal from './Components/HelpModal'
 import DataModal from "./Components/DownloadModal";
 import DisplayButton from "./Components/DisplayButton";
 import {rulerIntervalDefault, titleDefault} from "./Components/DefaultConfiguration";
+import Key from "./Components/Key"
 
 export default class App extends React.Component {
     state = {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         genotypes: {}, //All genotypes available in selected dataset
         referenceDataset: null, //Dataset reference was chosen from
         selected:[], //All selected datasets+genotypes for comparison
+	currentKey:[], //Deep copy of selected after submitting a comparison
         options: { //General configuration for selected data options
             left:{
                 feature : 'none',
@@ -154,6 +156,10 @@ export default class App extends React.Component {
         this.loadDatasets(authHeader);
     };
 
+    setKey = () => {
+	this.setState({currentKey:JSON.parse(JSON.stringify(this.state.selected))});
+    }
+
     /**
      * After UI mounts, hide cvit-app until first comparison request is made, and populate
      * list of available datasets
@@ -167,7 +173,7 @@ export default class App extends React.Component {
      * Render app components
      */
     render() {
-        const { selected, options, hideOptions, showModal, auth, user, authHeader } = this.state;
+        const { selected, currentKey, options, hideOptions, showModal, auth, user, authHeader } = this.state;
         let gts = this.state.referenceDataset !== null && this.state.genotypes[this.state.referenceDataset.value] !== undefined
             ? this.state.genotypes[this.state.referenceDataset.value]
             : [];
@@ -239,12 +245,13 @@ export default class App extends React.Component {
                     <OptionsForm setOptions ={this.setOptions} genotypes={selected} options={options}/>
                 </form>
                 <div className={'pure-g'}>
-                    <DisplayButton selected={selected} options={options} headers={authHeader} hide={()=>{this.setState({hideOptions:true});}}/>
+                    <DisplayButton selected={selected} options={options} headers={authHeader} hide={()=>{this.setState({hideOptions:true});}} setKey={this.setKey}/>
                     <div className={'pure-u-5-24 '}><br /></div>
                     <button className={'pure-u-1-4  pure-button button-display'} onClick={()=>this.handleOpenModal('data')}> Download </button>
                     <div className={'pure-u-1-24'} />
                     <button className={'pure-u-1-4  pure-button button-display'} onClick={()=>this.handleOpenModal('help')}> Help </button>
                 </div>
+		<Key datasets={currentKey} />
             </div>
         );
     };
