@@ -6,7 +6,7 @@ import React from 'react';
 
 export default class key extends React.Component {
     state = {
-	    visible : true
+	    visible : false,
     }
 
     render () {
