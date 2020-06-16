@@ -128,7 +128,7 @@ To start the GCViT service:
 docker-compose up -d
 ```
 
-GCViT is then available at https://localhost:8080
+The GCViT UI is then available at http://localhost:3000, and the GCViT API server at http://localhost:8080
 
 To stop the GCViT service:
 
