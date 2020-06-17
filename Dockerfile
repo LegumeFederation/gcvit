@@ -5,25 +5,26 @@ WORKDIR /cvit
 #Doing package before build allows us to leverage docker caching.
 COPY ui/cvitjs/package*.json ./
 RUN npm ci
-COPY ui/cvitjs/ ./
+# avoid copying user-modified cvit.conf and data
+COPY ui/cvitjs/css ./css
+COPY ui/cvitjs/src ./src
+COPY ui/cvitjs/rollup.config.js ui/cvitjs/.babelrc ./
 RUN npm run build
 
-#Build stage for gcvit ui component
+#gcvit image with dependencies installed for interactive development
 FROM node:12.18.0-alpine3.12 as gcvitui-dev
 ARG apiauth=false
 WORKDIR /gcvit
 COPY ui/gcvit/package*.json ./
 RUN npm ci
 #Migrate over build artifacts from the cvitui stage
-COPY ui/gcvit ./
-#Build UI components
 COPY --from=cvitui /cvit/build public/cvitjs/build/
-COPY --from=cvitui /cvit/cvit.conf public/cvitjs/cvit.conf
-COPY --from=cvitui /cvit/data/ public/cvitjs/data
+COPY ui/gcvit/public ./public
 ENTRYPOINT ["npm", "start"]
 EXPOSE 3000
 
 FROM gcvitui-dev AS gcvitui
+COPY ui/gcvit ./
 RUN npm run build && \
 	if [ "$apiauth" = "true" ] ; then echo Building UI with Auth && npm run buildauth ; fi
 
@@ -51,8 +52,8 @@ EXPOSE 8080
 FROM api as api-ui
 COPY --from=gcvitui /gcvit/build /app/ui/
 COPY --from=cvitui /cvit/build/ /app/ui/cvitjs/build
-COPY --from=cvitui /cvit/cvit.conf /app/ui/cvitjs/cvit.conf
-COPY --from=cvitui /cvit/data/ /app/ui/cvitjs/data
+COPY ui/cvitjs/cvit.conf /app/ui/cvitjs/cvit.conf
+COPY ui/cvitjs/data /app/ui/cvitjs/data
 
 #uncomment to build assets directly into container
 #This works best with smaller datasets

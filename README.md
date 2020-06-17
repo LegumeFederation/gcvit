@@ -29,7 +29,7 @@ Instructions for the UI are provided in the application itself.
  
 ### General Setup
 
-The steps for setting up a GCViT instance consists of downloading and installing the application, configuring the server, and data preparation. The GCViT repository includes example data from soybean consisting of these files: SNP data is in `assets/SoySNP50k_TestFile_named.vcf,` the backbone chromosomes are defined in `ui/cvit_assets/data/soySnp/gm_backbone.gff,` and the CViTjs image is configured with `ui/cvit_assets/data/soySnp/soySnp.conf.` 
+The steps for setting up a GCViT instance consists of downloading and installing the application, configuring the server, and data preparation. The GCViT repository includes example data from soybean consisting of these files: SNP data is in `assets/SoySNP50k_TestFile_named.vcf.gz`, the backbone chromosomes are defined in `ui/cvitjs/data/soySnp/gm_backbone.gff`, and the CViTjs image is configured with `ui/cvitjs/data/soySnp/test-42219.conf` 
 
 #### Configuring the Service
 No matter which method you intend to run GCViT, configuration of the Go backend service is the same. The default configuration file is `config/assetsconfig.yaml` and it has the following format:
@@ -88,15 +88,15 @@ While it is recommended, the data file given for 'location' does not have to be 
 
 ### Preparing the data
 
-**Reference Genome Assembly Backbone** You will need a GFF3 file that defines the chromosomes for the genome assembly backbone. This file must be added to the `ui/cvit_assets/data/` folder. An example file is included in the example, `ui/cvit_assets/data/soySnp/gm_backbone.gff`.
+**Reference Genome Assembly Backbone** You will need a GFF3 file that defines the chromosomes for the genome assembly backbone. This file must be added to the `ui/cvitjs/data/` folder. An example file is included in the example, `ui/cvitjs/data/soySnp/gm_backbone.gff`.
 
-To link the GFF file to CViTjs, edit the file ui/cvit_assets/cvit.conf to indicate the file exists and which CViTjs UI configuration file to use (described in [CViTjs documentation](https://github.com/LegumeFederation/cvitjs)).
+To link the GFF file to CViTjs, edit the file ui/cvitjs/cvit.conf to indicate the file exists and which CViTjs UI configuration file to use (described in [CViTjs documentation](https://github.com/LegumeFederation/cvitjs)).
 
 **Genotype Data Sets** Each genotype data set is represented by a single VCF file (which may be gzipped). By default, the files should go into the assets/ directory, but if you choose a different directory, it will be necessary to tell the application where to find the files. Information about connecting to a different the genotype data directory is described below.
 
 ### Configuring the UI
 
-Most aspects of the CViTjs display can be customized, including colors, fonts, and the popover box that appears when mousing over a feature. For more information on configuring the CViTjs component of GCViT, please see the documentation [here](https://github.com/LegumeFederation/cvitjs/wiki) and the example file `ui/cvit_assets/data/soySnp/soySnp.conf`.
+Most aspects of the CViTjs display can be customized, including colors, fonts, and the popover box that appears when mousing over a feature. For more information on configuring the CViTjs component of GCViT, please see the documentation [here](https://github.com/LegumeFederation/cvitjs/wiki) and the example file `ui/cvitjs/data/soySnp/test-42219.conf`.
 
 Configuration files for the three glyphs used by GCViT *Haplotype Block*, *Heatmap* and *Histogram* are in `ui/gcvit/src/Components/[HaploConfig.js|HeatConfig.js|HistConfig.js]` respectively.
 
@@ -113,7 +113,7 @@ For general use, it is easiest to get started with GCViT using [Docker](https://
 
 The Docker build process will retrieve the most recent version of CViTjs during the build process. 
 
-To add reference genome backbone files, popover customizations, or any other change to CViT place the files in `ui/cvit_assets`. This will overwrite the equivalent CViT file during the build process. 
+To add reference genome backbone files, popover customizations, or any other change to CViT place the files in `ui/cvitjs`. This will overwrite the equivalent CViT file during the build process. 
 
 Setting the environment variables `DOCKER_BUILDKIT=1` and `COMPOSE_DOCKER_CLI_BUILD=1` to enable [BuildKit](https://github.com/moby/buildkit) is recommended for faster builds.
 
@@ -166,15 +166,11 @@ If using the default server settings in assetconfig.yaml, GCViT will now be avai
 To update the data, you should be able to just add it directly to the mounted source, as GCViT checks for updated data when appropriate. 
 
 ##### Modifying the Docker container
-After building the Docker container, you will see three directories in the `ui/` directory: `build/,` `cvit_assets/,` and `public/.` 
-
 To make changes that will take affect when you build the container, make the changes in `build/.` Mirror cvit's directory/name structure for this and it will replace-before-build.
 
 To make changes without rebuilding the GCViT container but that require rebuilding CViTjs, edit and add files to `public/.`
 
 To make changes without rebuilding GCViT or CViTjs, edit and add files to `build/.` Not recommended unless testing changes.
-
-The best practices are to make CViTjs changes in `cvit_assets/` or `public/.`
 
 ##### Adding data set files to Docker container
 If data set files are located in the `/app/assets/` directory, you may want to build them into the container, especially for smaller datasets. To do so, edit `Dockerfile,` look for the line, `#Comment above and uncomment below if you would rather have assets built into container,` and follow the instructions.
