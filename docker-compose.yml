@@ -1,3 +1,4 @@
+# local interactive testing / development
 version: '2.3'
 
 services:
@@ -17,6 +18,8 @@ services:
     build:
       context: .
       target: api
+#     args:
+#       - apiauth=true
     volumes:
       - ./assets:/app/assets:ro
       - ./config:/app/config:ro

@@ -52,12 +52,11 @@ EXPOSE 8080
 FROM api as api-ui
 COPY --from=gcvitui /gcvit/build /app/ui/
 COPY --from=cvitui /cvit/build/ /app/ui/cvitjs/build
+
+#assets and config built directly into container
+#This works best with smaller datasets
+FROM api-ui as full
 COPY ui/cvitjs/cvit.conf /app/ui/cvitjs/cvit.conf
 COPY ui/cvitjs/data /app/ui/cvitjs/data
-
-#uncomment to build assets directly into container
-#This works best with smaller datasets
-#FROM api-ui AS complete
-#COPY /config /app/config
-#COPY /assets /app/assets
-
+COPY /config /app/config
+COPY /assets /app/assets

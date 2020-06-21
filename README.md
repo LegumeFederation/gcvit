@@ -108,19 +108,19 @@ Other display options (title, bin size, ruler tic interval) can be changed throu
   
 **Note:** Configuration settings in `ui/gcvit/src/Components/DefaultConfiguration.js` override CViTjs equivalent configuration settings, for example, ruler tic interval.
 
-### Docker Setup
+### Docker for testing / development
 For general use, it is easiest to get started with GCViT using [Docker](https://www.docker.com/). Before starting, make sure that docker is properly configured for your system.
-
-The Docker build process will retrieve the most recent version of CViTjs during the build process. 
 
 To add reference genome backbone files, popover customizations, or any other change to CViT place the files in `ui/cvitjs`. This will overwrite the equivalent CViT file during the build process. 
 
-Setting the environment variables `DOCKER_BUILDKIT=1` and `COMPOSE_DOCKER_CLI_BUILD=1` to enable [BuildKit](https://github.com/moby/buildkit) is recommended for faster builds.
+Setting the environment variables `DOCKER_BUILDKIT=1` and `COMPOSE_DOCKER_CLI_BUILD=1` to enable [BuildKit](https://github.com/moby/buildkit) is **strongly** recommended for faster, more efficient builds.
 
 To build the GCViT (development) images:
 ```
-docker-compose build
+docker-compose build [--build-arg apiauth=true]
 ```
+
+If you wish to build the api with BasicAuth, append `--build-arg apiauth=true` to the above build command.
 
 To start the GCViT service:
 
@@ -128,7 +128,10 @@ To start the GCViT service:
 docker-compose up -d
 ```
 
-The GCViT UI is then available at http://localhost:3000, and the GCViT API server at http://localhost:8080
+The GCViT UI is then accessible via web browser http://localhost:3000, while the GCViT API server is accessible at http://localhost:8080.
+
+Any changes to the files on the host in `assets/`, `data/`, `ui/cvitjs/data`, `gcvit/src`, or the `ui/cvitjs/cvit.conf` file will be immediately reflected.
+Changes to any other files will require stopping the gcvit service (`docker-compose down`), rebuilding container image(s) (`docker-compose build`), and restarting (with `docker-compose up -d`).
 
 To stop the GCViT service:
 
@@ -136,44 +139,22 @@ To stop the GCViT service:
 docker-compose down
 ```
 
-To build through docker:
+#### Docker for production
+To deploy a complete container image (UI + API, including the contents of `assets/` and `config/`) of GCViT in production:
+
+1. (optional) Set the [Docker Context](https://docs.docker.com/engine/context/working-with-contexts/) to the production host (default localhost).
+
+2. Build the complete container image on the host specified by the Docker context:
 ```
-docker build -t gcvit:1.0 . -f Dockerfile
-```
-This command will produce a image with the tag of **gcvit:1.0** that can be used to build a container. If you want to save time with automated builds and only need the server API component, the target build stage:
-```
---target=api
-```
-is provided to skip over the building of the UI components. Similarly, if you wish to build the tool with BasicAuth the build-arg:
-```
---build-arg apiauth=true
+docker-compose -f docker-compose.prod.yml build
 ```
 
-When starting the container, there are two mount points exposed to add configuration and data directories: `/app/config` and `/app/assets` respectively.
-
-An example of starting an instance of GCViT inside the gcvit directory, binding the configuration and assets directory at run time: 
+3. Deploy:
 ```
-docker run -d \
---name gcvit \
---mount type=bind,source="$(pwd)"/config,target=/app/config \
---mount type=bind,source="$(pwd)"/assets,target=/app/assets \
--p 8080:8080 \
-gcvit:1.0
+docker-compose -f docker-compose.prod.yml up -d
 ```
 
-If using the default server settings in assetconfig.yaml, GCViT will now be available at `http://localhost:8080.`
-
-To update the data, you should be able to just add it directly to the mounted source, as GCViT checks for updated data when appropriate. 
-
-##### Modifying the Docker container
-To make changes that will take affect when you build the container, make the changes in `build/.` Mirror cvit's directory/name structure for this and it will replace-before-build.
-
-To make changes without rebuilding the GCViT container but that require rebuilding CViTjs, edit and add files to `public/.`
-
-To make changes without rebuilding GCViT or CViTjs, edit and add files to `build/.` Not recommended unless testing changes.
-
-##### Adding data set files to Docker container
-If data set files are located in the `/app/assets/` directory, you may want to build them into the container, especially for smaller datasets. To do so, edit `Dockerfile,` look for the line, `#Comment above and uncomment below if you would rather have assets built into container,` and follow the instructions.
+The GCViT UI (and API) will then be available at http://<hostname>:8080 , where _hostname_ is the host running the Docker Engine specified by the Docker context.
 
 ### Go + Node Setup
 GCViT may also be built and served directly using [Go](https://golang.org/) and and [Node](https://nodejs.org/en/) together.
