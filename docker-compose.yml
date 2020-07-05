@@ -1,0 +1,27 @@
+# local interactive testing / development
+version: '2.3'
+
+services:
+  ui:
+    build:
+      context: .  
+      target: gcvitui-dev
+    ports:
+      - "3000:3000"
+    # https://github.com/facebook/create-react-app/issues/8688
+    stdin_open: true
+    volumes:
+      - ./ui/cvitjs/cvit.conf:/gcvit/public/cvitjs/cvit.conf:ro
+      - ./ui/cvitjs/data:/gcvit/public/cvitjs/data:ro
+      - ./ui/gcvit/src:/gcvit/src:ro
+  api:
+    build:
+      context: .
+      target: api
+#     args:
+#       - apiauth=true
+    volumes:
+      - ./assets:/app/assets:ro
+      - ./config:/app/config:ro
+    ports:
+      - "8080:8080"

@@ -5,8 +5,12 @@
 + [About](#about) 
 + [Getting Started](#getting-started)
 + [Setup](#setup)
-    + [General](#general-setup)
-    + [Docker](#docker-setup)
+    + [Preparing data](#preparing-the-data)
+    + [Configuring the API Service](#configuring-the-api-service)
+    + [Configuring the UI](#configuring-the-ui-(optional))
+    + [Running GCViT using Docker](#running-gcvit-using-docker)
++ [Running GCViT on a Production Server](#running-gcvit-on-a-production-server)
+    + [Docker](#docker)
     + [Go + Node](#go-+-node-setup) 
 + [API](#api)
 + [Authentication](#authentication)
@@ -20,44 +24,43 @@ GCViT is built on top of [CViTjs](https://github.com/LegumeFederation/cvitjs), a
 ![Williams Pedigree As Haplotype Blocks ](assets/readme_images/Williams_Pedigree2.png?raw=true)
 Figure 1. An example of haplotype comparisons of 6 soybean accessions.
 
-[Explore Soybean SNP data in GCViT](https://soybase.org/gcvit/)
+[Explore Soybean SNP data in GCViT (at SoyBase)](https://soybase.org/gcvit/)
 
 ## Getting Started
-An example dataset has been provided to test cvitjs. To get started, it is reccomended that you use [Docker](https://www.docker.com/), though there are provisions to run [standalone](#go-+-node-setup). To run for the first time in docker:
+An example soybean dataset has been provided to test cvitjs. To get started, it is recommended that you use [Docker](https://www.docker.com/).
 
-First build the image: 
 ```
-docker build -t gcvit:1.0 . -f Dockerfile
-```
-
-Then run the image:
-```
-docker run -d \
---name gcvit \
---mount type=bind,source="$(pwd)"/config,target=/app/config \
---mount type=bind,source="$(pwd)"/assets,target=/app/assets \
--p 8080:8080 \
-gcvit:1.0
+docker run -d -p 8080:8080 gcvit:latest
 ```
 
 GCViT should now be available at `http://localhost:8080.`
 
-If you are planning on developing and using gcvit on a server, the `docker-compose` branch has been made available with further optimisations for a CI environment.
-
 ## Setup
-While GCViT is intended to be an online tool, it may also be run locally as a stand alone tool. In either case, there are two main approaches to running GCViT, in a Docker container, or using the built-in Go server. The configuration of the backend service and the UI stays mostly the same in either case.
-A stand-alone [Electron](https://www.electronjs.org/) desktop app is in the process of being developed. 
 
-Instructions for the UI are provided in the application itself.
- 
-### General Setup
+Setting up a local GCViT instance with your own data requires:
+1. Preparing the data
+2. Configuring the UI
+3. Running GCViT
 
-The steps for setting up a GCViT instance consists of downloading and installing the application, configuring the server, and data preparation. The GCViT repository includes example data from soybean consisting of these files: SNP data is in `assets/SoySNP50k_TestFile_named.vcf,` the backbone chromosomes are defined in `ui/gcvit/public/cvitjs/data/soySnp/gm_backbone.gff,` and the CViTjs image is configured with `ui/gcvit/public/cvitjs/data/soySnp/soySnp.conf.` 
+### Preparing the data
+
+#### Reference Genome Assembly Backbone
+1. Add a GFF3 file that defines the chromosomes for the genome assembly backbone to the `ui/cvitjs/data/` folder.
+<br /><br />
+An example GFF3 file is included at `ui/cvitjs/data/soySnp/gm_backbone.gff`.
+
+2. Edit `ui/cvitjs/cvit.conf`, linking the GFF specified in #1 to CViTjs, and defining which CViTjs UI configuration file to use (described in [CViTjs documentation](https://github.com/LegumeFederation/cvitjs)).
 
 
-#### Configuring the Service
-No matter which method you intend to run GCViT, configuration of the Go backend service is the same. The default configuration file is `config/assetsconfig.yaml` and it has the following format:
+#### Genotype Data Sets
+Add one or more (optionally gzipped) VCF files representing genotype data to the `assets/` directory.
 
+An example dataset is included at `assets/SoySNP50k_TestFile_named.vcf.gz`
+
+#### Configuring the API Service
+Add a stanza to `config/assetsconfig.yaml` for each genotype data set (VCF) file to serve it from the API server, and configure other options described below.
+
+*Example config/assetsconfig.yaml*
 ```yaml
 server:
   port: 8080
@@ -79,7 +82,18 @@ snptestLegacy:
     - username
 ```
 
-The server stanza is optional, and supports the following options:
+The format for each VCF stanza (_snptestLegacy_ in the above example) is as follows:
+```yaml
+key: #user-defined unique name for internal key for API requests
+  location: relative to root of server directory
+  name: display name for dropdowns
+  format: vcf (only option for now, automatically checks if gzipped)
+  restricted: [optional] whitelist of users that may access this dataset, if not present, data may be accessed by anyone
+    - username: username that can access this data
+    - username2: another user that can access this datta
+```
+
+The **server** stanza is optional, and supports the following options:
 
 | Option | Default | Use |
 | ----- | ----- | ----- |
@@ -91,55 +105,66 @@ The server stanza is optional, and supports the following options:
 | source | gcvit | Value for Column 2 of generated gff files from /api/generateGFF |
 | binSize | 500000 | Default number of bases used for bins |
 
-The users stanza is also optional. Use this configuration option to set one-or-more users to password protect datasets.
+The **users** stanza is also optional. Use this configuration option to set one-or-more users to password protect datasets.
 Without proper credentials, users will never be presented with restricted datasets when using the gcvit ui.
 The format is one-or more `<username> : <password>` pairs. Note this only uses BasicAuth headers, and isn't intended to 
 be very secure. Future updates may include better practices if demand is present.
 
-Finally you may have one or more data tracks, that have the following required fields:
+### Configuring the UI (optional)
 
-```yaml
-key: #internal key for API requests
-  location: relative to root of server directory
-  name: display name for dropdowns
-  format: vcf (only option for now, automatically checks if gzipped)
-  restricted: [optional] whitelist of users that may access this dataset, if not present, data may be accessed by anyone
-    - username: username that can access this data
-    - username2: another user that can access this datta
+* **Glyphs** for *Haplotype Block*, *Heatmap* and *Histogram* can be customized in `ui/gcvit/src/Components/[HaploConfig.js|HeatConfig.js|HistConfig.js]` respectively.
+
+* **Popover** The box that pops up when clicking on a glyph in the image can be customized by editing `ui/cvit/src/templates/Popover.js`
+
+* **Help box** The text for various in-app help can be customized by editing the appropriate file in `ui/gcvit/src/Components/HelpTopcs/`
+  
+* **CViTjs display options** Title, colors, fonts, bin size, ruler tic interval, and other CViTjs display options are defined in CViTjs configuration file (the default is `ui/cvitjs/data/soySnp/test-42219.conf`, as spedified in `ui/cvitjs/cvit.conf`).
+For more information on configuring the CViTjs component of GCViT, please see the documentation [here](https://github.com/LegumeFederation/cvitjs/wiki) and the example file 
+  - Configuration settings in `ui/gcvit/src/Components/DefaultConfiguration.js` override CViTjs equivalent configuration settings
+
+### Running GCViT using Docker
+The easiest way run a local GCViT instance is by using [Docker](https://docs.docker.com/engine/install/).
+
+Setting the environment variables `DOCKER_BUILDKIT=1` and `COMPOSE_DOCKER_CLI_BUILD=1` to enable [BuildKit](https://github.com/moby/buildkit) is recommended for faster, more efficient builds.
+
+To build CViTjs with any UI customizations, the GCViT API server, and start GCViT, execute the following command in the same directory as docker-compose.yml (i.e., in the root of the gcvit git working tree):
+```
+docker-compose up --build -d
 ```
 
-While it is recommended, the data file given for 'location' does not have to be in the `assets` folder to be read by GCViT.
+If you wish to build the api with BasicAuth, append `--build-arg apiauth=true` to the above build command.
 
-### Preparing the data
+The GCViT UI is then accessible via web browser http://localhost:3000, while the GCViT API server is accessible at http://localhost:8080.
 
-**Reference Genome Assembly Backbone** You will need a GFF3 file that defines the chromosomes for the genome assembly backbone. This file must be added to the `ui/gcvit/public/cvitjs/data/` folder. An example file is included in the example, `ui/gcvit/public/cvitjs/data/soySnp/gm_backbone.gff`.
+_Any changes to the files on the host in `assets/`, `data/`, `ui/cvitjs/data`, `gcvit/src`, or the `ui/cvitjs/cvit.conf` file will be immediately reflected in the browser_.
+Changes to any other files will require rebuilding the container images and restarting the containers (`docker-compose up --build -d`).
 
-To link the GFF file to CViTjs, edit the file `ui/gcvit/public/cvitjs/cvit.conf` to indicate the file exists and which CViTjs UI configuration file to use (described in [CViTjs documentation](https://github.com/LegumeFederation/cvitjs)).
+To stop the GCViT service:
 
-**Genotype Data Sets** Each genotype data set is represented by a single VCF file (which may be gzipped). By default, the files should go into the assets/ directory, but if you choose a different directory, it will be necessary to tell the application where to find the files. Information about connecting to a different the genotype data directory is described below. An example dataset is available at `/assets/SoySNP50k_TestFile_named.vcf.gz`
+```
+docker-compose down
+```
 
-### Configuring the UI
+## Running GCViT on a Production Server
 
-Most aspects of the CViTjs display can be customized, including colors, fonts, and the popover box that appears when mousing over a feature. For more information on configuring the CViTjs component of GCViT, please see the documentation [here](https://github.com/LegumeFederation/cvitjs/wiki) and the example file `ui/gcvit/public/cvitjs/data/soySnp/soySnp.conf`.
+#### Docker
+To deploy a complete container image (UI + API, including the contents of `assets/` and `config/`) of GCViT in production:
 
-Configuration files for the three glyphs used by GCViT *Haplotype Block*, *Heatmap* and *Histogram* are in `ui/gcvit/src/Components/[HaploConfig.js|HeatConfig.js|HistConfig.js]` respectively. Any changes made will require a rebuild of the gcvit ui.
+1. (optional) Set the [Docker Context](https://docs.docker.com/engine/context/working-with-contexts/) to the production host (default localhost).
 
-Other display options (title, bin size, ruler tic interval) can be changed through editing the values in `ui/gcvit/src/Components/DefaultConfiguration.js`. After changes are made, the docker container will need to be rebuilt, or a manual build will need to be triggered through node, as described in the following sections. 
+2. Build the complete container image on the host specified by the Docker context:
+```
+docker-compose -f docker-compose.prod.yml build
+```
 
-**Popover customization** The box that pops up when clicking on a glyph in the image can be customized by editing `ui/cvit/src/templates/Popover.js` if building in docker, if not using docker, you must rebuild the cvit component and moving the resulting build directory to `/ui/gcvit/public/cvitjs/`.
+3. Deploy:
+```
+docker-compose -f docker-compose.prod.yml up -d
+```
 
-**Help box customizations** The text in in-app help can be customized. Edit the files `ui/gcvit/src/Components/HelpTopcs.`
-  
-**Note:** Configuration settings in `ui/gcvit/src/Components/DefaultConfiguration.js` override CViTjs equivalent configuration settings, for example, ruler tic interval.
+The GCViT UI (and API) will then be available at http://<hostname>:8080 , where _hostname_ is the host running the Docker Engine specified by the Docker context.
 
-### Docker Setup
-For general use, it is easiest to get started with GCViT using [Docker](https://www.docker.com/). Before starting, make sure that docker is properly configured for your system.
-
-The Docker build process will retrieve the most recent version of CViTjs during the build process. 
-
-To add reference genome backbone files, or other configuration changes to cvit place the files in `ui/gcvit/public`. Any changes to the cvitjs source will be built and added to the container, including changes to popovers. 
-
-To build through docker:
+Alternatively, a complete container image can be built directly with `docker build`:
 ```
 docker build -t gcvit:1.0 . -f Dockerfile
 ```
@@ -156,41 +181,11 @@ is provided to skip over the building of the UI components. Similarly, if you wi
 --build-arg apiauth=true
 ```
 
-When starting the container, there are two mount points exposed to add configuration and data directories: `/app/config` and `/app/assets` respectively.
-
-An example of starting an instance of GCViT inside the gcvit directory, binding the configuration and assets directory at run time: 
+Then to deploy using `docker run`:
 
 ```
-docker run -d \
---name gcvit \
---mount type=bind,source="$(pwd)"/config,target=/app/config \
---mount type=bind,source="$(pwd)"/assets,target=/app/assets \
--p 8080:8080 \
-gcvit:1.0
+docker run -d -p 8080:8080 gcvit:1.0
 ```
-
-If using the default server settings in assetconfig.yaml, GCViT will now be available at `http://localhost:8080.`
-
-To update the data, you should be able to just add it directly to the mounted source, as GCViT checks for updated data when appropriate. 
-
-##### Modifying the Docker container
-After building the Docker container, you will see two important directories in the `ui` directory: `cvit/`, and `gcvit/`. 
-
-Files under `/ui/cvit` should be modified to make changes to the cvit genome viewer container. Any changes to `css` or `src` require a rebuild of cvitjs. 
-
-Files under `/ui/gcvit` should be modified to edit the view control section of the UI. Any changes to `src` require a rebuild of the gcvit component.
-
-Rebuilding the docker container will automatically integrate changes to either `ui/cvit` or `ui/gcvit` otherwise there are options to change the ui component without rebuilding the container.
-
-To make changes without rebuilding the GCViT container but that require rebuilding the GCViT ui (including changes to CViTjs), edit and add files to `ui/gcvit/public/`. then rebuild the gcvit component.
-
-To make changes without rebuilding GCViT or CViTjs, edit and add files to `build/`. Not recommended unless testing changes.
-
-The best practices are to make CViTjs changes in `public/`.
-
-
-##### Adding data set files to Docker container
-If data set files are located in the `/app/assets/` directory, you may want to build them into the container, especially for smaller datasets. To do so, edit `Dockerfile,` look for the line, `#Comment above and uncomment below if you would rather have assets built into container,` and follow the instructions.
 
 ### Go + Node Setup
 GCViT may also be built and served directly using [Go](https://golang.org/) and and [Node](https://nodejs.org/en/) together.

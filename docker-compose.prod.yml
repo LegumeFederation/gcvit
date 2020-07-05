@@ -1,0 +1,8 @@
+# production deployment of complete container image
+version: '2'
+
+services:
+  gcvit:
+    build: .
+    ports:
+      - "8080:8080"

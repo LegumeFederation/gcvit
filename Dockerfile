@@ -1,28 +1,32 @@
 #Multistage build
 #Build stage for cvit component
 FROM node:12.18.0-alpine3.12 as cvitui
-ARG apionly=false
 WORKDIR /cvit
 #Doing package before build allows us to leverage docker caching.
 COPY ui/cvitjs/package*.json ./
-RUN if [ "$apionly" = "false" ] ; then npm ci; fi
-COPY ui/cvitjs/ ./
-RUN if [ "$apionly" = "false" ] ; then 	npm run build && \
-	echo Built cvitjs ; else echo Skipping cvitjs component; fi
+RUN npm ci
+# avoid copying user-modified cvit.conf and data
+COPY ui/cvitjs/css ./css
+COPY ui/cvitjs/src ./src
+COPY ui/cvitjs/rollup.config.js ui/cvitjs/.babelrc ./
+RUN npm run build
 
-#Build stage for gcvit ui component
-FROM node:12.18.0-alpine3.12 as gcvitui
-ARG apionly=false
+#gcvit image with dependencies installed for interactive development
+FROM node:12.18.0-alpine3.12 as gcvitui-dev
 ARG apiauth=false
 WORKDIR /gcvit
 COPY ui/gcvit/package*.json ./
-RUN if [ "$apionly" = "false" ] ; then npm ci; fi
+RUN npm ci
 #Migrate over build artifacts from the cvitui stage
+COPY --from=cvitui /cvit/build public/cvitjs/build/
+COPY ui/gcvit/public ./public
+ENTRYPOINT ["npm", "start"]
+EXPOSE 3000
+
+FROM gcvitui-dev AS gcvitui
 COPY ui/gcvit ./
-#Build UI components
-RUN if [ "$apionly" = "false" ] ; then 	npm run build && \
-	if [ "$apiauth" = "true" ] ; then echo Building UI with Auth && npm run buildauth ; else npm run build ; fi && \
-	echo Built UI components  ; else echo Skipping UI Components; fi
+RUN npm run build && \
+	if [ "$apiauth" = "true" ] ; then echo Building UI with Auth && npm run buildauth ; fi
 
 #Build stage for golang API components
 FROM golang:1.13.12-alpine3.12 as gcvitapi
@@ -43,16 +47,16 @@ VOLUME ["/app/config","/app/assets"]
 WORKDIR /app
 #start server
 ENTRYPOINT ["/app/server","--gcvitRoot=./", "--ui=/ui"]
+EXPOSE 8080
 
 FROM api as api-ui
 COPY --from=gcvitui /gcvit/build /app/ui/
 COPY --from=cvitui /cvit/build/ /app/ui/cvitjs/build
-COPY --from=cvitui /cvit/cvit.conf /app/ui/cvitjs/cvit.conf
-COPY --from=cvitui /cvit/data/ /app/ui/cvitjs/data
 
-#uncomment to build assets directly into container
+#assets and config built directly into container
 #This works best with smaller datasets
-#FROM api-ui AS complete
-#COPY /config /app/config
-#COPY /assets /app/assets
-
+FROM api-ui as full
+COPY ui/cvitjs/cvit.conf /app/ui/cvitjs/cvit.conf
+COPY ui/cvitjs/data /app/ui/cvitjs/data
+COPY /config /app/config
+COPY /assets /app/assets
