@@ -1,4 +1,6 @@
  # GCViT
+[![DOI](https://zenodo.org/badge/209399439.svg)](https://zenodo.org/badge/latestdoi/209399439)
+
 ![GCViT](assets/readme_images/logo.png?raw=true)
 
 ## Table of Contents
