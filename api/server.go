@@ -90,7 +90,7 @@ func main() {
 	portTLS := serverSettings.GetInt("portTLS")
 
 	// Setup HTTP port if *no* ports are passed
-	if port > 1 && portTLS < 1 {
+	if port < 1 && portTLS < 1 {
 		port = 8080
 	}
 
