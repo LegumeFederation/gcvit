@@ -71,7 +71,7 @@ func CheckAuth(ctx *fasthttp.RequestCtx) {
 		ctx.Logger().Printf("Valid Credentials for %s", user.(string))
 	} else {
 		ctx.Error("Invalid Credentials", fasthttp.StatusUnauthorized)
-		ctx.Logger().Printf("Invalid Credentials for %s", user.(string))
+		ctx.Logger().Printf("Invalid Credentials passed",)
 	}
 	return
 }
