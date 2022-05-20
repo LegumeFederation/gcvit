@@ -32,7 +32,7 @@ Figure 1. An example of haplotype comparisons of 6 soybean accessions.
 An example soybean dataset has been provided to test cvitjs. To get started, it is recommended that you use [Docker](https://www.docker.com/).
 
 ```
-docker run -d -p 8080:8080 gcvit:latest
+docker run -d -p 8080:8080 legumefederation/gcvit:v1.0.0
 ```
 
 GCViT should now be available at `http://localhost:8080.`
