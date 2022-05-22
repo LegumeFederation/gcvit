@@ -127,11 +127,11 @@ For more information on configuring the CViTjs component of GCViT, please see th
 ### Running GCViT using Docker
 The easiest way run a local GCViT instance is by using [Docker](https://docs.docker.com/engine/install/).
 
-Setting the environment variables `DOCKER_BUILDKIT=1` and `COMPOSE_DOCKER_CLI_BUILD=1` to enable [BuildKit](https://github.com/moby/buildkit) is recommended for faster, more efficient builds.
+Setting the environment variables `DOCKER_BUILDKIT=1` to enable [BuildKit](https://github.com/moby/buildkit) is recommended for faster, more efficient builds.
 
 To build CViTjs with any UI customizations, the GCViT API server, and start GCViT, execute the following command in the same directory as docker-compose.yml (i.e., in the root of the gcvit git working tree):
 ```
-docker-compose up --build -d
+docker compose up --build -d
 ```
 
 If you wish to build the api with BasicAuth, append `--build-arg apiauth=true` to the above build command.
@@ -139,12 +139,12 @@ If you wish to build the api with BasicAuth, append `--build-arg apiauth=true` t
 The GCViT UI is then accessible via web browser http://localhost:3000, while the GCViT API server is accessible at http://localhost:8080.
 
 _Any changes to the files on the host in `assets/`, `data/`, `ui/cvitjs/data`, `gcvit/src`, or the `ui/cvitjs/cvit.conf` file will be immediately reflected in the browser_.
-Changes to any other files will require rebuilding the container images and restarting the containers (`docker-compose up --build -d`).
+Changes to any other files will require rebuilding the container images and restarting the containers (`docker compose up --build -d`).
 
 To stop the GCViT service:
 
 ```
-docker-compose down
+docker compose down
 ```
 
 ## Running GCViT on a Production Server
@@ -156,19 +156,19 @@ To deploy a complete container image (UI + API, including the contents of `asset
 
 2. Build the complete container image on the host specified by the Docker context:
 ```
-docker-compose -f docker-compose.prod.yml build
+docker compose -f docker-compose.prod.yml build
 ```
 
 3. Deploy:
 ```
-docker-compose -f docker-compose.prod.yml up -d
+docker compose -f docker-compose.prod.yml up -d
 ```
 
 The GCViT UI (and API) will then be available at http://<hostname>:8080 , where _hostname_ is the host running the Docker Engine specified by the Docker context.
 
 Alternatively, a complete container image can be built directly with `docker build`:
 ```
-docker build -t gcvit:1.0 . -f Dockerfile
+docker build -t gcvit . -f Dockerfile
 ```
 
 This command will produce a image with the tag of **gcvit:1.0** that can be used to build a container. If you want to save time with automated builds and only need the server API component, the build-arg:
@@ -186,7 +186,7 @@ is provided to skip over the building of the UI components. Similarly, if you wi
 Then to deploy using `docker run`:
 
 ```
-docker run -d -p 8080:8080 gcvit:1.0
+docker run -d -p 8080:8080 gcvit
 ```
 
 ### Go + Node Setup
