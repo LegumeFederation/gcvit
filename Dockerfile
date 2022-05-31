@@ -39,8 +39,7 @@ RUN go get
 RUN CGO_ENABLED=0 go build -o server .
 
 #Actual deployment container stage
-FROM scratch as api
-#Good practice to not run deployed container as root
+FROM busybox as api
 COPY --from=gcvitapi /go/src/server /app/
 #add mount points for config and assets
 VOLUME ["/app/config","/app/assets"]
@@ -60,3 +59,9 @@ COPY ui/cvitjs/cvit.conf /app/ui/cvitjs/cvit.conf
 COPY ui/cvitjs/data /app/ui/cvitjs/data
 COPY /config /app/config
 COPY /assets /app/assets
+# precompress files so fasthttp doesn't attempt to compress them
+# (and fail due to lack of write permissions)
+RUN find /app/ui -type f -exec sh -c 'gzip < {} > {}.fasthttp.gz' \;
+
+# Run as "nobody" user (use uid for cf-for-k8s compatibility)
+USER 65534
