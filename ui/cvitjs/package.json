@@ -26,7 +26,7 @@
     "babel-plugin-array-includes": "^2.0.3",
     "babel-preset-preact": "^1.1.0",
     "bundlewatch": "^0.3.3",
-    "css-loader": "^2.1.1",
+    "css-loader": "^6.7.3",
     "cssnano": "^4.1.10",
     "mdn-polyfills": "^5.19.0",
     "npm-run-all": "^4.1.5",
@@ -43,11 +43,11 @@
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-node-resolve": "^4.2.4",
-    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^4.0.2",
-    "style-loader": "^0.19.1",
+    "style-loader": "^3.3.1",
     "unfetch": "^3.0.0",
-    "webpack": "^3.10.0",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^2.9.7"
   },
   "directories": {
