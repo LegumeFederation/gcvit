@@ -1,5 +1,4 @@
 # local interactive testing / development
-version: '2.3'
 
 services:
   ui:
