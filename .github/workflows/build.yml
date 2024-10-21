@@ -1,0 +1,40 @@
+# reference: https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images#publishing-images-to-github-packages
+
+name: Create and publish container image
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        default: master
+        description: Container image tag
+        required: true
+      is_latest:
+        type: boolean
+        description: 'Also create a `latest` tag for this image'
+        required: false
+        default: false
+
+env:
+  IMAGE_NAME: ghcr.io/${{ github.repository }}
+
+jobs:
+  build-and-push-image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Build container image
+        env:
+          IS_LATEST: ${{ env.is_latest }}
+        run: docker build -t ${{ env.IMAGE_NAME }}:${{ inputs.tag }} ${IS_LATEST:+-t ${{ env.IMAGE_NAME }}:latest} .
+      - name: Push image to ghcr.io
+        id: push
+        run: |
+             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin 
+             docker push --all-tags ${{ env.IMAGE_NAME }}
