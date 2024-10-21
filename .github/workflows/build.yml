@@ -15,9 +15,6 @@ on:
         required: false
         default: false
 
-env:
-  IMAGE_NAME: ghcr.io/${{ github.repository }}
-
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
@@ -29,12 +26,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: construct IMAGE_NAME
+        # lowercase the repository name
+        run: echo "IMAGE_NAME=ghcr.io/${GITHUB_REPOSITORY@L}" >> "${GITHUB_ENV}"
       - name: Build container image
         env:
           IS_LATEST: ${{ env.is_latest }}
-        run: docker build -t ${{ env.IMAGE_NAME }}:${{ inputs.tag }} ${IS_LATEST:+-t ${{ env.IMAGE_NAME }}:latest} .
+        run: docker build -t ${IMAGE_NAME}:${{ inputs.tag }} ${IS_LATEST:+-t ${IMAGE_NAME}:latest} .
       - name: Push image to ghcr.io
         id: push
         run: |
              echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin 
-             docker push --all-tags ${{ env.IMAGE_NAME }}
+             docker push --all-tags ${IMAGE_NAME}
