@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-modal": "^3.9.1",
-    "react-scripts": "^3.4.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-modal": "^3.16.1",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,9 +29,9 @@
     ]
   },
   "devDependencies": {
-    "purecss": "^1.0.1",
-    "react-color": "^2.17.3",
-    "react-select": "^3.0.3"
+    "purecss": "^3.0.0",
+    "react-color": "^2.19.3",
+    "react-select": "^5.8.1"
   },
   "proxy": "http://api:8080"
 }
