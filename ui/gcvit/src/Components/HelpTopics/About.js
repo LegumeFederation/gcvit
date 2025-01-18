@@ -18,6 +18,7 @@ export default class About extends React.Component {
                         </p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/B2gPVUipWo0" frameBorder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                sandbox="allow-scripts allow-same-origin allow-presentation"
                                 allowFullScreen title="Introduction to GCViT">
                         </iframe>
                     </div>
