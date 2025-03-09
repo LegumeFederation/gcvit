@@ -13,9 +13,6 @@ use Getopt::Long;
 
 my $dist_min=25000; # minimum distance for reporting the "next" SNP
 my $qual_min=0;  # minimum quality score for reporting a SNP
-my $REFFIELD=4;  # field of the REF field (ONE-indexed; typically 4)
-my $ALTFIELD=5;  # field of the ALT field (ONE-indexed; typically 5)
-my $QUALFIELD=6; # field of the quality score (ONE-indexed; typically 6)
 my $complex_var=0; # whether to process complex (multi-character) variants, or only SNPs
 my $help;
 
@@ -46,11 +43,9 @@ my $prev_pos = 0;
 
 while (<>) {
   chomp;
-  my @parts = split(/\t/, $_);
-  my ($chr, $pos, $qual) = ($parts[0], $parts[1], $parts[$QUALFIELD-1]);
-  my ($ref, $alt) = ($parts[$REFFIELD-1], $parts[$ALTFIELD-1]);
+  if (index($_, "#") == 0){ print "$_\n"; next }
+  my ($chr, $pos, $id, $ref, $alt, $qual) = split(/\t/);
 
-  if ($_=~/^#/){ print "$_\n"; next }
   if ($qual eq ".") {$qual = 0}
 
   if ($complex_var==0){ # report only SNPs - not complex variants 

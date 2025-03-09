@@ -63,5 +63,4 @@ COPY /assets /app/assets
 # (and fail due to lack of write permissions)
 RUN find /app/ui -type f -exec sh -c 'gzip < {} > {}.fasthttp.gz' \;
 
-# Run as "nobody" user (use uid for cf-for-k8s compatibility)
-USER 65534
+USER nobody
